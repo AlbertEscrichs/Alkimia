@@ -978,6 +978,304 @@ ol.alch-steps li::before {
   padding: 2px 7px;
   margin-top: 0.4rem;
 }
+/* ─── PILARES DE TRANSMUTACIÓN ─── */
+.pilares-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 1rem 0;
+  border: 1px solid var(--rule-color);
+  overflow: hidden;
+}
+.pilar-item {
+  display: grid;
+  grid-template-columns: 3.2rem 1fr;
+  align-items: stretch;
+  border-bottom: 1px solid var(--rule-color);
+  break-inside: avoid;
+}
+.pilar-item:last-child { border-bottom: none; }
+.pilar-num {
+  background: var(--band-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 0.9rem 0.4rem;
+  border-right: 1px solid rgba(176,138,30,0.2);
+}
+.pilar-numeral {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+.pilar-roman {
+  font-family: 'Cinzel', serif;
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  color: rgba(176,138,30,0.4);
+  text-transform: uppercase;
+}
+.pilar-content { padding: 0.85rem 1rem; background: rgba(242,232,200,0.3); }
+.pilar-name {
+  font-family: 'Cinzel', serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+.pilar-item:nth-child(1) .pilar-name { color: var(--velo-deep); }
+.pilar-item:nth-child(2) .pilar-name { color: var(--copper); }
+.pilar-item:nth-child(3) .pilar-name { color: #5a7a20; }
+.pilar-desc { font-size: 0.88rem; line-height: 1.6; color: var(--text-muted); }
+.pilar-desc strong { color: var(--ink); font-weight: 600; }
+.pilar-warning {
+  margin-top: 0.4rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--copper);
+  text-transform: uppercase;
+}
+
+/* ─── TARJETAS DE VÍA ALKÍMICA EXPANDIDAS ─── */
+.via-full-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+  margin: 0.9rem 0;
+}
+.via-full-card {
+  border: 1px solid var(--rule-color);
+  background: rgba(242,232,200,0.35);
+  overflow: hidden;
+  break-inside: avoid;
+  position: relative;
+}
+.via-full-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.65rem 0.9rem;
+  border-bottom: 1px solid var(--rule-color);
+}
+.via-full-sym {
+  font-size: 1.6rem;
+  line-height: 1;
+  width: 2.2rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+.via-full-title-block { flex: 1; }
+.via-full-name {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  line-height: 1.2;
+}
+.via-full-tagline {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  color: var(--text-caption);
+  letter-spacing: 0.06em;
+  margin-top: 1px;
+}
+.via-full-body { padding: 0.7rem 0.9rem; }
+.via-full-body p { font-size: 0.86rem; line-height: 1.58; color: var(--text-muted); margin-bottom: 0.6rem; text-align: left; }
+.via-stat-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem;
+  margin-top: 0.4rem;
+}
+.via-stat-item { font-size: 0.8rem; line-height: 1.45; color: var(--text-muted); }
+.via-stat-item .via-stat-key {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1px;
+}
+.via-stat-key.plus  { color: #3a6a20; }
+.via-stat-key.minus { color: var(--copper); }
+.via-stat-key.style { color: var(--velo-deep); }
+/* colores por elemento */
+.via-full-card.agua .via-full-sym  { color: #2060a0; }
+.via-full-card.agua .via-full-name { color: #1a4a80; }
+.via-full-card.tierra .via-full-sym  { color: #5a3e10; }
+.via-full-card.tierra .via-full-name { color: #4a3010; }
+.via-full-card.fuego .via-full-sym  { color: #a03010; }
+.via-full-card.fuego .via-full-name { color: #882008; }
+.via-full-card.aire .via-full-sym  { color: #306060; }
+.via-full-card.aire .via-full-name { color: #204848; }
+.via-full-card.sal .via-full-sym  { color: var(--copper); }
+.via-full-card.sal .via-full-name  { color: var(--copper); }
+.via-full-card.azufre .via-full-sym  { color: #803010; }
+.via-full-card.azufre .via-full-name { color: #701808; }
+.via-full-card.mercurio .via-full-sym  { color: var(--velo); }
+.via-full-card.mercurio .via-full-name { color: var(--velo-deep); }
+/* accent bar top */
+.via-full-card::before {
+  content: '';
+  display: block;
+  height: 3px;
+}
+.via-full-card.agua::before   { background: linear-gradient(90deg, #2060a0, transparent); }
+.via-full-card.tierra::before { background: linear-gradient(90deg, #5a3e10, transparent); }
+.via-full-card.fuego::before  { background: linear-gradient(90deg, #a03010, transparent); }
+.via-full-card.aire::before   { background: linear-gradient(90deg, #306060, transparent); }
+.via-full-card.sal::before    { background: linear-gradient(90deg, var(--copper), transparent); }
+.via-full-card.azufre::before { background: linear-gradient(90deg, #803010, transparent); }
+.via-full-card.mercurio::before { background: linear-gradient(90deg, var(--velo), transparent); }
+
+/* ─── TRIA PRIMA (3 bases) ─── */
+.tria-prima {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--rule-color);
+  margin: 1rem 0;
+  overflow: hidden;
+}
+.tria-item {
+  padding: 1rem 0.9rem;
+  border-right: 1px solid var(--rule-color);
+  text-align: center;
+  break-inside: avoid;
+}
+.tria-item:last-child { border-right: none; }
+.tria-sym {
+  font-size: 2.2rem;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+.tria-name {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+.tria-desc { font-size: 0.84rem; line-height: 1.58; color: var(--text-muted); text-align: left; }
+.tria-item.azufre-col .tria-sym  { color: #8a3010; }
+.tria-item.azufre-col .tria-name { color: #8a3010; }
+.tria-item.mercurio-col .tria-sym  { color: var(--velo-deep); }
+.tria-item.mercurio-col .tria-name { color: var(--velo-deep); }
+.tria-item.sal-col .tria-sym  { color: var(--copper); }
+.tria-item.sal-col .tria-name { color: var(--copper); }
+
+/* ─── EJEMPLO DE TRANSMUTACIÓN (proceso) ─── */
+.transmu-flow {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin: 1rem 0;
+  border: 1px solid var(--rule-color);
+  overflow: hidden;
+}
+.transmu-step {
+  flex: 1;
+  padding: 0.8rem 0.7rem;
+  text-align: center;
+  background: rgba(242,232,200,0.3);
+  border-right: 1px solid var(--rule-color);
+  break-inside: avoid;
+}
+.transmu-step:last-child { border-right: none; }
+.transmu-arrow {
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+  color: var(--rule-color);
+  font-size: 1.1rem;
+  background: rgba(242,232,200,0.15);
+  flex-shrink: 0;
+}
+.transmu-step-sym {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+.transmu-step-name {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+.transmu-step-desc { font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); }
+.transmu-step.comprension { background: rgba(32,80,160,0.05); }
+.transmu-step.comprension .transmu-step-sym  { color: #2060a0; }
+.transmu-step.comprension .transmu-step-name { color: #1a4a80; }
+.transmu-step.destruccion { background: rgba(160,48,16,0.05); }
+.transmu-step.destruccion .transmu-step-sym  { color: #a03010; }
+.transmu-step.destruccion .transmu-step-name { color: #882008; }
+.transmu-step.reconstruccion { background: rgba(58,106,32,0.05); }
+.transmu-step.reconstruccion .transmu-step-sym  { color: #3a6a20; }
+.transmu-step.reconstruccion .transmu-step-name { color: #2a5018; }
+
+/* ─── EFECTOS DEL VELO (símbolos corruptos) ─── */
+.velo-efectos {
+  background: rgba(36,94,96,0.07);
+  border: 1px solid rgba(36,94,96,0.22);
+  border-top: 3px solid var(--velo);
+  margin: 1rem 0;
+  overflow: hidden;
+}
+.velo-efectos-header {
+  background: var(--velo-deep);
+  padding: 0.55rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.velo-efectos-header span {
+  font-family: 'Cinzel', serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(194,222,222,0.8);
+}
+.velo-efectos-body { padding: 0.8rem 1rem; }
+.velo-efecto-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.velo-efecto-item {
+  display: grid;
+  grid-template-columns: 1.6rem 1fr;
+  gap: 0.6rem;
+  align-items: start;
+  padding: 0.5rem 0.6rem;
+  background: rgba(36,94,96,0.06);
+  border-left: 2px solid var(--velo);
+}
+.velo-efecto-sym { font-size: 0.9rem; color: var(--velo); text-align: center; padding-top: 2px; }
+.velo-efecto-name {
+  font-family: 'Cinzel', serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--velo-deep);
+  margin-bottom: 0.15rem;
+}
+.velo-efecto-desc { font-size: 0.86rem; line-height: 1.58; color: var(--text-muted); }
+.velo-efecto-desc strong { color: var(--ink); }
+
 </style>
 </head>
 <body>
@@ -993,6 +1291,7 @@ ol.alch-steps li::before {
     <a href="#portada"><span class="sym">◆</span> Portada</a>
     <a href="#introduccion"><span class="sym">◆</span> Introducción</a>
     <a href="#origen"><span class="sym">◆</span> El Origen del Velo</a>
+    <a href="#ciencia"><span class="sym">◆</span> La Ciencia de la Alkímia</a>
     <a href="#sistema"><span class="sym">◆</span> Sistema de Juego</a>
     <a href="#atributos"><span class="sym">◆</span> Atributos</a>
     <a href="#vias"><span class="sym">◆</span> Vías Alkímicas</a>
@@ -1729,6 +2028,700 @@ ol.alch-steps li::before {
       <div class="footer-title">Capítulo II · La Lucha por el Equilibrio</div>
     </div>
     <div class="page-id">7</div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     CAP. III — LA CIENCIA DE LA ALKÍMIA (pág. 8–12)
+     ═══════════════════════════════════════════════ -->
+
+<!-- ─── PÁGINA 8: APERTURA CAP. III + PRINCIPIOS FUNDAMENTALES ─── -->
+<section id="ciencia">
+  <div class="page-label">Página 8 · Cap. III · Apertura + Principios Fundamentales</div>
+  <div class="page">
+    <div class="page-band">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none">
+        <rect width="820" height="52" fill="#1a1c24"/>
+        <g opacity="0.2" fill="#b08a1e">
+          <circle cx="50"  cy="26" r="3"/> <circle cx="770" cy="26" r="3"/>
+          <line x1="60"  y1="26" x2="395" y2="26" stroke="#b08a1e" stroke-width="0.5"/>
+          <line x1="425" y1="26" x2="760" y2="26" stroke="#b08a1e" stroke-width="0.5"/>
+          <rect x="405" y="16" width="10" height="20" transform="rotate(45,410,26)"/>
+        </g>
+      </svg>
+      <span class="band-text">La Ciencia de la Alkímia · Principios Fundamentales</span>
+    </div>
+
+    <div class="border-left">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice">
+        <line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.3"/>
+        <g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.28">
+          <circle cx="18" cy="55" r="5"/>
+          <line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/>
+          <rect x="11" y="155" width="14" height="14" transform="rotate(45,18,162)"/>
+          <line x1="18" y1="173" x2="18" y2="295"/>
+          <circle cx="18" cy="295" r="4"/><circle cx="18" cy="295" r="7" stroke-dasharray="2,3"/>
+          <line x1="18" y1="305" x2="18" y2="430"/>
+          <polygon points="12,430 24,430 18,446"/>
+          <line x1="18" y1="448" x2="18" y2="590"/>
+          <circle cx="18" cy="590" r="5"/>
+          <line x1="18" y1="598" x2="18" y2="750"/>
+          <rect x="11" y="750" width="14" height="14" transform="rotate(45,18,757)"/>
+          <line x1="18" y1="768" x2="18" y2="900"/>
+        </g>
+      </svg>
+    </div>
+    <div class="border-right">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice">
+        <line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.22"/>
+        <g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.22">
+          <circle cx="18" cy="75" r="5"/>
+          <line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/>
+          <rect x="13" y="200" width="10" height="10"/>
+          <line x1="18" y1="213" x2="18" y2="355"/>
+          <circle cx="18" cy="355" r="4"/>
+          <line x1="18" y1="362" x2="18" y2="510"/>
+          <polygon points="12,510 24,510 18,526"/>
+          <line x1="18" y1="528" x2="18" y2="670"/>
+          <circle cx="18" cy="670" r="5"/><circle cx="18" cy="670" r="8" stroke-dasharray="3,3"/>
+          <line x1="18" y1="680" x2="18" y2="830"/>
+          <rect x="13" y="830" width="10" height="10"/>
+          <line x1="18" y1="843" x2="18" y2="900"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="page-inner">
+      <!-- Chapter hero oscuro integrado en la página -->
+      <div class="chapter-hero" style="margin: -2.2rem -3.4rem 1.6rem -4rem;">
+        <div class="chap-num">Capítulo III</div>
+        <div class="chap-title">La Ciencia de la Alkímia</div>
+        <div class="chap-sub">Principios · Vías · Símbolos · Transmutaciones</div>
+        <div class="chap-sym">⊕</div>
+      </div>
+
+      <p class="drop-cap">En el mundo de <em>Alkímia: Senderos del Velo</em>, la Alkímia se basa en la <strong>manipulación de la materia y la energía</strong> a través de un proceso fundamental conocido como transmutación. Este proceso se divide en <strong>tres etapas clave o «pilares»</strong>: Comprensión, Destrucción y Reconstrucción. Cada una de estas etapas conlleva sus propios riesgos y consecuencias.</p>
+
+      <p>Es fundamental recordar que cada transmutación, sin importar su complejidad, <strong>exige un intercambio equivalente</strong>. Este principio se traduce en la necesidad de gastar <strong>Ánima</strong> (energía vital) y la posibilidad de sufrir consecuencias negativas en caso de fallos. La influencia del Velo puede distorsionar las transmutaciones, amplificando los riesgos y generando resultados inesperados.</p>
+
+      <!-- Diagrama de flujo de los 3 pilares -->
+      <div class="transmu-flow">
+        <div class="transmu-step comprension">
+          <div class="transmu-step-sym">◉</div>
+          <div class="transmu-step-name">I · Comprensión</div>
+          <div class="transmu-step-desc">Primera fase. El Alkimista <strong>analiza el objetivo</strong> en profundidad: estructura, composición y propiedades inherentes. Utiliza sus sentidos, conocimiento alkímico y herramientas especializadas.</div>
+        </div>
+        <div class="transmu-arrow">›</div>
+        <div class="transmu-step destruccion">
+          <div class="transmu-step-sym">⊗</div>
+          <div class="transmu-step-name">II · Destrucción</div>
+          <div class="transmu-step-desc">Descompone la estructura existente en sus elementos básicos. Requiere <strong>control preciso de la energía Alkímica</strong>. Un fallo puede generar fisuras del Velo.</div>
+        </div>
+        <div class="transmu-arrow">›</div>
+        <div class="transmu-step reconstruccion">
+          <div class="transmu-step-sym">✦</div>
+          <div class="transmu-step-name">III · Reconstrucción</div>
+          <div class="transmu-step-desc">Etapa final. El Alkimista <strong>reforma la materia en una nueva forma</strong>. Un fallo produce formas imperfectas, propiedades peligrosas o la disipación completa.</div>
+        </div>
+      </div>
+
+      <div class="section-title">Los Tres Pilares en Detalle</div>
+      <div class="alch-sep"><span>△▽</span></div>
+
+      <div class="pilares-row">
+        <div class="pilar-item">
+          <div class="pilar-num">
+            <div class="pilar-numeral">I</div>
+            <div class="pilar-roman">Pilar</div>
+          </div>
+          <div class="pilar-content">
+            <div class="pilar-name">Comprensión: Descifrando los Secretos de la Materia</div>
+            <div class="pilar-desc">Esta es la <strong>primera fase</strong> de cualquier transmutación. El Alkimista debe analizar detalladamente el objetivo, buscando entender su estructura, composición y propiedades inherentes. Este análisis se logra a través de un estudio profundo, utilizando los sentidos del Alkimista, su conocimiento alkímico y, en ocasiones, herramientas especializadas.</div>
+          </div>
+        </div>
+        <div class="pilar-item">
+          <div class="pilar-num">
+            <div class="pilar-numeral">II</div>
+            <div class="pilar-roman">Pilar</div>
+          </div>
+          <div class="pilar-content">
+            <div class="pilar-name">Destrucción: Rompiendo las Ataduras de la Forma</div>
+            <div class="pilar-desc">Esta etapa implica <strong>descomponer la estructura existente del objetivo</strong> en sus elementos básicos o en un estado más maleable. Requiere un control preciso de la energía Alkímica, que es canalizada mediante símbolos y gestos específicos. Un fallo puede tener consecuencias negativas severas, como la pérdida de control de la energía, la corrupción del objetivo o la <strong>creación accidental de fisuras del Velo</strong>. Esto resalta cómo la Ley del Intercambio Equivalente se manifiesta.</div>
+            <div class="pilar-warning">⚠ Riesgo de Fisura si se falla la tirada de Destrucción</div>
+          </div>
+        </div>
+        <div class="pilar-item">
+          <div class="pilar-num">
+            <div class="pilar-numeral">III</div>
+            <div class="pilar-roman">Pilar</div>
+          </div>
+          <div class="pilar-content">
+            <div class="pilar-name">Reconstrucción: Dando Forma a lo Nuevo</div>
+            <div class="pilar-desc">Es la <strong>etapa final</strong> del proceso alkímico, donde el Alkimista reforma la materia en una nueva forma, con diferentes propiedades y funciones. Aquí es donde la visión del Alkimista se materializa. Un fallo en la Reconstrucción puede dar como resultado una forma imperfecta, propiedades inesperadas o peligrosas, o incluso la <strong>disipación completa de la materia</strong>, desperdiciando el esfuerzo.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nota">(Nota: Las mecánicas de juego detalladas asociadas con estos principios se explican en la sección «Sistema de Juego»)</div>
+    </div>
+
+    <div class="page-footer">
+      <div class="footer-title">Alkímia: Senderos del Velo</div>
+      <div class="footer-title">Capítulo III · La Ciencia de la Alkímia</div>
+    </div>
+    <div class="page-id">8</div>
+  </div>
+</section>
+
+<!-- ─── PÁGINA 9: VÍAS ALKÍMICAS — ELEMENTOS CLÁSICOS (2 columnas) ─── -->
+<section>
+  <div class="page-label">Página 9 · Vías Alkímicas: Elementos Clásicos — Layout dos columnas</div>
+  <div class="page">
+    <div class="page-band">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none">
+        <rect width="820" height="52" fill="#1a1c24"/>
+        <g opacity="0.18" fill="#b08a1e">
+          <circle cx="50" cy="26" r="3"/> <circle cx="770" cy="26" r="3"/>
+          <line x1="60" y1="26" x2="395" y2="26" stroke="#b08a1e" stroke-width="0.5"/>
+          <line x1="425" y1="26" x2="760" y2="26" stroke="#b08a1e" stroke-width="0.5"/>
+          <polygon points="408,17 420,26 408,35 396,26" fill="none" stroke="#b08a1e" stroke-width="0.8"/>
+        </g>
+      </svg>
+      <span class="band-text">La Ciencia de la Alkímia · Vías Alkímicas: Elementos Clásicos</span>
+    </div>
+
+    <div class="border-left">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice">
+        <line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.3"/>
+        <g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.28">
+          <circle cx="18" cy="55" r="5"/>
+          <line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/>
+          <polygon points="12,155 24,155 18,170"/>
+          <line x1="18" y1="173" x2="18" y2="310"/>
+          <circle cx="18" cy="310" r="4"/><circle cx="18" cy="310" r="7" stroke-dasharray="2,3"/>
+          <line x1="18" y1="320" x2="18" y2="470"/>
+          <rect x="11" y="470" width="14" height="14" transform="rotate(45,18,477)"/>
+          <line x1="18" y1="488" x2="18" y2="640"/>
+          <circle cx="18" cy="640" r="5"/>
+          <line x1="18" y1="648" x2="18" y2="820"/>
+          <polygon points="12,820 24,820 18,835"/>
+          <line x1="18" y1="838" x2="18" y2="900"/>
+        </g>
+      </svg>
+    </div>
+    <div class="border-right">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice">
+        <line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.22"/>
+        <g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.22">
+          <circle cx="18" cy="75" r="5"/>
+          <line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="210"/>
+          <rect x="13" y="210" width="10" height="10"/>
+          <line x1="18" y1="223" x2="18" y2="370"/>
+          <circle cx="18" cy="370" r="4"/>
+          <line x1="18" y1="377" x2="18" y2="530"/>
+          <polygon points="12,530 24,530 18,546"/>
+          <line x1="18" y1="548" x2="18" y2="695"/>
+          <circle cx="18" cy="695" r="5"/>
+          <line x1="18" y1="703" x2="18" y2="850"/>
+          <rect x="13" y="850" width="10" height="10"/>
+          <line x1="18" y1="863" x2="18" y2="900"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="page-inner">
+      <div class="section-title">Vías Alkímicas: <span class="highlight">Elementos Clásicos</span></div>
+      <div class="chapter-subtitle" style="margin-bottom:0.8rem;">Agua · Tierra · Fuego · Aire</div>
+      <div class="chapter-rule"></div>
+
+      <p>El sistema de juego ofrece dos vías principales de especialización para los Alkimistas. Los <strong>Elementos Clásicos</strong> permiten a los jugadores que siguen esta vía basar su Alkímia en su <strong>conexión y dominio sobre las fuerzas elementales de la naturaleza</strong>. Son versátiles y capaces de adaptarse a diversas situaciones, utilizando los elementos para atacar, defender y manipular el entorno.</p>
+
+      <div class="alch-sep"><span>◆</span></div>
+
+      <div class="via-full-grid">
+
+        <div class="via-full-card agua">
+          <div class="via-full-header">
+            <div class="via-full-sym">∇</div>
+            <div class="via-full-title-block">
+              <div class="via-full-name">Agua</div>
+              <div class="via-full-tagline">La Adaptabilidad y el Flujo</div>
+            </div>
+          </div>
+          <div class="via-full-body">
+            <p>Simboliza la adaptabilidad, fluidez, movimiento constante y emoción. Los Alkimistas de Agua son maestros de la defensa y la supervivencia, capaces de fluir alrededor de cualquier obstáculo.</p>
+            <div class="via-stat-row">
+              <div class="via-stat-item"><span class="via-stat-key plus">Fortalezas</span>Defensa y curación, control del terreno, manipulación de la presión del agua.</div>
+              <div class="via-stat-item"><span class="via-stat-key minus">Debilidades</span>Menor poder destructivo directo.</div>
+              <div class="via-stat-item" style="grid-column:1/-1"><span class="via-stat-key style">Estilo de Juego</span>Roles de apoyo, defensa o control.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="via-full-card tierra">
+          <div class="via-full-header">
+            <div class="via-full-sym">▽</div>
+            <div class="via-full-title-block">
+              <div class="via-full-name">Tierra</div>
+              <div class="via-full-tagline">La Resistencia y la Solidez</div>
+            </div>
+          </div>
+          <div class="via-full-body">
+            <p>Representa la solidez, resistencia, estabilidad y construcción. Los Alkimistas de Tierra son los bastiones del grupo, inamovibles y capaces de transformar el campo de batalla.</p>
+            <div class="via-stat-row">
+              <div class="via-stat-item"><span class="via-stat-key plus">Fortalezas</span>Gran capacidad defensiva, control del terreno, fuerza bruta, manipulación de minerales y metales.</div>
+              <div class="via-stat-item"><span class="via-stat-key minus">Debilidades</span>Menor movilidad y Velocidad.</div>
+              <div class="via-stat-item" style="grid-column:1/-1"><span class="via-stat-key style">Estilo de Juego</span>Tanques naturales, ideales para defensa y control de campo de batalla.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="via-full-card fuego">
+          <div class="via-full-header">
+            <div class="via-full-sym">△</div>
+            <div class="via-full-title-block">
+              <div class="via-full-name">Fuego</div>
+              <div class="via-full-tagline">La Energía Destructiva y la Transformación</div>
+            </div>
+          </div>
+          <div class="via-full-body">
+            <p>Simboliza la energía, destrucción, pasión y transformación. Los Alkimistas de Fuego son los atacantes más temidos, capaces de purificar tanto la materia como la corrupción del Velo.</p>
+            <div class="via-stat-row">
+              <div class="via-stat-item"><span class="via-stat-key plus">Fortalezas</span>Gran poder ofensivo, control del fuego, purificación, transmutación rápida.</div>
+              <div class="via-stat-item"><span class="via-stat-key minus">Debilidades</span>Riesgo de daño colateral, susceptibilidad a la corrupción del Velo.</div>
+              <div class="via-stat-item" style="grid-column:1/-1"><span class="via-stat-key style">Estilo de Juego</span>Atacantes poderosos, capaces de infligir grandes cantidades de daño.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="via-full-card aire">
+          <div class="via-full-header">
+            <div class="via-full-sym">▲</div>
+            <div class="via-full-title-block">
+              <div class="via-full-name">Aire</div>
+              <div class="via-full-tagline">El Movimiento y la Evasión</div>
+            </div>
+          </div>
+          <div class="via-full-body">
+            <p>Representa el movimiento, libertad, Velocidad e invisibilidad. Los Alkimistas de Aire son los exploradores y estrategas del grupo, siempre un paso por delante del enemigo.</p>
+            <div class="via-stat-row">
+              <div class="via-stat-item"><span class="via-stat-key plus">Fortalezas</span>Gran movilidad, capacidad de evasión, control del viento, desorientación, sigilo.</div>
+              <div class="via-stat-item"><span class="via-stat-key minus">Debilidades</span>Menor resistencia física.</div>
+              <div class="via-stat-item" style="grid-column:1/-1"><span class="via-stat-key style">Estilo de Juego</span>Exploradores y combatientes ágiles.</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /via-full-grid -->
+
+      <div class="box-rule">
+        <div class="box-title">Nota de diseño · Elección de Vía</div>
+        <p>La elección entre Elementos Clásicos y Principios Esenciales determinará el enfoque del Alkimista en el juego. Los Elementos Clásicos ofrecen un control más directo sobre las fuerzas de la naturaleza, mientras que los Principios Esenciales permiten manipular la materia y la energía a un nivel más fundamental.</p>
+        <p style="margin:0">Cada vía provee habilidades únicas que se adaptan a distintos estilos de juego, permitiendo crear personajes Alkimistas únicos con roles específicos dentro del grupo.</p>
+      </div>
+
+    </div>
+
+    <div class="page-footer">
+      <div class="footer-title">Alkímia: Senderos del Velo</div>
+      <div class="footer-title">Capítulo III · Vías Alkímicas</div>
+    </div>
+    <div class="page-id">9</div>
+  </div>
+</section>
+
+<!-- ─── PÁGINA 10: PRINCIPIOS ESENCIALES (2 columnas) ─── -->
+<section>
+  <div class="page-label">Página 10 · Vías Alkímicas: Principios Esenciales — Layout dos columnas</div>
+  <div class="page">
+    <div class="page-band">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none">
+        <rect width="820" height="52" fill="#1a1c24"/>
+        <g opacity="0.18" fill="#7a3e14">
+          <circle cx="50" cy="26" r="3"/> <circle cx="770" cy="26" r="3"/>
+          <line x1="60" y1="26" x2="395" y2="26" stroke="#7a3e14" stroke-width="0.5"/>
+          <line x1="425" y1="26" x2="760" y2="26" stroke="#7a3e14" stroke-width="0.5"/>
+          <polygon points="408,17 420,26 408,35 396,26" fill="none" stroke="#7a3e14" stroke-width="0.8"/>
+        </g>
+      </svg>
+      <span class="band-text" style="color:rgba(196,120,64,0.7)">La Ciencia de la Alkímia · Vías Alkímicas: Principios Esenciales</span>
+    </div>
+
+    <div class="border-left">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice">
+        <line x1="18" y1="0" x2="18" y2="900" stroke="#7a3e14" stroke-width="0.5" opacity="0.28"/>
+        <g fill="none" stroke="#7a3e14" stroke-width="0.6" opacity="0.26">
+          <circle cx="18" cy="55" r="5"/>
+          <line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="170"/>
+          <rect x="11" y="170" width="14" height="14" transform="rotate(45,18,177)"/>
+          <line x1="18" y1="188" x2="18" y2="320"/>
+          <circle cx="18" cy="320" r="4"/><circle cx="18" cy="320" r="7" stroke-dasharray="2,3"/>
+          <line x1="18" y1="330" x2="18" y2="480"/>
+          <polygon points="12,480 24,480 18,495"/>
+          <line x1="18" y1="498" x2="18" y2="650"/>
+          <circle cx="18" cy="650" r="5"/>
+          <line x1="18" y1="658" x2="18" y2="830"/>
+          <rect x="11" y="830" width="14" height="14" transform="rotate(45,18,837)"/>
+          <line x1="18" y1="850" x2="18" y2="900"/>
+        </g>
+      </svg>
+    </div>
+    <div class="border-right">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice">
+        <line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.2"/>
+        <g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.2">
+          <circle cx="18" cy="75" r="5"/>
+          <line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/>
+          <rect x="13" y="200" width="10" height="10"/>
+          <line x1="18" y1="213" x2="18" y2="360"/>
+          <circle cx="18" cy="360" r="4"/>
+          <line x1="18" y1="367" x2="18" y2="530"/>
+          <polygon points="12,530 24,530 18,546"/>
+          <line x1="18" y1="548" x2="18" y2="695"/>
+          <circle cx="18" cy="695" r="5"/>
+          <line x1="18" y1="703" x2="18" y2="880"/>
+          <circle cx="18" cy="880" r="4"/>
+          <line x1="18" y1="887" x2="18" y2="900"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="page-inner">
+      <div class="section-title">Principios Esenciales</div>
+      <div class="chapter-subtitle" style="margin-bottom:0.8rem;">Sal · Azufre · Mercurio — La Tria Prima</div>
+      <div class="chapter-rule"></div>
+
+      <p>Los Alkimistas que dominan los Principios son <strong>maestros de la transmutación</strong>, capaces de manipular la esencia misma de la materia. Se centran en la comprensión de los principios alkímicos para crear efectos complejos y poderosos, desde la creación de objetos hasta la alteración de la realidad.</p>
+
+      <div class="alch-sep"><span>⊕</span></div>
+
+      <div class="via-full-grid">
+
+        <div class="via-full-card sal">
+          <div class="via-full-header">
+            <div class="via-full-sym">Θ</div>
+            <div class="via-full-title-block">
+              <div class="via-full-name">Sal</div>
+              <div class="via-full-tagline">La Fortaleza y la Estabilidad</div>
+            </div>
+          </div>
+          <div class="via-full-body">
+            <p>Representa la estructura, solidez, resistencia y estabilidad. Los Alkimistas de Sal son los pilares inquebrantables del grupo: Alkimistas firmes con gran fuerza de voluntad.</p>
+            <div class="via-stat-row">
+              <div class="via-stat-item"><span class="via-stat-key plus">Fortalezas</span>Gran resistencia física y mental, protección, control de energía, purificación.</div>
+              <div class="via-stat-item"><span class="via-stat-key minus">Debilidades</span>Menor flexibilidad y adaptabilidad.</div>
+              <div class="via-stat-item" style="grid-column:1/-1"><span class="via-stat-key style">Estilo de Juego</span>Protectores y soportes del grupo.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="via-full-card azufre">
+          <div class="via-full-header">
+            <div class="via-full-sym">✦</div>
+            <div class="via-full-title-block">
+              <div class="via-full-name">Azufre</div>
+              <div class="via-full-tagline">La Energía y la Transformación</div>
+            </div>
+          </div>
+          <div class="via-full-body">
+            <p>Simboliza la energía, transformación, intensidad y volatilidad. Los Alkimistas de Azufre son los más peligrosos y los más poderosos, capaces de canalizar fuerzas destructivas inmensas.</p>
+            <div class="via-stat-row">
+              <div class="via-stat-item"><span class="via-stat-key plus">Fortalezas</span>Gran capacidad ofensiva, manipulación de energía, aceleración de procesos, creación de explosiones.</div>
+              <div class="via-stat-item"><span class="via-stat-key minus">Debilidades</span>Riesgo de perder el control, susceptibilidad a la corrupción del Velo.</div>
+              <div class="via-stat-item" style="grid-column:1/-1"><span class="via-stat-key style">Estilo de Juego</span>Atacantes poderosos con alto daño, pero deben ser cautelosos.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="via-full-card mercurio" style="grid-column: 1 / -1;">
+          <div class="via-full-header">
+            <div class="via-full-sym">☿</div>
+            <div class="via-full-title-block">
+              <div class="via-full-name">Mercurio</div>
+              <div class="via-full-tagline">El Equilibrio y la Fluidez — Mediador entre Sal y Azufre</div>
+            </div>
+          </div>
+          <div class="via-full-body" style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+            <p style="margin:0;">Representa la adaptabilidad, fluidez, equilibrio y transformación. Los Alkimistas de Mercurio son los más versátiles del sistema, actuando como el puente entre la solidez de la Sal y la energía del Azufre. Son los únicos capaces de maniobrar entre todos los roles.</p>
+            <div class="via-stat-row">
+              <div class="via-stat-item"><span class="via-stat-key plus">Fortalezas</span>Gran adaptabilidad, capacidad de transformación, manipulación de materia, control del flujo.</div>
+              <div class="via-stat-item"><span class="via-stat-key minus">Debilidades</span>Menor poder destructivo directo.</div>
+              <div class="via-stat-item" style="grid-column:1/-1"><span class="via-stat-key style">Estilo de Juego</span>Versátiles: infiltración, espionaje, control de multitudes y resolución de acertijos.</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /via-full-grid principios -->
+
+    </div>
+
+    <div class="page-footer">
+      <div class="footer-title">Alkímia: Senderos del Velo</div>
+      <div class="footer-title">Capítulo III · Principios Esenciales</div>
+    </div>
+    <div class="page-id">10</div>
+  </div>
+</section>
+
+<!-- ─── PÁGINA 11: SÍMBOLOS Y TRANSMUTACIONES + APLICACIÓN ─── -->
+<section>
+  <div class="page-label">Página 11 · Símbolos y Transmutaciones — Tria Prima + Aplicación</div>
+  <div class="page">
+    <div class="page-band">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none">
+        <rect width="820" height="52" fill="#1a1c24"/>
+        <g opacity="0.18" fill="#b08a1e">
+          <circle cx="50" cy="26" r="3"/> <circle cx="770" cy="26" r="3"/>
+          <line x1="60" y1="26" x2="395" y2="26" stroke="#b08a1e" stroke-width="0.5"/>
+          <line x1="425" y1="26" x2="760" y2="26" stroke="#b08a1e" stroke-width="0.5"/>
+          <rect x="405" y="16" width="10" height="20" transform="rotate(45,410,26)"/>
+        </g>
+      </svg>
+      <span class="band-text">La Ciencia de la Alkímia · Símbolos y Transmutaciones</span>
+    </div>
+
+    <div class="border-left">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice">
+        <line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.3"/>
+        <g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.28">
+          <circle cx="18" cy="55" r="5"/>
+          <line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="160"/>
+          <rect x="11" y="160" width="14" height="14" transform="rotate(45,18,167)"/>
+          <line x1="18" y1="178" x2="18" y2="315"/>
+          <circle cx="18" cy="315" r="4"/><circle cx="18" cy="315" r="7" stroke-dasharray="2,3"/>
+          <line x1="18" y1="325" x2="18" y2="465"/>
+          <polygon points="12,465 24,465 18,480"/>
+          <line x1="18" y1="483" x2="18" y2="625"/>
+          <circle cx="18" cy="625" r="5"/>
+          <line x1="18" y1="633" x2="18" y2="800"/>
+          <rect x="11" y="800" width="14" height="14" transform="rotate(45,18,807)"/>
+          <line x1="18" y1="820" x2="18" y2="900"/>
+        </g>
+      </svg>
+    </div>
+    <div class="border-right">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice">
+        <line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.22"/>
+        <g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.22">
+          <circle cx="18" cy="75" r="5"/>
+          <line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/>
+          <rect x="13" y="200" width="10" height="10"/>
+          <line x1="18" y1="213" x2="18" y2="370"/>
+          <circle cx="18" cy="370" r="4"/>
+          <line x1="18" y1="377" x2="18" y2="530"/>
+          <polygon points="12,530 24,530 18,546"/>
+          <line x1="18" y1="548" x2="18" y2="700"/>
+          <circle cx="18" cy="700" r="5"/>
+          <line x1="18" y1="708" x2="18" y2="870"/>
+          <rect x="13" y="870" width="10" height="10"/>
+          <line x1="18" y1="883" x2="18" y2="900"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="page-inner">
+      <div class="section-title">Símbolos y Transmutaciones: <span class="highlight">Ejemplos y Aplicaciones</span></div>
+      <div class="chapter-subtitle" style="margin-bottom:0.8rem;">La Tria Prima — Las tres bases de toda Alkímia</div>
+      <div class="chapter-rule"></div>
+
+      <p>Los <strong>símbolos alkímicos</strong> son cruciales en <em>Alkímia: Senderos del Velo</em>, ya que representan los principios fundamentales que rigen la transmutación y son una herramienta esencial para que los Alkimistas comprendan y manipulen el mundo.</p>
+
+      <p>En el corazón de la Alkímia se encuentran las <strong>tres bases, o <em>Tria Prima</em></strong>: Sal (Θ), Azufre (✦) y Mercurio (☿). Estos no son sustancias físicas, sino principios alkímicos que representan diferentes aspectos de la realidad y la existencia:</p>
+
+      <!-- Tria Prima visual -->
+      <div class="tria-prima">
+        <div class="tria-item azufre-col">
+          <div class="tria-sym">✦</div>
+          <div class="tria-name">Azufre</div>
+          <div class="tria-desc">Representa el <strong>principio vital</strong>, la energía bruta y la fuerza animadora que impulsa la transformación. Es anónimo e inconsciente, simbolizando el potencial puro. El «fuego» que mueve toda transmutación.</div>
+        </div>
+        <div class="tria-item mercurio-col">
+          <div class="tria-sym">☿</div>
+          <div class="tria-name">Mercurio</div>
+          <div class="tria-desc">Simboliza el <strong>alma, la conciencia y la capacidad de fluir y adaptarse</strong>. Es el mediador entre el Azufre y la Sal, permitiendo que la energía vital se exprese en la forma material. La «mente» de la transmutación.</div>
+        </div>
+        <div class="tria-item sal-col">
+          <div class="tria-sym">Θ</div>
+          <div class="tria-name">Sal</div>
+          <div class="tria-desc">Es el <strong>cuerpo, la materia sólida</strong> y la manifestación tangible de la energía. Representa la estructura, la estabilidad y el resultado final de la transmutación. El «recipiente» que da forma al resultado.</div>
+        </div>
+      </div>
+
+      <div class="section-title" style="margin-top:1.6rem;">Aplicación de los Símbolos en la Transmutación</div>
+      <div class="alch-sep"><span>△▽</span></div>
+
+      <p>Los jugadores pueden usar estos símbolos en combinación con sus habilidades de Alkímia para crear una variedad de efectos. La <strong>comprensión de la interacción entre las tres bases es esencial</strong> para realizar transmutaciones exitosas.</p>
+
+      <ul class="alch-list">
+        <li>
+          <strong>Transformaciones Simples:</strong> Para transformar un objeto simple, un jugador podría enfocar la energía del <strong>Azufre para romper su estructura (Destrucción)</strong>, usar el <strong>Mercurio para guiar la transformación</strong>, y la <strong>Sal para solidificar la nueva forma (Reconstrucción)</strong>.
+        </li>
+        <li>
+          <strong>Rituales Complejos:</strong> Estos rituales alkímicos más complejos pueden involucrar la invocación de múltiples símbolos y la manipulación de las energías de las tres bases en una secuencia específica. Se pueden usar para crear poderosos artefactos, abrir portales a otras dimensiones o incluso desafiar la muerte.
+        </li>
+      </ul>
+
+      <!-- Ejemplo visual de transmutación simple -->
+      <div class="box-lore" style="margin-top:1.2rem;">
+        <p><strong>Ejemplo — Transmutación de una espada oxidada:</strong> El Alkimista aplica Comprensión para analizar la composición del hierro. Luego invoca el Azufre (✦) para descomponer la oxidación —Destrucción—. El Mercurio (☿) guía la restructuración de los átomos de hierro. Finalmente, la Sal (Θ) solidifica la nueva forma en una hoja perfecta —Reconstrucción—. Coste: 2 puntos de Ánima. Tirada: Designio.</p>
+      </div>
+
+    </div>
+
+    <div class="page-footer">
+      <div class="footer-title">Alkímia: Senderos del Velo</div>
+      <div class="footer-title">Capítulo III · Símbolos y Transmutaciones</div>
+    </div>
+    <div class="page-id">11</div>
+  </div>
+</section>
+
+<!-- ─── PÁGINA 12: EL VELO Y LA CORRUPCIÓN DE LOS SÍMBOLOS ─── -->
+<section>
+  <div class="page-label">Página 12 · El Velo y la Corrupción de los Símbolos — Layout columna + caja</div>
+  <div class="page">
+    <div class="page-band">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none">
+        <rect width="820" height="52" fill="#1a1c24"/>
+        <g opacity="0.18" fill="#2a6b6e">
+          <circle cx="50" cy="26" r="3"/> <circle cx="770" cy="26" r="3"/>
+          <line x1="60" y1="26" x2="395" y2="26" stroke="#2a6b6e" stroke-width="0.5"/>
+          <line x1="425" y1="26" x2="760" y2="26" stroke="#2a6b6e" stroke-width="0.5"/>
+          <polygon points="408,17 420,26 408,35 396,26" fill="none" stroke="#2a6b6e" stroke-width="0.8"/>
+        </g>
+      </svg>
+      <span class="band-text">La Ciencia de la Alkímia · El Velo y la Corrupción de los Símbolos</span>
+    </div>
+
+    <div class="border-left">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice">
+        <line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.3"/>
+        <g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.28">
+          <circle cx="18" cy="55" r="5"/>
+          <line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="165"/>
+          <rect x="11" y="165" width="14" height="14" transform="rotate(45,18,172)"/>
+          <line x1="18" y1="183" x2="18" y2="320"/>
+          <circle cx="18" cy="320" r="4"/><circle cx="18" cy="320" r="7" stroke-dasharray="2,3"/>
+          <line x1="18" y1="330" x2="18" y2="475"/>
+          <polygon points="12,475 24,475 18,490"/>
+          <line x1="18" y1="493" x2="18" y2="640"/>
+          <circle cx="18" cy="640" r="5"/>
+          <line x1="18" y1="648" x2="18" y2="810"/>
+          <rect x="11" y="810" width="14" height="14" transform="rotate(45,18,817)"/>
+          <line x1="18" y1="830" x2="18" y2="900"/>
+        </g>
+      </svg>
+    </div>
+    <div class="border-right">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice">
+        <line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.2"/>
+        <g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.2">
+          <circle cx="18" cy="75" r="5"/>
+          <line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="205"/>
+          <rect x="13" y="205" width="10" height="10"/>
+          <line x1="18" y1="218" x2="18" y2="370"/>
+          <circle cx="18" cy="370" r="4"/>
+          <line x1="18" y1="377" x2="18" y2="545"/>
+          <polygon points="12,545 24,545 18,560"/>
+          <line x1="18" y1="563" x2="18" y2="710"/>
+          <circle cx="18" cy="710" r="5"/>
+          <line x1="18" y1="718" x2="18" y2="880"/>
+          <circle cx="18" cy="880" r="4"/>
+          <line x1="18" y1="887" x2="18" y2="900"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="page-inner">
+      <div class="section-title">El Velo y la Corrupción de los Símbolos</div>
+      <div class="chapter-subtitle" style="margin-bottom:0.8rem;">Cuando la Alkímia se retuerce</div>
+      <div class="chapter-rule"></div>
+
+      <p class="drop-cap">El <strong>Velo</strong>, al ser una fisura entre el mundo material y espiritual, introduce un elemento de peligro en la Alkímia. Su corrupción puede <strong>distorsionar los símbolos alkímicos</strong>, afectando a las transmutaciones de maneras impredecibles. Cuanto más cerca se trabaje del Velo, mayor es el riesgo de que los símbolos se corrompan y la transmutación derive hacia resultados catastróficos.</p>
+
+      <p>Los jugadores deben ser <strong>cautelosos al usar la Alkímia cerca del Velo</strong>, ya que la corrupción puede tener consecuencias devastadoras. Organizaciones como la Mano de los Misterios y B.A.R.D. existen precisamente para monitorear el Velo y proteger al mundo de sus peligros.</p>
+
+      <div class="velo-efectos">
+        <div class="velo-efectos-header">
+          <span style="font-size:1rem; color:rgba(90,176,160,0.7);">✦</span>
+          <span>Efectos de la Corrupción del Velo sobre los Símbolos</span>
+        </div>
+        <div class="velo-efectos-body">
+          <div class="velo-efecto-row">
+            <div class="velo-efecto-item">
+              <div class="velo-efecto-sym">≈</div>
+              <div>
+                <div class="velo-efecto-name">Distorsión</div>
+                <div class="velo-efecto-desc">Los símbolos pueden volverse <strong>inestables y difíciles de controlar</strong>, lo que lleva a resultados inesperados y potencialmente peligrosos. La transmutación puede producir un efecto completamente diferente al deseado, con consecuencias narrativas y mecánicas.</div>
+              </div>
+            </div>
+            <div class="velo-efecto-item">
+              <div class="velo-efecto-sym">⚗</div>
+              <div>
+                <div class="velo-efecto-name">Mutaciones</div>
+                <div class="velo-efecto-desc">La corrupción puede causar <strong>mutaciones en la materia</strong>, creando criaturas grotescas o deformando objetos de maneras extrañas. Los objetivos de una transmutación fallida pueden adquirir propiedades del Velo, volviéndose hostiles o peligrosos.</div>
+              </div>
+            </div>
+            <div class="velo-efecto-item">
+              <div class="velo-efecto-sym">⛓</div>
+              <div>
+                <div class="velo-efecto-name">Pérdida de Control</div>
+                <div class="velo-efecto-desc">En casos extremos, la influencia del Velo puede llevar a la <strong>pérdida de control total sobre la transmutación</strong>, resultando en explosiones de energía o la creación de entidades corruptas. El Alkimista puede sufrir Corrupción del Velo y Marcas permanentes.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alch-sep"><span>✦</span></div>
+
+      <!-- Tabla de referencia de riesgo -->
+      <div class="subsection-title">Nivel de Riesgo según Proximidad al Velo</div>
+      <table class="rules-table" style="margin-top:0.5rem;">
+        <thead>
+          <tr>
+            <th>Proximidad al Velo</th>
+            <th>Modificador a Tiradas</th>
+            <th>Efecto de Fallo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Lejos</strong> — Sin fisuras cercanas</td>
+            <td>Normal</td>
+            <td>Pérdida de Ánima</td>
+          </tr>
+          <tr>
+            <td><strong>Cerca</strong> — Fisura menor detectada</td>
+            <td>−1 dado a tiradas de transmutación</td>
+            <td>Dolor + posible Distorsión</td>
+          </tr>
+          <tr>
+            <td><strong>Interior</strong> — Zona de fisura activa</td>
+            <td>−2 dados, riesgo de Corrupción</td>
+            <td>Mutación o Pérdida de Control</td>
+          </tr>
+          <tr>
+            <td><strong>Núcleo del Velo</strong> — Fisura mayor</td>
+            <td>Tirada con Desventaja total</td>
+            <td>Entidad corrupta invocada</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="box-warning" style="margin-top:1.2rem;">
+        <div class="box-title">⚠ Advertencia del Director de Juego</div>
+        <p>Los efectos del Velo sobre los símbolos deben usarse para aumentar la tensión narrativa, no como castigo arbitrario. Informad a los jugadores del nivel de riesgo antes de que decidan proceder con una transmutación en zona corrupta. La Ley del Intercambio Equivalente siempre se aplica.</p>
+      </div>
+
+    </div>
+
+    <div class="page-footer">
+      <div class="footer-title">Alkímia: Senderos del Velo</div>
+      <div class="footer-title">Capítulo III · El Velo y la Corrupción de los Símbolos</div>
+    </div>
+    <div class="page-id">12</div>
   </div>
 </section>
 
