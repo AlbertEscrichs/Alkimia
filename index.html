@@ -59,7 +59,7 @@ body {
 }
 .toc-nav h2 {
   font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--gold);
@@ -84,7 +84,7 @@ body {
 .toc-nav .section-group { margin-top: 0.8rem; }
 .toc-nav .section-label {
   font-family: 'Cinzel', serif;
-  font-size: 0.58rem;
+  font-size: 0.66rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: rgba(176,138,30,0.5);
@@ -160,7 +160,7 @@ body {
 }
 .page-band .band-text {
   font-family: 'Cinzel', serif;
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
   color: var(--band-text);
@@ -204,8 +204,10 @@ body {
   padding: 2.2rem 3.4rem 3.8rem 4rem;
 }
 .page-inner.two-col {
-  columns: 2;
-  column-gap: var(--col-gap);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--col-gap);
+  align-items: start;
 }
 .page-inner.two-col .break-after { break-after: column; }
 .page-inner.two-col .no-break { break-inside: avoid; }
@@ -224,7 +226,7 @@ body {
 }
 .chapter-subtitle {
   font-family: 'Cinzel', serif;
-  font-size: 0.85rem;
+  font-size: 0.92rem;
   font-weight: 400;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -393,7 +395,7 @@ p em {
 }
 .attr-name {
   font-family: 'Cinzel', serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -401,7 +403,7 @@ p em {
 }
 .attr-sub {
   font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   color: var(--copper);
   letter-spacing: 0.08em;
   margin-bottom: 0.6rem;
@@ -410,7 +412,7 @@ p em {
 .attr-stat-row { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.4rem; }
 .attr-tag {
   font-family: 'Cinzel', serif;
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 2px 7px;
@@ -449,18 +451,18 @@ p em {
 }
 .via-ley {
   font-family: 'Cinzel', serif;
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   color: var(--velo);
   letter-spacing: 0.07em;
   margin-bottom: 0.4rem;
 }
-.via-desc { font-size: 0.84rem; line-height: 1.55; color: var(--text-muted); text-align: left; }
+.via-desc { font-size: 0.92rem; line-height: 1.55; color: var(--text-muted); text-align: left; }
 
 /* ─── TABLA DE REGLAS ─── */
 .rules-table { width: 100%; border-collapse: collapse; margin: 0.8rem 0; font-size: 0.88rem; break-inside: avoid; }
 .rules-table th {
   font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--band-text);
@@ -487,7 +489,7 @@ ul.alch-list li::before {
   position: absolute;
   left: 0.3rem;
   color: var(--gold);
-  font-size: 0.45rem;
+  font-size: 0.7rem;
   top: 0.65rem;
 }
 ul.alch-list li strong { font-weight: 600; color: var(--ink); }
@@ -510,7 +512,7 @@ ol.alch-steps li::before {
   background: var(--velo-deep);
   color: var(--gold-pale);
   font-family: 'Cinzel', serif;
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -533,7 +535,7 @@ ol.alch-steps li::before {
 .success-item.s3 { border-color: var(--velo); }
 .success-item .dice-badge {
   font-family: 'Cinzel', serif;
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   padding: 3px 7px;
@@ -545,7 +547,7 @@ ol.alch-steps li::before {
 .success-item.s2 .dice-badge { background: rgba(176,138,30,0.12); color: #8a6800; border: 1px solid rgba(176,138,30,0.3); }
 .success-item.s3 .dice-badge { background: rgba(36,94,96,0.12); color: var(--velo); border: 1px solid rgba(36,94,96,0.3); }
 .success-item .success-text { font-size: 0.9rem; line-height: 1.55; flex: 1; }
-.success-item .success-label { font-family: 'Cinzel', serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+.success-item .success-label { font-family: 'Cinzel', serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
 
 /* ─── FICHA DE PERSONAJE HEADER ─── */
 .char-header {
@@ -582,7 +584,7 @@ ol.alch-steps li::before {
   border: 1px solid rgba(176,138,30,0.25);
 }
 .mini-stat .val { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 700; color: var(--gold-pale); line-height: 1; }
-.mini-stat .lbl { font-family: 'Cinzel', serif; font-size: 0.55rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(212,200,154,0.55); margin-top: 2px; }
+.mini-stat .lbl { font-family: 'Cinzel', serif; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(212,200,154,0.55); margin-top: 2px; }
 
 /* ─── NOTA AL PIE ─── */
 .page-footer {
@@ -595,7 +597,7 @@ ol.alch-steps li::before {
 }
 .footer-title {
   font-family: 'Cinzel', serif;
-  font-size: 0.58rem;
+  font-size: 0.66rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--text-caption);
@@ -680,7 +682,7 @@ ol.alch-steps li::before {
 .cover-sym span { transform: rotate(-45deg); }
 .cover-desc {
   font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: rgba(176,138,30,0.45);
@@ -690,7 +692,7 @@ ol.alch-steps li::before {
 /* ─── INDICADOR DE PÁGINA (etiqueta) ─── */
 .page-label {
   font-family: 'Cinzel', serif;
-  font-size: 0.55rem;
+  font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--text-caption);
@@ -715,7 +717,7 @@ ol.alch-steps li::before {
 }
 .chapter-hero .chap-num {
   font-family: 'Cinzel', serif;
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: rgba(176,138,30,0.55);
@@ -749,7 +751,7 @@ ol.alch-steps li::before {
 /* ─── INLINE NOTA ─── */
 .nota {
   font-style: italic;
-  font-size: 0.86rem;
+  font-size: 0.92rem;
   color: var(--text-caption);
   padding: 0.6rem 0;
   border-top: 1px solid var(--rule-color);
@@ -764,7 +766,7 @@ ol.alch-steps li::before {
   bottom: 14px;
   right: 44px;
   font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 0.15em;
   color: var(--text-caption);
   z-index: 5;
@@ -850,7 +852,7 @@ ol.alch-steps li::before {
 }
 .pioneer-card-epithet {
   font-family: 'Cinzel', serif;
-  font-size: 0.58rem;
+  font-size: 0.66rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(212,200,154,0.5);
@@ -866,7 +868,7 @@ ol.alch-steps li::before {
 .pioneer-card-tag {
   display: inline-block;
   font-family: 'Cinzel', serif;
-  font-size: 0.58rem;
+  font-size: 0.66rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 2px 7px;
@@ -951,7 +953,7 @@ ol.alch-steps li::before {
 }
 .hazana-name {
   font-family: 'Cinzel', serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   color: var(--ink);
@@ -959,7 +961,7 @@ ol.alch-steps li::before {
 }
 .hazana-trigger {
   font-family: 'Cinzel', serif;
-  font-size: 0.62rem;
+  font-size: 0.68rem;
   color: var(--copper);
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -969,7 +971,7 @@ ol.alch-steps li::before {
 .hazana-cost {
   display: inline-block;
   font-family: 'Cinzel', serif;
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background: rgba(122,62,20,0.1);
@@ -1014,7 +1016,7 @@ ol.alch-steps li::before {
 }
 .pilar-roman {
   font-family: 'Cinzel', serif;
-  font-size: 0.55rem;
+  font-size: 0.7rem;
   letter-spacing: 0.1em;
   color: rgba(176,138,30,0.4);
   text-transform: uppercase;
@@ -1036,7 +1038,7 @@ ol.alch-steps li::before {
 .pilar-warning {
   margin-top: 0.4rem;
   font-family: 'Cinzel', serif;
-  font-size: 0.62rem;
+  font-size: 0.68rem;
   letter-spacing: 0.08em;
   color: var(--copper);
   text-transform: uppercase;
@@ -1082,23 +1084,23 @@ ol.alch-steps li::before {
 }
 .via-full-tagline {
   font-family: 'Cinzel', serif;
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   color: var(--text-caption);
   letter-spacing: 0.06em;
   margin-top: 1px;
 }
 .via-full-body { padding: 0.7rem 0.9rem; }
-.via-full-body p { font-size: 0.86rem; line-height: 1.58; color: var(--text-muted); margin-bottom: 0.6rem; text-align: left; }
+.via-full-body p { font-size: 0.92rem; line-height: 1.58; color: var(--text-muted); margin-bottom: 0.6rem; text-align: left; }
 .via-stat-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.35rem;
   margin-top: 0.4rem;
 }
-.via-stat-item { font-size: 0.8rem; line-height: 1.45; color: var(--text-muted); }
+.via-stat-item { font-size: 0.9rem; line-height: 1.62; color: var(--text-muted); }
 .via-stat-item .via-stat-key {
   font-family: 'Cinzel', serif;
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1166,7 +1168,7 @@ ol.alch-steps li::before {
   text-transform: uppercase;
   margin-bottom: 0.2rem;
 }
-.tria-desc { font-size: 0.84rem; line-height: 1.58; color: var(--text-muted); text-align: left; }
+.tria-desc { font-size: 0.92rem; line-height: 1.58; color: var(--text-muted); text-align: left; }
 .tria-item.azufre-col .tria-sym  { color: #8a3010; }
 .tria-item.azufre-col .tria-name { color: #8a3010; }
 .tria-item.mercurio-col .tria-sym  { color: var(--velo-deep); }
@@ -1208,13 +1210,13 @@ ol.alch-steps li::before {
 }
 .transmu-step-name {
   font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 0.2rem;
 }
-.transmu-step-desc { font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); }
+.transmu-step-desc { font-size: 0.9rem; line-height: 1.65; color: var(--text-muted); }
 .transmu-step.comprension { background: rgba(32,80,160,0.05); }
 .transmu-step.comprension .transmu-step-sym  { color: #2060a0; }
 .transmu-step.comprension .transmu-step-name { color: #1a4a80; }
@@ -1273,7 +1275,7 @@ ol.alch-steps li::before {
   color: var(--velo-deep);
   margin-bottom: 0.15rem;
 }
-.velo-efecto-desc { font-size: 0.86rem; line-height: 1.58; color: var(--text-muted); }
+.velo-efecto-desc { font-size: 0.92rem; line-height: 1.58; color: var(--text-muted); }
 .velo-efecto-desc strong { color: var(--ink); }
 /* ─── RASTREADORES DE DAÑO / CORRUPCIÓN ─── */
 .tracker-row { display:flex; gap:0.4rem; align-items:center; flex-wrap:wrap; margin:0.4rem 0; }
@@ -1286,7 +1288,7 @@ ol.alch-steps li::before {
 .tracker-pip.filled-dolor  { background:var(--copper); border-color:var(--copper); }
 .tracker-pip.filled-corrup { background:var(--velo); border-color:var(--velo-deep); }
 .tracker-pip.filled-anima  { background:var(--gold); border-color:var(--gold); }
-.tracker-label { font-family:'Cinzel',serif; font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-caption); margin-right:0.3rem; }
+.tracker-label { font-family:'Cinzel',serif; font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-caption); margin-right:0.3rem; }
 
 /* ─── BLOQUE DE ATRIBUTO EXPANDIDO ─── */
 .attr-full {
@@ -1312,20 +1314,20 @@ ol.alch-steps li::before {
 .attr-full-sym.azufre   { border-color:rgba(128,48,16,0.4); color:#8a3010; background:rgba(128,48,16,0.06); }
 .attr-full-sym.mercurio { border-color:rgba(42,107,110,0.4); color:var(--velo-deep); background:rgba(42,107,110,0.06); }
 .attr-full-name { font-family:'Cinzel Decorative',serif; font-size:0.9rem; font-weight:700; color:var(--ink); line-height:1.2; }
-.attr-full-sub  { font-family:'Cinzel',serif; font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--copper); margin-top:1px; }
-.attr-full-pilar { font-family:'Cinzel',serif; font-size:0.58rem; letter-spacing:0.08em; color:var(--text-caption); margin-top:2px; }
+.attr-full-sub  { font-family:'Cinzel',serif; font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--copper); margin-top:1px; }
+.attr-full-pilar { font-family:'Cinzel',serif; font-size:0.66rem; letter-spacing:0.08em; color:var(--text-caption); margin-top:2px; }
 .attr-full-body { padding:0.75rem 1rem; }
 .attr-full-body p { font-size:0.9rem; line-height:1.65; margin-bottom:0.5em; text-align:left; }
 .attr-full-row { display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; margin-top:0.5rem; }
-.attr-full-item { font-size:0.84rem; color:var(--text-muted); line-height:1.5; }
-.attr-full-item-key { font-family:'Cinzel',serif; font-size:0.58rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; display:block; margin-bottom:1px; }
+.attr-full-item { font-size:0.92rem; color:var(--text-muted); line-height:1.65; }
+.attr-full-item-key { font-family:'Cinzel',serif; font-size:0.66rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; display:block; margin-bottom:1px; }
 .attr-full-item-key.pilar-link { color:var(--velo-deep); }
 .attr-full-item-key.hazana-link { color:var(--copper); }
 .attr-full-item-key.orientacion { color:#3a6a20; }
 .attr-full-nota {
   background:rgba(36,94,96,0.06); border-top:1px solid rgba(36,94,96,0.15);
   padding:0.5rem 1rem;
-  font-family:'Cinzel',serif; font-size:0.62rem; letter-spacing:0.06em;
+  font-family:'Cinzel',serif; font-size:0.68rem; letter-spacing:0.06em;
   color:var(--velo-deep); font-style:italic;
 }
 
@@ -1344,11 +1346,11 @@ ol.alch-steps li::before {
 .skill-card-sym.azufre-s { color:#8a3010; }
 .skill-card-sym.mercurio-s { color:var(--velo-deep); }
 .skill-card-name { font-family:'Cinzel',serif; font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); margin-bottom:0.15rem; }
-.skill-card-atrib { display:inline-block; font-family:'Cinzel',serif; font-size:0.55rem; letter-spacing:0.1em; text-transform:uppercase; padding:1px 6px; border-radius:1px; margin-bottom:0.25rem; }
+.skill-card-atrib { display:inline-block; font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; padding:1px 6px; border-radius:1px; margin-bottom:0.25rem; }
 .skill-card-atrib.sal-a { background:rgba(122,62,20,0.1); color:var(--copper); border:1px solid rgba(122,62,20,0.25); }
 .skill-card-atrib.azufre-a { background:rgba(128,48,16,0.1); color:#8a3010; border:1px solid rgba(128,48,16,0.25); }
 .skill-card-atrib.mercurio-a { background:rgba(42,107,110,0.1); color:var(--velo-deep); border:1px solid rgba(42,107,110,0.2); }
-.skill-card-desc { font-size:0.86rem; line-height:1.58; color:var(--text-muted); }
+.skill-card-desc { font-size:0.92rem; line-height:1.65; color:var(--text-muted); }
 .skill-card-desc strong { color:var(--ink); }
 
 /* ─── TABLA DE HABILIDADES ELEMENTALES ─── */
@@ -1373,10 +1375,10 @@ ol.alch-steps li::before {
 .elemental-card.fuego .elemental-sym { color:#a03010; }
 .elemental-card.aire .elemental-sym  { color:#306060; }
 .elemental-name { font-family:'Cinzel',serif; font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink); }
-.elemental-rasgo { font-family:'Cinzel',serif; font-size:0.6rem; color:var(--text-caption); letter-spacing:0.06em; margin-bottom:0.4rem; }
-.elemental-desc { font-size:0.85rem; line-height:1.58; color:var(--text-muted); }
+.elemental-rasgo { font-family:'Cinzel',serif; font-size:0.68rem; color:var(--text-caption); letter-spacing:0.06em; margin-bottom:0.4rem; }
+.elemental-desc { font-size:0.92rem; line-height:1.65; color:var(--text-muted); }
 .elemental-desc strong { color:var(--ink); }
-.elemental-cost { display:inline-block; font-family:'Cinzel',serif; font-size:0.58rem; letter-spacing:0.1em; text-transform:uppercase; padding:1px 6px; margin-top:0.4rem; background:rgba(36,94,96,0.08); color:var(--velo-deep); border:1px solid rgba(36,94,96,0.2); }
+.elemental-cost { display:inline-block; font-family:'Cinzel',serif; font-size:0.66rem; letter-spacing:0.1em; text-transform:uppercase; padding:1px 6px; margin-top:0.4rem; background:rgba(36,94,96,0.08); color:var(--velo-deep); border:1px solid rgba(36,94,96,0.2); }
 
 /* ─── PROCESO DETALLADO DE TRANSMUTACIÓN ─── */
 .transmu-detail { display:flex; flex-direction:column; gap:0; border:1px solid var(--rule-color); margin:0.9rem 0; overflow:hidden; }
@@ -1404,12 +1406,12 @@ ol.alch-steps li::before {
 .transmu-detail-step.destruccion-d  .transmu-detail-name { color:#882008; }
 .transmu-detail-step.reconstruccion-d .transmu-detail-name { color:#2a5018; }
 .transmu-detail-meta { display:flex; gap:1rem; margin-bottom:0.3rem; flex-wrap:wrap; }
-.transmu-detail-meta span { font-family:'Cinzel',serif; font-size:0.6rem; letter-spacing:0.08em; text-transform:uppercase; padding:1px 6px; }
+.transmu-detail-meta span { font-family:'Cinzel',serif; font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; padding:1px 6px; }
 .tag-atrib { background:rgba(176,138,30,0.12); color:#8a6800; border:1px solid rgba(176,138,30,0.3); }
 .tag-riesgo { background:rgba(122,62,20,0.1); color:var(--copper); border:1px solid rgba(122,62,20,0.28); }
 .transmu-detail-content p { font-size:0.88rem; line-height:1.62; color:var(--text-muted); margin-bottom:0.3em; text-align:left; }
 .transmu-detail-content p strong { color:var(--ink); }
-.transmu-detail-ejemplo { font-size:0.82rem; font-style:italic; color:var(--text-caption); margin-top:0.2rem; border-top:1px dashed var(--rule-color); padding-top:0.3rem; }
+.transmu-detail-ejemplo { font-size:0.9rem; font-style:italic; color:var(--text-caption); margin-top:0.2rem; border-top:1px dashed var(--rule-color); padding-top:0.3rem; }
 
 /* ─── TABLA DE COMBATE ─── */
 .combate-row { display:flex; flex-direction:column; gap:0.5rem; margin:0.8rem 0; }
@@ -1423,7 +1425,7 @@ ol.alch-steps li::before {
 }
 .combate-sym { font-size:1rem; color:var(--gold-dark); text-align:center; padding-top:2px; }
 .combate-name { font-family:'Cinzel',serif; font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); margin-bottom:0.15rem; }
-.combate-desc { font-size:0.87rem; line-height:1.6; color:var(--text-muted); }
+.combate-desc { font-size:0.92rem; line-height:1.6; color:var(--text-muted); }
 .combate-desc strong { color:var(--ink); }
 
 /* ─── TARJETA DE HAZAÑA EXPANDIDA ─── */
@@ -1444,12 +1446,12 @@ ol.alch-steps li::before {
   letter-spacing:0.12em; background:var(--gold-dark);
   color:var(--parchment); padding:2px 8px; white-space:nowrap;
 }
-.hazana-full-name { font-family:'Cinzel Decorative',serif; font-size:0.82rem; font-weight:700; color:var(--gold-pale); }
+.hazana-full-name { font-family:'Cinzel Decorative',serif; font-size:0.9rem; font-weight:700; color:var(--gold-pale); }
 .hazana-full-body { padding:0.75rem 1rem; display:grid; grid-template-columns:1fr 1fr; gap:0.8rem; }
 .hazana-full-body p { font-size:0.88rem; line-height:1.6; color:var(--text-muted); margin-bottom:0; text-align:left; }
 .hazana-full-meta { display:flex; flex-direction:column; gap:0.4rem; }
-.hazana-meta-item { font-size:0.84rem; line-height:1.55; }
-.hazana-meta-key { font-family:'Cinzel',serif; font-size:0.6rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; display:block; margin-bottom:1px; }
+.hazana-meta-item { font-size:0.92rem; line-height:1.65; }
+.hazana-meta-key { font-family:'Cinzel',serif; font-size:0.68rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; display:block; margin-bottom:1px; }
 .hazana-meta-key.activacion { color:var(--copper); }
 .hazana-meta-key.consecuencia { color:var(--velo-deep); }
 
@@ -1470,9 +1472,309 @@ ol.alch-steps li::before {
 .maniobra-item:nth-last-child(-n+2) { border-bottom:none; }
 .maniobra-item:nth-last-child(1):nth-child(odd) { grid-column:1/-1; border-right:none; border-bottom:none; }
 .maniobra-name { font-family:'Cinzel',serif; font-size:0.68rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); margin-bottom:0.15rem; }
-.maniobra-desc { font-size:0.84rem; line-height:1.55; color:var(--text-muted); }
-.maniobra-cost-bar { padding:0.4rem 0.8rem; font-family:'Cinzel',serif; font-size:0.62rem; letter-spacing:0.08em; color:var(--text-caption); border-top:1px solid var(--rule-color); }
+.maniobra-desc { font-size:0.92rem; line-height:1.65; color:var(--text-muted); }
+.maniobra-cost-bar { padding:0.4rem 0.8rem; font-family:'Cinzel',serif; font-size:0.68rem; letter-spacing:0.08em; color:var(--text-caption); border-top:1px solid var(--rule-color); }
 .maniobra-cost-bar strong { color:var(--ink); }
+
+
+  /* ── LEGIBILITY FIXES v2 ── */
+  .page-inner p { font-size: 0.93rem; line-height: 1.72; color: var(--text-body); margin-bottom: 0.7em; }
+  .page-inner ul, .page-inner ol { padding-left: 1.2rem; margin: 0.4rem 0 0.7rem; }
+  .page-inner li { font-size: 0.93rem; line-height: 1.68; color: var(--text-body); margin-bottom: 0.25rem; }
+  .faccion-desc { font-size: 0.92rem !important; line-height: 1.68 !important; }
+  .skill-card-desc { font-size: 0.92rem !important; line-height: 1.65 !important; }
+  .attr-full-item { font-size: 0.92rem !important; line-height: 1.62 !important; }
+  .elemental-desc { font-size: 0.9rem !important; line-height: 1.65 !important; }
+  .consecuencia-desc { font-size: 0.92rem !important; line-height: 1.65 !important; }
+  .pioneer-card-body p { font-size: 0.92rem !important; line-height: 1.65 !important; }
+  .npc-body { font-size: 0.92rem !important; line-height: 1.65 !important; }
+  .velo-efecto-desc { font-size: 0.9rem !important; line-height: 1.65 !important; }
+  .transmu-detail-content p { font-size: 0.92rem !important; }
+  .maniobra-desc { font-size: 0.9rem !important; line-height: 1.62 !important; }
+  .combate-desc { font-size: 0.92rem !important; line-height: 1.65 !important; }
+  .tria-desc { font-size: 0.9rem !important; }
+  .pilar-desc { font-size: 0.92rem !important; line-height: 1.65 !important; }
+  .via-full-body p { font-size: 0.9rem !important; line-height: 1.65 !important; }
+  .box-lore p, .box-rule p, .box-warning p { font-size: 0.92rem; line-height: 1.68; }
+  .nota { font-size: 0.9rem !important; line-height: 1.65 !important; }
+  /* Smaller labels get a minimum bump */
+  .pioneer-card-epithet, .via-full-tagline, .chap-sub,
+  .pilar-roman, .attr-full-pilar { font-size: 0.68rem !important; }
+  .via-stat-key, .transmu-step-name, .transmu-detail-name,
+  .hazana-meta-key, .maniobra-name, .combate-name,
+  .elemental-name, .elemental-rasgo, .maniobra-cost-bar { font-size: 0.72rem !important; }
+  /* Rules table readability */
+  .rules-table td, .rules-table th { font-size: 0.88rem; padding: 8px 11px; line-height: 1.6; }
+
+  /* ── ENEMY STAT BLOCK ── */
+  .enemy-block {
+    border: 1px solid var(--rule-color);
+    background: var(--parchment);
+    overflow: hidden;
+    break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+  .enemy-header {
+    background: var(--band-dark);
+    padding: 0.7rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .enemy-header-left { flex: 1; }
+  .enemy-name {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gold-pale);
+    line-height: 1.2;
+  }
+  .enemy-class {
+    font-family: 'Cinzel', serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(212,200,154,0.5);
+    margin-top: 2px;
+  }
+  .enemy-quote {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 0.82rem;
+    color: rgba(212,200,154,0.55);
+    max-width: 260px;
+    text-align: right;
+    line-height: 1.5;
+    margin-top: 2px;
+  }
+  .enemy-stats-row {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--rule-color);
+    background: rgba(0,0,0,0.04);
+  }
+  .enemy-stat {
+    flex: 1;
+    text-align: center;
+    padding: 0.6rem 0.4rem;
+    border-right: 1px solid var(--rule-color);
+  }
+  .enemy-stat:last-child { border-right: none; }
+  .enemy-stat-val {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gold-dark);
+    display: block;
+    line-height: 1.2;
+  }
+  .enemy-stat-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-caption);
+  }
+  .enemy-tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--rule-color);
+    background: rgba(0,0,0,0.02);
+  }
+  .enemy-tag {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+  }
+  .enemy-tag.corrup { background: rgba(36,94,96,0.1); color: var(--velo-deep); border: 1px solid rgba(36,94,96,0.25); }
+  .enemy-tag.alkimia { background: rgba(176,138,30,0.1); color: #7a6000; border: 1px solid rgba(176,138,30,0.25); }
+  .enemy-tag.oscuridad { background: rgba(30,10,10,0.08); color: #5a2020; border: 1px solid rgba(80,20,20,0.2); }
+  .enemy-body-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .enemy-col {
+    padding: 0.85rem 1rem;
+    border-right: 1px solid var(--rule-color);
+  }
+  .enemy-col:last-child { border-right: none; }
+  .enemy-col p { font-size: 0.92rem; line-height: 1.65; color: var(--text-muted); margin-bottom: 0.5em; text-align: left; }
+  .enemy-col p:last-child { margin-bottom: 0; }
+  .enemy-section-title {
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-bottom: 0.3rem;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--rule-color);
+  }
+  .enemy-special {
+    background: rgba(36,94,96,0.06);
+    border: 1px solid rgba(36,94,96,0.2);
+    padding: 0.6rem 0.8rem;
+    margin-top: 0.5rem;
+  }
+  .enemy-special-name {
+    font-family: 'Cinzel', serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--velo-deep);
+    margin-bottom: 0.2rem;
+  }
+  .enemy-veil-bar { height: 3px; }
+  .enemy-veil-bar.susurro { background: linear-gradient(90deg, rgba(36,94,96,0.6), transparent); }
+  .enemy-veil-bar.cabala   { background: linear-gradient(90deg, rgba(122,26,26,0.7), transparent); }
+  .enemy-veil-bar.regente  { background: linear-gradient(90deg, rgba(80,0,0,0.9), transparent); }
+  .enemy-veil-bar.emisario { background: linear-gradient(90deg, rgba(36,94,96,0.8), rgba(122,26,26,0.6), transparent); }
+
+  /* ── CINCO DEDOS CARDS ── */
+  .cinco-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.8rem;
+    margin: 0.8rem 0;
+  }
+  .dedo-card {
+    border: 1px solid var(--rule-color);
+    background: rgba(242,232,200,0.35);
+    overflow: hidden;
+    break-inside: avoid;
+    position: relative;
+  }
+  .dedo-card::before { content:''; display:block; height:3px; }
+  .dedo-card.pulgar::before   { background: linear-gradient(90deg, var(--gold), transparent); }
+  .dedo-card.indice::before   { background: linear-gradient(90deg, var(--velo), transparent); }
+  .dedo-card.corazon::before  { background: linear-gradient(90deg, var(--copper), transparent); }
+  .dedo-card.anular::before   { background: linear-gradient(90deg, #5a4080, transparent); }
+  .dedo-card.menique::before  { background: linear-gradient(90deg, #406040, transparent); }
+  .dedo-header {
+    padding: 0.6rem 0.8rem 0.5rem;
+    border-bottom: 1px solid var(--rule-color);
+    background: rgba(0,0,0,0.03);
+  }
+  .dedo-symbol {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .dedo-card.pulgar  .dedo-symbol { color: var(--gold-dark); }
+  .dedo-card.indice  .dedo-symbol { color: var(--velo-deep); }
+  .dedo-card.corazon .dedo-symbol { color: var(--copper); }
+  .dedo-card.anular  .dedo-symbol { color: #5a4080; }
+  .dedo-card.menique .dedo-symbol { color: #406040; }
+  .dedo-name {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+  .dedo-role {
+    font-family: 'Cinzel', serif;
+    font-size: 0.66rem;
+    letter-spacing: 0.06em;
+    color: var(--text-caption);
+    margin-top: 1px;
+  }
+  .dedo-body { padding: 0.7rem 0.8rem; }
+  .dedo-body p { font-size: 0.88rem; line-height: 1.65; color: var(--text-muted); margin-bottom: 0.35rem; text-align: left; }
+  .dedo-body p:last-child { margin-bottom: 0; }
+  .dedo-lider {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-top: 1px solid var(--rule-color);
+    color: var(--text-caption);
+    font-style: italic;
+  }
+
+  /* ── OPUS MAGNUM STEPS ── */
+  .opus-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--rule-color);
+    overflow: hidden;
+    margin: 0.8rem 0;
+  }
+  .opus-step {
+    display: grid;
+    grid-template-columns: 3.2rem 1fr;
+    border-bottom: 1px solid var(--rule-color);
+    break-inside: avoid;
+  }
+  .opus-step:last-child { border-bottom: none; }
+  .opus-num {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 0.3rem;
+    border-right: 1px solid var(--rule-color);
+    gap: 3px;
+  }
+  .opus-step.nigredo   .opus-num { background: rgba(20,10,10,0.12); }
+  .opus-step.albedo    .opus-num { background: rgba(240,235,210,0.6); }
+  .opus-step.citrinitas .opus-num { background: rgba(200,170,30,0.12); }
+  .opus-step.rubedo    .opus-num { background: rgba(120,20,20,0.1); }
+  .opus-step.cauda     .opus-num { background: rgba(80,40,120,0.08); }
+  .opus-roman {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .opus-step.nigredo    .opus-roman { color: #1e1010; }
+  .opus-step.albedo     .opus-roman { color: #6a5a30; }
+  .opus-step.citrinitas .opus-roman { color: #8a7010; }
+  .opus-step.rubedo     .opus-roman { color: #8a1010; }
+  .opus-step.cauda      .opus-roman { color: #6a40a0; }
+  .opus-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.56rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-caption);
+  }
+  .opus-content { padding: 0.75rem 1rem; }
+  .opus-title {
+    font-family: 'Cinzel', serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+  .opus-step.nigredo    .opus-title { color: #1e1010; }
+  .opus-step.albedo     .opus-title { color: #5a4a20; }
+  .opus-step.citrinitas .opus-title { color: #7a6010; }
+  .opus-step.rubedo     .opus-title { color: #7a1010; }
+  .opus-step.cauda      .opus-title { color: #6040a0; }
+  .opus-desc { font-size: 0.92rem; line-height: 1.65; color: var(--text-muted); }
+  .opus-manif {
+    font-family: 'Cinzel', serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    color: var(--text-caption);
+    font-style: italic;
+    margin-top: 0.2rem;
+  }
 
 </style>
 </head>
@@ -4695,6 +4997,961 @@ ol.alch-steps li::before {
     <div class="page-id">30–31</div>
   </div>
 </section>
+
+<!-- ═══════════════════════════════════════════════
+     CAP. VI — INTERCAMBIO EQUIVALENTE Y CORRUPCIÓN
+     ═══════════════════════════════════════════════ -->
+
+<!-- APERTURA CAP. VI -->
+<section id="intercambio">
+  <div class="page-label">Página 32 · Cap. VI · Intercambio Equivalente y Corrupción — Apertura</div>
+  <div class="page" style="min-height:680px;background:#0f0d0b;background-image:radial-gradient(ellipse at 50% 35%,rgba(122,26,26,0.22) 0%,transparent 65%),radial-gradient(ellipse at 80% 80%,rgba(36,94,96,0.12) 0%,transparent 55%),linear-gradient(180deg,#0e0c09 0%,#130f0b 100%);">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.22" fill="#7a1a1a"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="392" y2="26" stroke="#7a1a1a" stroke-width="0.5"/><line x1="428" y1="26" x2="760" y2="26" stroke="#7a1a1a" stroke-width="0.5"/><polygon points="408,16 420,26 408,36 396,26" fill="none" stroke="#7a1a1a" stroke-width="0.9"/></g></svg><span class="band-text" style="color:rgba(180,80,80,0.65);">Alkímia: Senderos del Velo · Intercambio Equivalente y Corrupción</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 700" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="700" stroke="#7a1a1a" stroke-width="0.5" opacity="0.3"/><g fill="none" stroke="#7a1a1a" stroke-width="0.7" opacity="0.28"><circle cx="18" cy="60" r="5"/><line x1="18" y1="30" x2="18" y2="52"/><line x1="18" y1="68" x2="18" y2="200"/><rect x="11" y="200" width="14" height="14" transform="rotate(45,18,207)"/><line x1="18" y1="218" x2="18" y2="360"/><circle cx="18" cy="360" r="5"/><line x1="18" y1="368" x2="18" y2="520"/><polygon points="12,520 24,520 18,535"/><line x1="18" y1="538" x2="18" y2="700"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 700" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="700" stroke="#2a6b6e" stroke-width="0.5" opacity="0.2"/><g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.2"><circle cx="18" cy="80" r="5"/><line x1="18" y1="30" x2="18" y2="72"/><line x1="18" y1="88" x2="18" y2="240"/><rect x="13" y="240" width="10" height="10"/><line x1="18" y1="253" x2="18" y2="420"/><circle cx="18" cy="420" r="4"/><line x1="18" y1="427" x2="18" y2="600"/><polygon points="12,600 24,600 18,615"/><line x1="18" y1="618" x2="18" y2="700"/></g></svg></div>
+    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);opacity:0.09;pointer-events:none;z-index:0;"><svg width="460" height="460" viewBox="0 0 460 460" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="230" cy="230" r="210" stroke="#7a1a1a" stroke-width="0.8"/><circle cx="230" cy="230" r="150" stroke="#7a1a1a" stroke-width="0.5" stroke-dasharray="5,7"/><polygon points="230,55 410,360 50,360" fill="none" stroke="#7a1a1a" stroke-width="0.8"/><polygon points="230,405 50,100 410,100" fill="none" stroke="#2a6b6e" stroke-width="0.6"/><circle cx="230" cy="230" r="30" fill="none" stroke="#7a1a1a" stroke-width="1"/><text x="228" y="238" fill="#7a1a1a" font-size="24" font-family="serif" text-anchor="middle">⊗</text></svg></div>
+    <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3rem 5rem 3.5rem;text-align:center;min-height:580px;">
+      <div style="font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.4em;text-transform:uppercase;color:rgba(180,80,80,0.5);margin-bottom:0.8rem;">Capítulo VI</div>
+      <div style="font-family:'Cinzel Decorative',serif;font-size:2.5rem;font-weight:900;color:#e8c0c0;text-shadow:0 0 40px rgba(122,26,26,0.4),0 2px 6px rgba(0,0,0,0.9);line-height:1.1;margin-bottom:0.2em;">Intercambio Equivalente<br>y Corrupción</div>
+      <div style="width:180px;height:1px;background:linear-gradient(90deg,transparent,rgba(180,80,80,0.5),transparent);margin:0.7rem auto;"></div>
+      <div style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:rgba(212,180,180,0.35);margin-bottom:2rem;">La Ley Inquebrantable · Tentaciones · Corrupción · Marcas del Velo</div>
+      <div style="max-width:480px;"><p style="font-family:'EB Garamond',serif;font-style:italic;font-size:1rem;line-height:1.8;color:rgba(212,180,180,0.6);text-align:center;margin:0;">«Nada se obtiene sin precio. Cada transmutación, cada decisión, cada momento en que el Alkimista toca el Velo — todo exige su tributo. La pregunta no es si pagarás. La pregunta es cuánto estás dispuesto a perder.»</p></div>
+    </div>
+    <div class="page-footer" style="border-top-color:rgba(122,26,26,0.2);"><div class="footer-title" style="color:rgba(180,80,80,0.4);">Alkímia: Senderos del Velo</div><div class="footer-title" style="color:rgba(180,80,80,0.4);">Capítulo VI · Intercambio Equivalente y Corrupción</div></div>
+    <div class="page-id">32</div>
+  </div>
+</section>
+
+<!-- PÁG 33: LA LEY INQUEBRANTABLE + TENTACIONES -->
+<section>
+  <div class="page-label">Página 33 · La Ley Inquebrantable + Tentaciones y Sacrificios</div>
+  <div class="page">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.2" fill="#7a1a1a"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="395" y2="26" stroke="#7a1a1a" stroke-width="0.5"/><line x1="425" y1="26" x2="760" y2="26" stroke="#7a1a1a" stroke-width="0.5"/><polygon points="408,17 420,26 408,35 396,26" fill="none" stroke="#7a1a1a" stroke-width="0.8"/></g></svg><span class="band-text" style="color:rgba(180,80,80,0.65);">Intercambio Equivalente · La Ley Inquebrantable</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#7a1a1a" stroke-width="0.5" opacity="0.28"/><g fill="none" stroke="#7a1a1a" stroke-width="0.6" opacity="0.26"><circle cx="18" cy="55" r="5"/><line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/><rect x="11" y="155" width="14" height="14" transform="rotate(45,18,162)"/><line x1="18" y1="173" x2="18" y2="310"/><circle cx="18" cy="310" r="4"/><circle cx="18" cy="310" r="7" stroke-dasharray="2,3"/><line x1="18" y1="320" x2="18" y2="475"/><polygon points="12,475 24,475 18,490"/><line x1="18" y1="493" x2="18" y2="640"/><circle cx="18" cy="640" r="5"/><line x1="18" y1="648" x2="18" y2="810"/><rect x="11" y="810" width="14" height="14" transform="rotate(45,18,817)"/><line x1="18" y1="830" x2="18" y2="900"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.2"/><g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.2"><circle cx="18" cy="75" r="5"/><line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/><rect x="13" y="200" width="10" height="10"/><line x1="18" y1="213" x2="18" y2="360"/><circle cx="18" cy="360" r="4"/><line x1="18" y1="367" x2="18" y2="530"/><polygon points="12,530 24,530 18,546"/><line x1="18" y1="548" x2="18" y2="700"/><circle cx="18" cy="700" r="5"/><line x1="18" y1="708" x2="18" y2="880"/></g></svg></div>
+    <div class="page-inner">
+      <div class="section-title">La Ley Inquebrantable: <span class="highlight">Impacto en el Juego</span></div>
+      <div class="chapter-rule"></div>
+      <p class="drop-cap">La <strong>Ley del Intercambio Equivalente</strong> es el principio central que rige el uso de la Alkímia, estableciendo que <strong>para obtener algo, se debe sacrificar algo de igual valor</strong>. No es meramente una norma de intercambio de recursos, sino una fuerza que mantiene el equilibrio natural. Ignorar o pervertir este principio puede desencadenar una corrupción que afecta el cuerpo, la mente y el espíritu del Alkimista.</p>
+      <!-- Tabla de resultados de transmutación bajo la Ley -->
+      <table class="rules-table" style="margin:0.8rem 0;">
+        <thead><tr><th>Resultado</th><th>Descripción</th><th>Consecuencia mecánica</th></tr></thead>
+        <tbody>
+          <tr><td><strong style="color:#3a6a20;">Éxito Completo</strong></td><td>Transmutación óptima con coste mínimo.</td><td>Sin consecuencias adicionales.</td></tr>
+          <tr><td><strong style="color:var(--copper);">Éxito Parcial</strong></td><td>El objetivo se logra, pero implica un <strong>alto precio</strong>: sacrificios físicos, emocionales o apertura de fisuras.</td><td>+1 Dolor o +1 Corrupción.</td></tr>
+          <tr><td><strong style="color:#8a3010;">Fallo Moderado</strong></td><td>Errores significativos que afectan al Alkimista o a la transmutación.</td><td>Consecuencia narrativa grave.</td></tr>
+          <tr><td><strong style="color:#7a1a1a;">Pifia Catastrófica</strong></td><td>Desastre total con <strong>consecuencias permanentes</strong>: pérdida de memoria, daño irreversible o creación de fisuras del Velo.</td><td>Marca permanente + fisura.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="alch-sep"><span>⊗</span></div>
+      <div class="section-title">Tentaciones y Sacrificios: <span class="highlight">Dilemas Éticos</span></div>
+      <p style="font-size:0.9rem;color:var(--text-muted);line-height:1.65;margin-bottom:0.8rem;">Los jugadores enfrentarán dilemas éticos al usar la Alkímia, donde la tentación del poder puede llevar a decisiones difíciles. Tres historias cortas que ilustran el precio de cada elección:</p>
+      <div class="faccion-row">
+        <div class="faccion-item" style="border-left-color:#7a1a1a;">
+          <div class="faccion-name" style="color:#7a1a1a;">1 · El Elixir de la Vida</div>
+          <div class="faccion-desc"><strong>Contexto:</strong> En Ustramark, una enfermedad amenaza con extinguir la sociedad. El Alkimista Elias, corrompido por el Velo, posee la fórmula pero exige la <strong>energía vital de un miembro del grupo</strong> como sacrificio.<br><strong>Decisiones:</strong> Aceptar el trato (salvando Ustramark a costa de corrupción o muerte), rechazarlo (buscando otra solución mientras la enfermedad avanza), o combatir a Elias para obtener la fórmula.<br><strong>Consecuencias:</strong> La elección definirá el destino de Ustramark y tendrá un impacto duradero en historia y personajes — redención, búsqueda épica o nuevos secretos.</div>
+        </div>
+        <div class="faccion-item" style="border-left-color:var(--copper);">
+          <div class="faccion-name" style="color:var(--copper);">2 · El Corazón de la Ciudad</div>
+          <div class="faccion-desc"><strong>Contexto:</strong> En las Cenizas de Kaltenstein, se debe encontrar «El Corazón de la Ciudad» para sellar una fisura del Velo. Un grupo de Cábala también lo busca.<br><strong>Dilema:</strong> El artefacto está ligado a la energía vital de los habitantes de una ciudad cercana — <strong>activarlo sacrificaría a la población</strong>.<br><strong>Consecuencias:</strong> La decisión afectará el destino de la región y la moral de los personajes, dejando cicatrices profundas o fortaleciendo su determinación.</div>
+        </div>
+        <div class="faccion-item" style="border-left-color:var(--velo);">
+          <div class="faccion-name" style="color:var(--velo-deep);">3 · La Herencia Maldita</div>
+          <div class="faccion-desc"><strong>Contexto:</strong> Un jugador descubre que su linaje está conectado al Velo — ancestros que abrieron una fisura. Hereda un artefacto que puede cerrar la fisura pero que también amplifica su poder alkímico a un nivel peligroso.<br><strong>Dilema:</strong> Usar el artefacto para cerrar la fisura (arriesgándose a la corrupción) o destruirlo (protegiendo el mundo a costa de su familia).<br><strong>Consecuencias:</strong> La elección define el destino del jugador y su familia, influyendo significativamente en su desarrollo como Alkimista.</div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer"><div class="footer-title">Alkímia: Senderos del Velo</div><div class="footer-title">Capítulo VI · La Ley Inquebrantable</div></div>
+    <div class="page-id">33</div>
+  </div>
+</section>
+
+<!-- PÁG 34–35: EFECTOS DE LA CORRUPCIÓN -->
+<section>
+  <div class="page-label">Páginas 34–35 · Efectos de la Corrupción + Marcas del Velo</div>
+  <div class="page">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.2" fill="#2a6b6e"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="395" y2="26" stroke="#2a6b6e" stroke-width="0.5"/><line x1="425" y1="26" x2="760" y2="26" stroke="#2a6b6e" stroke-width="0.5"/><polygon points="408,17 420,26 408,35 396,26" fill="none" stroke="#2a6b6e" stroke-width="0.8"/></g></svg><span class="band-text">Intercambio Equivalente · Efectos de la Corrupción · Marcas del Velo</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.3"/><g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.28"><circle cx="18" cy="55" r="5"/><line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/><rect x="11" y="155" width="14" height="14" transform="rotate(45,18,162)"/><line x1="18" y1="173" x2="18" y2="300"/><circle cx="18" cy="300" r="4"/><circle cx="18" cy="300" r="7" stroke-dasharray="2,3"/><line x1="18" y1="310" x2="18" y2="460"/><polygon points="12,460 24,460 18,475"/><line x1="18" y1="478" x2="18" y2="630"/><circle cx="18" cy="630" r="5"/><line x1="18" y1="638" x2="18" y2="800"/><rect x="11" y="800" width="14" height="14" transform="rotate(45,18,807)"/><line x1="18" y1="820" x2="18" y2="900"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#7a1a1a" stroke-width="0.5" opacity="0.2"/><g fill="none" stroke="#7a1a1a" stroke-width="0.6" opacity="0.2"><circle cx="18" cy="75" r="5"/><line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/><rect x="13" y="200" width="10" height="10"/><line x1="18" y1="213" x2="18" y2="360"/><circle cx="18" cy="360" r="4"/><line x1="18" y1="367" x2="18" y2="530"/><polygon points="12,530 24,530 18,546"/><line x1="18" y1="548" x2="18" y2="700"/><circle cx="18" cy="700" r="5"/><line x1="18" y1="708" x2="18" y2="880"/></g></svg></div>
+    <div class="page-inner">
+      <div class="section-title">Efectos de la Corrupción: <span class="highlight">A. Rastreadores</span></div>
+      <div class="chapter-rule"></div>
+      <div class="page-inner two-col" style="padding:0;margin-bottom:1rem;">
+        <!-- Dolor -->
+        <div class="attr-full" style="margin-bottom:0;">
+          <div class="attr-full-header" style="background:rgba(122,62,20,0.12);border-bottom-color:rgba(122,62,20,0.2);">
+            <div class="attr-full-sym sal">🩸</div>
+            <div><div class="attr-full-name" style="font-size:0.85rem;">Dolor</div><div class="attr-full-sub">Daño Físico</div></div>
+            <div style="margin-left:auto;"><div class="tracker-label">Umbral</div><div class="tracker-row" style="justify-content:flex-end;"><div class="tracker-pip filled-dolor"></div><div class="tracker-pip filled-dolor"></div><div class="tracker-pip filled-dolor"></div><div class="tracker-pip"></div><div class="tracker-pip"></div><div class="tracker-pip" style="border-color:#7a1a1a;"></div></div></div>
+          </div>
+          <div class="attr-full-body">
+            <div class="attr-full-row">
+              <div class="attr-full-item"><span class="attr-full-item-key pilar-link">Definición</span>Representa el <strong>daño físico y las heridas</strong> que sufre el Alkimista.</div>
+              <div class="attr-full-item"><span class="attr-full-item-key hazana-link">Adquisición</span>Heridas en combate, fallos parciales con «alto precio», o exposición a efectos físicos.</div>
+              <div class="attr-full-item" style="grid-column:1/-1;"><span class="attr-full-item-key orientacion">Penalizaciones</span>Un valor elevado de Dolor impone <strong>penalizaciones físicas</strong> (dificultad para acciones/movimientos). Si el Dolor alcanza <strong>6 puntos, el personaje perece</strong>.</div>
+            </div>
+          </div>
+          <div class="attr-full-nota" style="background:rgba(122,26,26,0.08);border-top-color:rgba(122,26,26,0.2);color:#7a3010;">Umbral de Marca del Velo: 3–4 puntos de Dolor acumulados.</div>
+        </div>
+        <!-- Corrupción -->
+        <div class="attr-full" style="margin-bottom:0;">
+          <div class="attr-full-header" style="background:rgba(36,94,96,0.1);border-bottom-color:rgba(36,94,96,0.2);">
+            <div class="attr-full-sym mercurio">✦</div>
+            <div><div class="attr-full-name" style="font-size:0.85rem;">Corrupción</div><div class="attr-full-sub">Daño Mental/Espiritual</div></div>
+            <div style="margin-left:auto;"><div class="tracker-label">Umbral</div><div class="tracker-row" style="justify-content:flex-end;"><div class="tracker-pip filled-corrup"></div><div class="tracker-pip filled-corrup"></div><div class="tracker-pip filled-corrup"></div><div class="tracker-pip"></div><div class="tracker-pip"></div><div class="tracker-pip" style="border-color:var(--velo);"></div></div></div>
+          </div>
+          <div class="attr-full-body">
+            <div class="attr-full-row">
+              <div class="attr-full-item"><span class="attr-full-item-key pilar-link">Definición</span>Encapsula el <strong>daño mental, espiritual y la influencia insidiosa del Velo</strong> en la psique y el alma.</div>
+              <div class="attr-full-item"><span class="attr-full-item-key hazana-link">Adquisición</span>Exposición directa al Velo, uso irresponsable, fallos en transmutaciones avanzadas, ataques de Susurros o Cábala, o ignorar la Ley del Intercambio.</div>
+              <div class="attr-full-item" style="grid-column:1/-1;"><span class="attr-full-item-key orientacion">Penalizaciones</span>Una Corrupción elevada conlleva <strong>penalizaciones mentales y Alkímicas</strong>. Si alcanza <strong>6 puntos, el personaje perece transformado en una criatura del Velo</strong> — el «castigo supremo».</div>
+            </div>
+          </div>
+          <div class="attr-full-nota" style="background:rgba(36,94,96,0.08);border-top-color:rgba(36,94,96,0.18);color:var(--velo-deep);">El aumento de Corrupción es la manifestación directa del «alto precio» de la Ley del Intercambio Equivalente.</div>
+        </div>
+      </div>
+
+      <div class="section-title" style="margin-top:0.5rem;">B. Otros Efectos de la Corrupción</div>
+      <div class="alch-sep"><span>✦</span></div>
+      <div class="page-inner two-col" style="padding:0;">
+        <div>
+          <div class="subsection-title">Efectos Físicos</div>
+          <div class="consecuencia-row">
+            <div class="consecuencia-item"><div class="consecuencia-icon" style="color:#8a3010;">🧬</div><div><div class="consecuencia-name" style="color:#5a2010;">Mutaciones</div><div class="consecuencia-desc">La exposición al Velo puede desencadenar <strong>mutaciones físicas grotescas</strong>: garras, escamas, ojos adicionales, tentáculos o fusión de carne y metal. A largo plazo pueden llevar a la <strong>pérdida de la apariencia humana</strong>.</div></div></div>
+            <div class="consecuencia-item"><div class="consecuencia-icon" style="color:#7a1a1a;">🦠</div><div><div class="consecuencia-name" style="color:#5a1010;">Enfermedades</div><div class="consecuencia-desc">El Velo puede engendrar <strong>enfermedades inexplicables</strong>: podredumbre de la carne, fiebre mística, alucinaciones, pérdida de sentidos o envejecimiento acelerado. A largo plazo, crónicas y deformantes.</div></div></div>
+          </div>
+          <div class="subsection-title" style="margin-top:0.8rem;">Pérdida de Control sobre la Alkímia</div>
+          <div class="consecuencia-row">
+            <div class="consecuencia-item"><div class="consecuencia-icon" style="color:var(--velo);">⚗</div><div><div class="consecuencia-name">Distorsión de Transmutaciones</div><div class="consecuencia-desc">La corrupción hace que las transmutaciones sean <strong>impredecibles y peligrosas</strong>: fallos que causan daño, creación accidental de criaturas del Velo o apertura de nuevas fisuras.</div></div></div>
+            <div class="consecuencia-item"><div class="consecuencia-icon" style="color:#7a1a1a;">💥</div><div><div class="consecuencia-name">Pifia Catastrófica</div><div class="consecuencia-desc">Un error alkímico amplificado por la corrupción puede tener consecuencias devastadoras: <strong>daño físico irreversible, pérdida de memoria permanente, creación de una poderosa criatura del Velo o la muerte del Alkimista</strong>.</div></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="subsection-title">Efectos Mentales</div>
+          <div class="consecuencia-row">
+            <div class="consecuencia-item"><div class="consecuencia-icon" style="color:var(--velo);">🧠</div><div><div class="consecuencia-name" style="color:var(--velo-deep);">Pérdida de Memoria</div><div class="consecuencia-desc">La corrupción puede erosionar la memoria, <strong>borrando recuerdos y habilidades</strong>. Lleva a confusión, desorientación, pérdida de confianza y, en casos graves, <strong>amnesia severa o pérdida de identidad</strong>.</div></div></div>
+            <div class="consecuencia-item"><div class="consecuencia-icon" style="color:var(--velo);">🌀</div><div><div class="consecuencia-name" style="color:var(--velo-deep);">Inestabilidad Emocional</div><div class="consecuencia-desc">La corrupción puede desencadenar <strong>cambios de humor impredecibles y emociones extremas</strong>: ira, paranoia, depresión o una obsesión con el poder. Puede llevar a <strong>trastornos de personalidad y aislamiento social</strong>.</div></div></div>
+          </div>
+          <div class="subsection-title" style="margin-top:0.8rem;">Atracción hacia el Velo</div>
+          <div class="consecuencia-row">
+            <div class="consecuencia-item"><div class="consecuencia-icon" style="color:#7a1a1a;">👁</div><div><div class="consecuencia-name" style="color:#5a1010;">Tentación del Poder</div><div class="consecuencia-desc">El Velo susurra promesas de poder y conocimiento ilimitados, <strong>tentando a los Alkimistas a sucumbir a su influencia</strong>. Es un recordatorio constante de que el poder sin control y la ambición desmedida tienen consecuencias terribles.</div></div></div>
+            <div class="consecuencia-item"><div class="consecuencia-icon" style="color:#7a1a1a;">☠</div><div><div class="consecuencia-name" style="color:#5a1010;">Transformación en Criatura</div><div class="consecuencia-desc">En casos extremos, los Alkimistas pueden perder su humanidad, <strong>transformándose en criaturas del Velo</strong> como un «Cábala» o un «Emisario». Implica cambios físicos y de comportamiento — agresividad, egoísmo, traición.</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer"><div class="footer-title">Alkímia: Senderos del Velo</div><div class="footer-title">Capítulo VI · Efectos de la Corrupción</div></div>
+    <div class="page-id">34–35</div>
+  </div>
+</section>
+
+<!-- PÁG 36: MARCAS DEL VELO — TABLA COMPLETA -->
+<section>
+  <div class="page-label">Página 36 · Marcas del Velo: Mutaciones, Debilidades, Poderes Oscuros</div>
+  <div class="page">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.2" fill="#2a6b6e"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="395" y2="26" stroke="#2a6b6e" stroke-width="0.5"/><line x1="425" y1="26" x2="760" y2="26" stroke="#2a6b6e" stroke-width="0.5"/><polygon points="408,17 420,26 408,35 396,26" fill="none" stroke="#2a6b6e" stroke-width="0.8"/></g></svg><span class="band-text">Intercambio Equivalente · Marcas del Velo</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.3"/><g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.28"><circle cx="18" cy="55" r="5"/><line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/><rect x="11" y="155" width="14" height="14" transform="rotate(45,18,162)"/><line x1="18" y1="173" x2="18" y2="300"/><circle cx="18" cy="300" r="4"/><circle cx="18" cy="300" r="7" stroke-dasharray="2,3"/><line x1="18" y1="310" x2="18" y2="460"/><polygon points="12,460 24,460 18,475"/><line x1="18" y1="478" x2="18" y2="630"/><circle cx="18" cy="630" r="5"/><line x1="18" y1="638" x2="18" y2="800"/><rect x="11" y="800" width="14" height="14" transform="rotate(45,18,807)"/><line x1="18" y1="820" x2="18" y2="900"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#7a1a1a" stroke-width="0.5" opacity="0.2"/><g fill="none" stroke="#7a1a1a" stroke-width="0.6" opacity="0.2"><circle cx="18" cy="75" r="5"/><line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/><rect x="13" y="200" width="10" height="10"/><line x1="18" y1="213" x2="18" y2="360"/><circle cx="18" cy="360" r="4"/><line x1="18" y1="367" x2="18" y2="530"/><polygon points="12,530 24,530 18,546"/><line x1="18" y1="548" x2="18" y2="700"/><circle cx="18" cy="700" r="5"/><line x1="18" y1="708" x2="18" y2="880"/></g></svg></div>
+    <div class="page-inner">
+      <div class="section-title">Marcas del Velo: <span class="highlight">Mutaciones, Debilidades, Poderes Oscuros</span></div>
+      <div class="chapter-rule"></div>
+      <p>El <strong>Sistema de Marcas del Velo</strong> es un sistema opcional que añade profundidad a la historia y mecánicas del personaje. Cada marca es una <strong>manifestación física o mental de la influencia del Velo</strong>, otorgando beneficios y desventajas. Las marcas pueden elegirse durante la creación o adquirirse en el juego por exposición intensa al Velo (Dolor o Corrupción en umbral 3–4).</p>
+      <div class="alch-sep"><span>◆</span></div>
+      <!-- Tabla de Marcas -->
+      <table class="rules-table" style="font-size:0.82rem;">
+        <thead>
+          <tr><th>Marca del Velo</th><th>Descripción</th><th>Efectos en el Juego</th><th>Adquisición</th><th>Impacto Narrativo</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong style="color:var(--velo-deep);">Ojo del Abismo</strong></td>
+            <td>Un ojo adicional que brilla con luz tenue en la frente o palma.</td>
+            <td><strong>Percepción Aumentada</strong> (bonif. a percepción). <strong>Debilidad a la Luz</strong>: sensible a luz brillante, causa dolor y ceguera temporal. <strong>Visiones del Velo</strong>: muestra visiones fugaces perturbadoras o proféticas.</td>
+            <td>Exposición prolongada a una fisura; ataque de criatura que manipula la vista; pifia catastrófica en transmutación que involucre la vista.</td>
+            <td>Causa rechazo y miedo en otros. Dificultad para controlar visiones. Sensibilidad a la luz puede ser una debilidad táctica.</td>
+          </tr>
+          <tr>
+            <td><strong style="color:#5a1010;">Garras del Vacío</strong></td>
+            <td>Las manos se transforman en garras afiladas de color negro azabache que absorben la luz.</td>
+            <td><strong>Ataques Desgarradores</strong> (bonif. a daño cuerpo a cuerpo). <strong>Pérdida de Destreza</strong>: tareas de precisión con desventaja. <strong>Sed de Sangre</strong>: necesidad creciente de causar daño, difícil de controlar.</td>
+            <td>Fallo grave en transmutación de materia orgánica; herida por garras de una criatura del Velo; absorción significativa de energía corrupta.</td>
+            <td>Convierte al personaje en un arma letal. La sed de sangre puede llevar a actos violentos, arriesgando la humanidad del grupo.</td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--copper);">Piel de Obsidiana</strong></td>
+            <td>La piel se endurece y oscurece, adquiriendo un tono similar a la obsidiana, fría e insensible al dolor.</td>
+            <td><strong>Resistencia Aumentada</strong> (bonif. a Vitae). <strong>Pérdida de Sensibilidad</strong>: dificulta percepción táctil y expresión de emociones. <strong>Aislamiento Emocional</strong>: la falta de dolor físico y la frialdad pueden llevar al aislamiento.</td>
+            <td>Exposición a alta concentración de energía del Velo; sobrevivir a una experiencia cercana a la muerte; transmutación de protección corporal con consecuencia inesperada.</td>
+            <td>Convierte al personaje en un escudo viviente, pero también en un ser distante y frío. La pérdida de sensibilidad puede afectar la empatía.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="nota" style="margin-top:0.8rem;">La tabla es una base — el Director de Juego puede crear nuevas Marcas del Velo y adaptar sus efectos según la narrativa. Las Marcas del Velo no son permanentes; pueden intentarse purificar a través de rituales alkímicos, sacrificios o eventos especiales, aunque el proceso es peligroso e incierto.</div>
+      <div style="display:flex;gap:0.5rem;margin-top:0.6rem;flex-wrap:wrap;">
+        <span class="label-tag" style="background:rgba(36,94,96,0.1);color:var(--velo-deep);border:1px solid rgba(36,94,96,0.25);">La Mano: herramienta para combatir el Velo si se usan responsablemente</span>
+        <span class="label-tag label-copper">B.A.R.D.: señal de peligro, buscan neutralizar a Alkimistas con marcas prominentes</span>
+      </div>
+    </div>
+    <div class="page-footer"><div class="footer-title">Alkímia: Senderos del Velo</div><div class="footer-title">Capítulo VI · Marcas del Velo</div></div>
+    <div class="page-id">36</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     CAP. VII — EL MUNDO DE ALKÍMIA (pág. 37–44)
+     ═══════════════════════════════════════════════ -->
+
+<!-- APERTURA CAP. VII -->
+<section id="mundo">
+  <div class="page-label">Página 37 · Cap. VII · El Mundo de Alkímia — Apertura</div>
+  <div class="page" style="min-height:680px;background:#0a0e0c;background-image:radial-gradient(ellipse at 50% 35%,rgba(36,94,96,0.25) 0%,transparent 65%),radial-gradient(ellipse at 20% 75%,rgba(122,62,20,0.1) 0%,transparent 55%),linear-gradient(180deg,#090d0a 0%,#0e130f 100%);">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.22" fill="#2a6b6e"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="392" y2="26" stroke="#2a6b6e" stroke-width="0.5"/><line x1="428" y1="26" x2="760" y2="26" stroke="#2a6b6e" stroke-width="0.5"/><polygon points="408,16 420,26 408,36 396,26" fill="none" stroke="#2a6b6e" stroke-width="0.9"/></g></svg><span class="band-text" style="color:rgba(90,176,160,0.65);">Alkímia: Senderos del Velo · El Mundo de Alkímia</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 700" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="700" stroke="#2a6b6e" stroke-width="0.5" opacity="0.3"/><g fill="none" stroke="#2a6b6e" stroke-width="0.7" opacity="0.28"><circle cx="18" cy="60" r="5"/><line x1="18" y1="30" x2="18" y2="52"/><line x1="18" y1="68" x2="18" y2="200"/><rect x="11" y="200" width="14" height="14" transform="rotate(45,18,207)"/><line x1="18" y1="218" x2="18" y2="360"/><circle cx="18" cy="360" r="5"/><line x1="18" y1="368" x2="18" y2="520"/><polygon points="12,520 24,520 18,535"/><line x1="18" y1="538" x2="18" y2="700"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 700" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="700" stroke="#b08a1e" stroke-width="0.5" opacity="0.2"/><g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.2"><circle cx="18" cy="80" r="5"/><line x1="18" y1="30" x2="18" y2="72"/><line x1="18" y1="88" x2="18" y2="240"/><rect x="13" y="240" width="10" height="10"/><line x1="18" y1="253" x2="18" y2="420"/><circle cx="18" cy="420" r="4"/><line x1="18" y1="427" x2="18" y2="600"/><polygon points="12,600 24,600 18,615"/><line x1="18" y1="618" x2="18" y2="700"/></g></svg></div>
+    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);opacity:0.08;pointer-events:none;z-index:0;"><svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="250" cy="250" r="230" stroke="#2a6b6e" stroke-width="0.8"/><circle cx="250" cy="250" r="170" stroke="#b08a1e" stroke-width="0.5" stroke-dasharray="6,8"/><line x1="60" y1="250" x2="440" y2="250" stroke="#2a6b6e" stroke-width="0.4"/><line x1="250" y1="60" x2="250" y2="440" stroke="#2a6b6e" stroke-width="0.4"/><line x1="107" y1="107" x2="393" y2="393" stroke="#b08a1e" stroke-width="0.3" stroke-dasharray="4,6"/><line x1="393" y1="107" x2="107" y2="393" stroke="#b08a1e" stroke-width="0.3" stroke-dasharray="4,6"/><circle cx="150" cy="140" r="8" fill="none" stroke="#b08a1e" stroke-width="1"/><text x="148" y="145" fill="#b08a1e" font-size="8" font-family="serif" text-anchor="middle">Rügen</text><circle cx="360" cy="155" r="8" fill="none" stroke="#2a6b6e" stroke-width="1"/><text x="358" y="160" fill="#2a6b6e" font-size="8" font-family="serif" text-anchor="middle">Ustramark</text><circle cx="340" cy="360" r="8" fill="none" stroke="#7a3e14" stroke-width="1"/><text x="338" y="365" fill="#7a3e14" font-size="7" font-family="serif" text-anchor="middle">Kaltenstein</text><circle cx="130" cy="360" r="8" fill="none" stroke="#b08a1e" stroke-width="1"/><text x="128" y="365" fill="#b08a1e" font-size="7" font-family="serif" text-anchor="middle">Lyssarøy</text><path d="M150,148 Q200,200 250,250 Q300,300 340,352" fill="none" stroke="#2a6b6e" stroke-width="0.5" stroke-dasharray="3,5"/><path d="M360,163 Q300,200 250,250 Q200,300 138,352" fill="none" stroke="#b08a1e" stroke-width="0.5" stroke-dasharray="3,5"/></svg></div>
+    <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3rem 5rem 3.5rem;text-align:center;min-height:580px;">
+      <div style="font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.4em;text-transform:uppercase;color:rgba(90,176,160,0.5);margin-bottom:0.8rem;">Capítulo VII</div>
+      <div style="font-family:'Cinzel Decorative',serif;font-size:2.8rem;font-weight:900;color:#c0e0d8;text-shadow:0 0 40px rgba(36,94,96,0.4),0 2px 6px rgba(0,0,0,0.9);line-height:1.05;margin-bottom:0.2em;">El Mundo de Alkímia</div>
+      <div style="width:180px;height:1px;background:linear-gradient(90deg,transparent,rgba(90,176,160,0.5),transparent);margin:0.7rem auto;"></div>
+      <div style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(180,210,200,0.32);margin-bottom:1.6rem;">Rügen · Ustramark · Kaltenstein · Lyssarøy</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;max-width:480px;margin-top:0.5rem;">
+        <div style="text-align:center;border:1px solid rgba(176,138,30,0.15);padding:0.8rem;opacity:0.6;"><div style="font-size:1.2rem;color:#b08a1e;margin-bottom:0.3rem;">🏝</div><div style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(212,200,154,0.5);">Rügen</div><div style="font-family:'EB Garamond',serif;font-style:italic;font-size:0.78rem;color:rgba(212,200,154,0.4);">Ecos del pasado</div></div>
+        <div style="text-align:center;border:1px solid rgba(36,94,96,0.2);padding:0.8rem;opacity:0.6;"><div style="font-size:1.2rem;color:#2a6b6e;margin-bottom:0.3rem;">🏔</div><div style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(180,210,200,0.5);">Ustramark</div><div style="font-family:'EB Garamond',serif;font-style:italic;font-size:0.78rem;color:rgba(180,210,200,0.4);">La Fortaleza del Viento Helado</div></div>
+        <div style="text-align:center;border:1px solid rgba(122,62,20,0.2);padding:0.8rem;opacity:0.6;"><div style="font-size:1.2rem;color:#7a3e14;margin-bottom:0.3rem;">🌋</div><div style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(200,180,150,0.5);">Kaltenstein</div><div style="font-family:'EB Garamond',serif;font-style:italic;font-size:0.78rem;color:rgba(200,180,150,0.4);">Un Mundo de Penumbra</div></div>
+        <div style="text-align:center;border:1px solid rgba(176,138,30,0.15);padding:0.8rem;opacity:0.6;"><div style="font-size:1.2rem;color:#b08a1e;margin-bottom:0.3rem;">☀</div><div style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(212,200,154,0.5);">Lyssarøy</div><div style="font-family:'EB Garamond',serif;font-style:italic;font-size:0.78rem;color:rgba(212,200,154,0.4);">La Isla de los Días Eternos</div></div>
+      </div>
+    </div>
+    <div class="page-footer" style="border-top-color:rgba(36,94,96,0.2);"><div class="footer-title" style="color:rgba(90,176,160,0.4);">Alkímia: Senderos del Velo</div><div class="footer-title" style="color:rgba(90,176,160,0.4);">Capítulo VII · El Mundo de Alkímia</div></div>
+    <div class="page-id">37</div>
+  </div>
+</section>
+
+<!-- PÁG 38–39: REGIONES — RÜGEN + USTRAMARK -->
+<section>
+  <div class="page-label">Páginas 38–39 · Regiones: Rügen y Ustramark</div>
+  <div class="page">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.2" fill="#b08a1e"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="395" y2="26" stroke="#b08a1e" stroke-width="0.5"/><line x1="425" y1="26" x2="760" y2="26" stroke="#b08a1e" stroke-width="0.5"/><polygon points="408,17 420,26 408,35 396,26" fill="none" stroke="#b08a1e" stroke-width="0.8"/></g></svg><span class="band-text">El Mundo de Alkímia · Regiones: Rügen · Ustramark</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.3"/><g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.28"><circle cx="18" cy="55" r="5"/><line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/><rect x="11" y="155" width="14" height="14" transform="rotate(45,18,162)"/><line x1="18" y1="173" x2="18" y2="300"/><circle cx="18" cy="300" r="4"/><circle cx="18" cy="300" r="7" stroke-dasharray="2,3"/><line x1="18" y1="310" x2="18" y2="460"/><polygon points="12,460 24,460 18,475"/><line x1="18" y1="478" x2="18" y2="630"/><circle cx="18" cy="630" r="5"/><line x1="18" y1="638" x2="18" y2="800"/><rect x="11" y="800" width="14" height="14" transform="rotate(45,18,807)"/><line x1="18" y1="820" x2="18" y2="900"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.22"/><g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.22"><circle cx="18" cy="75" r="5"/><line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/><rect x="13" y="200" width="10" height="10"/><line x1="18" y1="213" x2="18" y2="360"/><circle cx="18" cy="360" r="4"/><line x1="18" y1="367" x2="18" y2="530"/><polygon points="12,530 24,530 18,546"/><line x1="18" y1="548" x2="18" y2="700"/><circle cx="18" cy="700" r="5"/><line x1="18" y1="708" x2="18" y2="880"/></g></svg></div>
+    <div class="page-inner">
+      <div class="section-title">Regiones Afectadas</div>
+      <div class="chapter-subtitle" style="margin-bottom:0.5rem;">Las cuatro regiones principales del mundo de Alkímia</div>
+      <div class="chapter-rule"></div>
+      <div class="page-inner two-col" style="padding:0;">
+        <!-- RÜGEN -->
+        <div>
+          <div class="subsection-title" style="color:var(--copper);">🏝 Rügen: Ecos del Pasado</div>
+          <div class="faccion-row">
+            <div class="faccion-item" style="border-left-color:var(--copper);">
+              <div class="faccion-name" style="color:var(--copper);">Descripción General</div>
+              <div class="faccion-desc">Isla con paisajes de acantilados imponentes, playas de arena oscura y densos bosques de pinos. Atmósfera melancólica y mística, clima moderado con tormentas frecuentes. <strong>Es un cruce entre el mundo material y el Velo</strong>, donde los ecos de la Alkímia resuenan constantemente.</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--gold-dark);">
+              <div class="faccion-name">Historia y Leyendas</div>
+              <div class="faccion-desc">Los primeros colonos fundaron <strong>Havenvold</strong> atraídos por la leyenda de una <strong>Piedra Alkímica</strong> capaz de manipular el Velo. La leyenda de <strong>Eldrin el Susurrante</strong> narra cómo su fracaso al intentar cerrar una fisura creó una <strong>tormenta de susurros</strong> que envuelve la isla eternamente.</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--rule-color);">
+              <div class="faccion-name">Lugares Notables</div>
+              <div class="faccion-desc"><strong>Faro de Eldrin</strong> (convergencia de energía Alkímica) · <strong>Ruinas de Havenvold</strong> (laberinto de secretos con energía residual) · <strong>Bosque de los Ecos</strong> (árboles susurrantes y criaturas corrompidas) · Torre de Vidya.</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--velo);">
+              <div class="faccion-name" style="color:var(--velo-deep);">Criaturas y Aliados</div>
+              <div class="faccion-desc"><strong>Ecos de Eldrin</strong> (fantasmas débiles a la luz) · <strong>Nómadas de la Niebla</strong> (manipuladores de la realidad) · <strong>Guardianes de la Ruina</strong> (vulnerables a transmutaciones de tierra). <br>Aliados: <strong>Sabios de Havenvold</strong> vs. <strong>Cultistas del Susurro</strong>.</div>
+            </div>
+          </div>
+        </div>
+        <!-- USTRAMARK -->
+        <div>
+          <div class="subsection-title" style="color:var(--velo-deep);">🏔 Ustramark: Fortaleza del Viento Helado</div>
+          <div class="faccion-row">
+            <div class="faccion-item" style="border-left-color:var(--velo);">
+              <div class="faccion-name" style="color:var(--velo-deep);">Descripción General</div>
+              <div class="faccion-desc">Región de montañas majestuosas, nieves eternas y tormentas abrasadoras. Sociedad <strong>militarizada centrada en la protección y el dominio de las fuerzas naturales</strong>. Los habitantes son guardianes del conocimiento alkímico de aire y energía elemental.</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--gold-dark);">
+              <div class="faccion-name">Historia y Leyendas</div>
+              <div class="faccion-desc">Fundada por pueblos nórdicos descendientes de Alkimistas que manipularon los elementos para crear una fortaleza. La leyenda del <strong>Viento Corrupto</strong> narra cómo <strong>Yronir al-Estos</strong> desató una fisura del Velo, creando la <strong>«Tormenta Eterna»</strong> que aún acecha los cielos.</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--rule-color);">
+              <div class="faccion-name">Lugares Notables</div>
+              <div class="faccion-desc"><strong>Muralla del Viento</strong> (barrera natural de tormentas) · <strong>Castillo de Niebla</strong> en la Montaña de Hierro (secretos alkímicos, incluyendo el <em>Corazón de la Tormenta</em>) · <strong>Valle de las Lamentaciones</strong> (cubierto de niebla, viento susurra los ecos de los sucumbidos).</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--velo);">
+              <div class="faccion-name" style="color:var(--velo-deep);">Criaturas y Aliados</div>
+              <div class="faccion-desc"><strong>Viento Corrupto</strong> (incorpóreos débiles al calor/tierra) · <strong>Tormentas Errantes</strong> (elementales agresivos, débiles a luz/aire puro) · <strong>Hijos del Viento Corrupto</strong> (Alkimistas corrompidos). <br>Aliados: <strong>Alkimistas del Viento</strong> vs. <strong>Hijos del Viento Corrupto</strong>.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer"><div class="footer-title">Alkímia: Senderos del Velo</div><div class="footer-title">Capítulo VII · Rügen · Ustramark</div></div>
+    <div class="page-id">38–39</div>
+  </div>
+</section>
+
+<!-- PÁG 40–41: KALTENSTEIN + LYSSARØY -->
+<section>
+  <div class="page-label">Páginas 40–41 · Regiones: Kaltenstein y Lyssarøy</div>
+  <div class="page">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.2" fill="#7a3e14"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="395" y2="26" stroke="#7a3e14" stroke-width="0.5"/><line x1="425" y1="26" x2="760" y2="26" stroke="#7a3e14" stroke-width="0.5"/><polygon points="408,17 420,26 408,35 396,26" fill="none" stroke="#7a3e14" stroke-width="0.8"/></g></svg><span class="band-text" style="color:rgba(196,120,64,0.7);">El Mundo de Alkímia · Regiones: Kaltenstein · Lyssarøy</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#7a3e14" stroke-width="0.5" opacity="0.28"/><g fill="none" stroke="#7a3e14" stroke-width="0.6" opacity="0.26"><circle cx="18" cy="55" r="5"/><line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/><rect x="11" y="155" width="14" height="14" transform="rotate(45,18,162)"/><line x1="18" y1="173" x2="18" y2="300"/><circle cx="18" cy="300" r="4"/><circle cx="18" cy="300" r="7" stroke-dasharray="2,3"/><line x1="18" y1="310" x2="18" y2="460"/><polygon points="12,460 24,460 18,475"/><line x1="18" y1="478" x2="18" y2="630"/><circle cx="18" cy="630" r="5"/><line x1="18" y1="638" x2="18" y2="800"/><rect x="11" y="800" width="14" height="14" transform="rotate(45,18,807)"/><line x1="18" y1="820" x2="18" y2="900"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.2"/><g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.2"><circle cx="18" cy="75" r="5"/><line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/><rect x="13" y="200" width="10" height="10"/><line x1="18" y1="213" x2="18" y2="360"/><circle cx="18" cy="360" r="4"/><line x1="18" y1="367" x2="18" y2="530"/><polygon points="12,530 24,530 18,546"/><line x1="18" y1="548" x2="18" y2="700"/><circle cx="18" cy="700" r="5"/><line x1="18" y1="708" x2="18" y2="880"/></g></svg></div>
+    <div class="page-inner">
+      <div class="page-inner two-col" style="padding:0;">
+        <!-- KALTENSTEIN -->
+        <div>
+          <div class="subsection-title" style="color:#7a3e14;">🌋 Cenizas de Kaltenstein: Un Mundo de Penumbra</div>
+          <div class="faccion-row">
+            <div class="faccion-item" style="border-left-color:#7a3e14;">
+              <div class="faccion-name" style="color:#7a3e14;">Descripción General</div>
+              <div class="faccion-desc">Paisaje desolado de montañas oscuras, <strong>llanuras de ceniza y cielos tóxicos</strong>, resultado de un cataclismo alkímico. Un páramo inhóspito para renegados y criaturas del Velo.</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--gold-dark);">
+              <div class="faccion-name">Historia y Leyendas</div>
+              <div class="faccion-desc">Antiguamente fértil, un ritual fallido para replicar el <strong>Sol de Aether</strong> desató el <strong>Gran Fuego de las Estrellas</strong>, creando una fisura del Velo y dejando un residuo de cenizas tóxicas. Los supervivientes se convirtieron en los <strong>Hijos de la Penumbra</strong>.</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--rule-color);">
+              <div class="faccion-name">Lugares Notables</div>
+              <div class="faccion-desc"><strong>Crisol Eterno</strong> (cráter con llamas Alkímicas activas, santuario de criaturas del Velo) · <strong>Torre de la Ceniza Negra</strong> (base de los Hijos de la Penumbra) · <strong>Garganta de las Sombras</strong> (tiempo y espacio distorsionados) · <strong>Mar de Cenizas</strong>.</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:#7a3e14;">
+              <div class="faccion-name" style="color:#7a3e14;">Criaturas y Sociedad</div>
+              <div class="faccion-desc"><strong>Llamas Susurrantes</strong> (restos del Gran Fuego) · <strong>Atrincherados</strong> (guerreros de ceniza y energía corrupta) · <strong>Ente Oscuro</strong> (figura legendaria en el núcleo del Crisol).<br>Los <strong>Hijos de la Penumbra</strong> son un grupo nómada que venera la «Equilibria». También atrae <strong>Exiliados</strong> y Alkimistas en desgracia.</div>
+            </div>
+          </div>
+        </div>
+        <!-- LYSSARØY -->
+        <div>
+          <div class="subsection-title" style="color:#8a6800;">☀ Isla de Lyssarøy: Los Días Eternos</div>
+          <div class="faccion-row">
+            <div class="faccion-item" style="border-left-color:#8a6800;">
+              <div class="faccion-name" style="color:#8a6800;">Descripción General</div>
+              <div class="faccion-desc">Parte de un archipiélago remoto con vientos helados, conocida por el <strong>Resplandor de Lyss</strong>, una luz solar perpetua que afecta a todo en la isla. Una anomalía alkímica que convierte a la isla en un lugar de luz eterna sin noche.</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--gold-dark);">
+              <div class="faccion-name">Historia y Leyendas</div>
+              <div class="faccion-desc">El Resplandor comenzó cuando <strong>Lyssander Ulvak</strong> intentó atrapar la esencia de la luz solar para derrotar el Velo, alterando el flujo de energía. El <strong>Faro Sin Sombra</strong> (Faro de Vidya) repele criaturas del Velo. Una aldea desapareció misteriosamente — sus habitantes se unieron al Velo o fueron absorbidos por el Resplandor.</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--rule-color);">
+              <div class="faccion-name">Lugares Notables</div>
+              <div class="faccion-desc"><strong>Lago de Cristal Solar</strong> (transmutaciones a alto coste espiritual) · <strong>Gruta del Eclipse</strong> (energía residual del Velo para experimentos oscuros) · <strong>Piedra de Lyssander</strong> (runas que revelan secretos de la transmutación final) · <strong>Faro de Vidya</strong>.</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--gold);">
+              <div class="faccion-name">Criaturas y Aliados</div>
+              <div class="faccion-desc"><strong>Sombras Resplandecientes</strong> (criaturas de luz, débiles a tierra/sombras) · <strong>Guardianes del Faro</strong> (autómatas alkímicos) · <strong>Lamentos del Velo</strong> (ecos de habitantes perdidos, débiles a luz pura).<br>Aliados: <strong>Vigilantes de Lyss</strong> (creen el Resplandor es divino) vs. <strong>Cábala de Sombras Rojas</strong> (buscan explotarlo).</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer"><div class="footer-title">Alkímia: Senderos del Velo</div><div class="footer-title">Capítulo VII · Kaltenstein · Lyssarøy</div></div>
+    <div class="page-id">40–41</div>
+  </div>
+</section>
+
+<!-- PÁG 42–43: PUNTOS DE INTERÉS + CULTURA + FLUJO ETERNO -->
+<section>
+  <div class="page-label">Páginas 42–44 · Puntos de Interés · Cultura y Sociedad · El Flujo Eterno</div>
+  <div class="page">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.2" fill="#b08a1e"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="395" y2="26" stroke="#b08a1e" stroke-width="0.5"/><line x1="425" y1="26" x2="760" y2="26" stroke="#b08a1e" stroke-width="0.5"/><rect x="405" y="16" width="10" height="20" transform="rotate(45,410,26)"/></g></svg><span class="band-text">El Mundo de Alkímia · Puntos de Interés · Cultura · El Flujo Eterno</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.3"/><g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.28"><circle cx="18" cy="55" r="5"/><line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/><rect x="11" y="155" width="14" height="14" transform="rotate(45,18,162)"/><line x1="18" y1="173" x2="18" y2="300"/><circle cx="18" cy="300" r="4"/><circle cx="18" cy="300" r="7" stroke-dasharray="2,3"/><line x1="18" y1="310" x2="18" y2="460"/><polygon points="12,460 24,460 18,475"/><line x1="18" y1="478" x2="18" y2="630"/><circle cx="18" cy="630" r="5"/><line x1="18" y1="638" x2="18" y2="800"/><rect x="11" y="800" width="14" height="14" transform="rotate(45,18,807)"/><line x1="18" y1="820" x2="18" y2="900"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.22"/><g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.22"><circle cx="18" cy="75" r="5"/><line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/><rect x="13" y="200" width="10" height="10"/><line x1="18" y1="213" x2="18" y2="360"/><circle cx="18" cy="360" r="4"/><line x1="18" y1="367" x2="18" y2="530"/><polygon points="12,530 24,530 18,546"/><line x1="18" y1="548" x2="18" y2="700"/><circle cx="18" cy="700" r="5"/><line x1="18" y1="708" x2="18" y2="880"/></g></svg></div>
+    <div class="page-inner">
+      <!-- PUNTOS DE INTERÉS (tabla compacta) -->
+      <div class="section-title">Puntos de Interés por Región</div>
+      <div class="chapter-rule"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;margin-bottom:1.2rem;">
+        <div style="border:1px solid var(--rule-color);padding:0.7rem 0.9rem;background:rgba(242,232,200,0.3);">
+          <div style="font-family:'Cinzel',serif;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--copper);margin-bottom:0.4rem;">🏝 Lyssarøy</div>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.25rem;">
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Resplandor de Lyss</strong> — Fenómeno de luz perpetua</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Faro de Vidya</strong> — Brilla con luz Alkímica, repele sombras</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Lago de Cristal Solar</strong> — Transmutaciones especiales</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Gruta del Eclipse</strong> — Restos del Velo</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Piedra de Lyssander</strong> — Roca con runas de la transmutación final</li>
+          </ul>
+        </div>
+        <div style="border:1px solid var(--rule-color);padding:0.7rem 0.9rem;background:rgba(242,232,200,0.3);">
+          <div style="font-family:'Cinzel',serif;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--copper);margin-bottom:0.4rem;">🏝 Rügen</div>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.25rem;">
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Faro de Eldrin</strong> — Punto de convergencia Alkímica con el Velo</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Ruinas de Havenvold</strong> — Ciudad abandonada llena de secretos</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Bosque de los Ecos</strong> — Árboles susurrantes, criaturas corrompidas</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">El Susurro del Velo</strong> — Tormenta de energía corrupta</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Torre de Vidya</strong> — Torre en ruinas construida para estudiar el Velo</li>
+          </ul>
+        </div>
+        <div style="border:1px solid var(--rule-color);padding:0.7rem 0.9rem;background:rgba(242,232,200,0.3);">
+          <div style="font-family:'Cinzel',serif;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--velo-deep);margin-bottom:0.4rem;">🏔 Ustramark</div>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.25rem;">
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Muralla del Viento</strong> — Barrera natural de tormentas</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Castillo de Niebla</strong> — Fortaleza con artefactos alkímicos secretos</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Valle de las Lamentaciones</strong> — Almas atrapadas en el viento</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Montaña de Hierro</strong> — Laboratorios alkímicos antiguos</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">El Viento Corrupto</strong> — Tormenta que altera el clima y la materia</li>
+          </ul>
+        </div>
+        <div style="border:1px solid var(--rule-color);padding:0.7rem 0.9rem;background:rgba(242,232,200,0.3);">
+          <div style="font-family:'Cinzel',serif;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#7a3e14;margin-bottom:0.4rem;">🌋 Cenizas de Kaltenstein</div>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.25rem;">
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Mar de Cenizas</strong> — Vasta llanura de cenizas y polvo</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Torre Quebrada</strong> — Construida para contener una fisura, en ruinas</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Crisol del Olvido</strong> — Fisura activa que consume todo</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Ruinas de la Ciudad Perdida</strong> — Desaparecida bajo las cenizas</li>
+            <li style="font-size:0.84rem;color:var(--text-muted);"><strong style="color:var(--ink);">Piedra de la Transmutación</strong> — Artefacto clave para manipular el Velo</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CULTURA Y SOCIEDAD (compacto) -->
+      <div class="section-title">Cultura y Sociedad</div>
+      <div class="alch-sep"><span>◆</span></div>
+      <table class="rules-table" style="font-size:0.82rem;margin-bottom:1rem;">
+        <thead><tr><th>Región</th><th>Vida Cotidiana</th><th>Religión / Creencias</th><th>Economía e Impacto del Velo</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong style="color:#8a6800;">☀ Lyssarøy</strong></td>
+            <td>Ciclos de «luz alta» y «luz tenue». Pesca y recolección marina. El Resplandor es bendición y carga.</td>
+            <td><strong>Culto al Sol Eterno</strong> — Portadores del Amanecer lideran rituales. Vigilia Solar y Silencio del Eclipse.</td>
+            <td>Comercian con cristales solares. Intercambian con Ustramark (metales) y Rügen (conocimiento). Marcas de luz: «tocados» o bendecidos.</td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--copper);">🏝 Rügen</strong></td>
+            <td>Vida cautelosa con talismanes y runas. Noches peligrosas — nadie sale sin luz Alkímica. Artesanos fabrican amuletos.</td>
+            <td><strong>Culto del Silencio</strong> — centrado en Eldrin el Susurrante. Eco de Eldrin (visiones semanales) y Procesión de la Luz.</td>
+            <td>Rica en minerales oscuros (extracción restringida). Comercia minerales con Ustramark y cristales con Lyssarøy. El Velo causa paranoia y Eco-Errantes.</td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--velo-deep);">🏔 Ustramark</strong></td>
+            <td>Clanes para supervivencia. Entrenamientos y fortalecimiento de defensas. Dominan el arte de redirigir vientos.</td>
+            <td><strong>Canto del Viento</strong> — viento como entidad viva. Los Intonadores cantan para apaciguar las tormentas. Solsticio del Ciclón.</td>
+            <td>Comercian con metales raros y energía eólica. Suministran herramientas a Lyssarøy y Rügen. Tormenta Eterna crea Portadores del Viento.</td>
+          </tr>
+          <tr>
+            <td><strong style="color:#7a3e14;">🌋 Kaltenstein</strong></td>
+            <td>Supervivientes natos. Asentamientos alrededor de pozos de agua. Los niños se entrenan en Alkímia defensiva desde pequeños.</td>
+            <td><strong>Devoción a las Cenizas</strong> — ciclo de destrucción y renacimiento. Día del Polvo Negro y Juramento de las Sombras.</td>
+            <td>Exportan ceniza Alkímica (barrera contra el Velo). Intercambian con otras regiones por alimentos. Las fisuras activas deforman el terreno y las personas.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- EL FLUJO ETERNO -->
+      <div class="section-title">El Flujo Eterno: <span class="highlight">Equilibrio Creación-Destrucción</span></div>
+      <div class="chapter-rule"></div>
+      <div class="velo-efectos" style="border-top-color:var(--gold);margin-top:0.5rem;">
+        <div class="velo-efectos-header" style="background:rgba(176,138,30,0.12);border-bottom:1px solid rgba(176,138,30,0.2);">
+          <span style="font-size:1rem;color:var(--gold);">∞</span>
+          <span style="color:rgba(212,180,100,0.8);">La Filosofía Central del Mundo de Alkímia</span>
+        </div>
+        <div class="velo-efectos-body">
+          <p style="font-size:0.9rem;line-height:1.65;color:var(--text-muted);margin-bottom:0.7rem;">El <strong>Flujo Eterno</strong> es la filosofía espiritual y práctica central de Alkímia, representando el ciclo constante de creación y destrucción, y la Ley del Intercambio Equivalente. Es una <strong>danza interminable entre opuestos</strong>, donde toda acción, transmutación o cambio debe equilibrarse — nada puede ser creado sin destruir algo.</p>
+          <div class="velo-efecto-row">
+            <div class="velo-efecto-item" style="border-left-color:var(--gold);">
+              <div class="velo-efecto-sym" style="color:var(--gold);">∞</div>
+              <div><div class="velo-efecto-name" style="color:#8a6800;">El Flujo en la Cultura y la Religión</div><div class="velo-efecto-desc">La <strong>Religión del Flujo</strong> venera el <em>Círculo del Flujo</em> (Ouroboros — serpiente que se muerde la cola) con runas de Creación, Destrucción y Renacimiento. Los <strong>Intérpretes del Flujo</strong> son sus líderes. Creencias fundamentales: <em>Equilibrio Supremo</em> (luz necesita oscuridad, vida necesita muerte, poder alkímico exige sacrificio) y el <em>Ciclo de la Transmutación</em>.</div></div>
+            </div>
+            <div class="velo-efecto-item" style="border-left-color:var(--velo);">
+              <div class="velo-efecto-sym" style="color:var(--velo);">⚗</div>
+              <div><div class="velo-efecto-name">Influencia del Velo en el Flujo Eterno</div><div class="velo-efecto-desc">El Velo es visto como una prueba o consecuencia del desequilibrio del Flujo. Dos corrientes: los <strong>Conservadores del Flujo</strong> (buscan sellar el Velo) y los <strong>Radicales del Ciclo</strong> (creen que debe ser comprendido y aceptado como parte del ciclo).</div></div>
+            </div>
+            <div class="velo-efecto-item" style="border-left-color:var(--gold);">
+              <div class="velo-efecto-sym" style="color:var(--gold);">◎</div>
+              <div><div class="velo-efecto-name" style="color:#8a6800;">Impacto en los Alkimistas y la Sociedad</div><div class="velo-efecto-desc">Los Alkimistas que siguen el Flujo Eterno juran <strong>nunca usar el poder sin ofrecer algo a cambio</strong>. La enseñanza de la Alkímia incorpora meditaciones sobre el Flujo. El Flujo Eterno es el <strong>corazón que impulsa el mundo de Alkímia</strong>, uniendo a las personas en su lucha y búsqueda de equilibrio.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer"><div class="footer-title">Alkímia: Senderos del Velo</div><div class="footer-title">Capítulo VII · Puntos de Interés · Cultura · Flujo Eterno</div></div>
+    <div class="page-id">42–44</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     CAP. VIII — FACCIONES Y ENEMIGOS (pág. 45–57)
+     ═══════════════════════════════════════════════ -->
+
+<!-- APERTURA CAP. VIII -->
+<section id="facciones">
+  <div class="page-label">Página 45 · Cap. VIII · Facciones y Enemigos — Apertura</div>
+  <div class="page" style="min-height:660px;background:#0a0c0f;background-image:radial-gradient(ellipse at 40% 30%,rgba(36,94,96,0.2) 0%,transparent 60%),radial-gradient(ellipse at 70% 70%,rgba(122,26,26,0.15) 0%,transparent 55%),linear-gradient(180deg,#09090c 0%,#0c0e10 100%);">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.22" fill="#b08a1e"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="395" y2="26" stroke="#b08a1e" stroke-width="0.5"/><line x1="425" y1="26" x2="760" y2="26" stroke="#b08a1e" stroke-width="0.5"/><polygon points="408,16 420,26 408,36 396,26" fill="none" stroke="#b08a1e" stroke-width="0.9"/></g></svg><span class="band-text">Alkímia: Senderos del Velo · Facciones y Enemigos</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 700" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="700" stroke="#2a6b6e" stroke-width="0.5" opacity="0.3"/><g fill="none" stroke="#2a6b6e" stroke-width="0.7" opacity="0.28"><circle cx="18" cy="60" r="5"/><line x1="18" y1="30" x2="18" y2="52"/><line x1="18" y1="68" x2="18" y2="200"/><rect x="11" y="200" width="14" height="14" transform="rotate(45,18,207)"/><line x1="18" y1="218" x2="18" y2="360"/><circle cx="18" cy="360" r="5"/><line x1="18" y1="368" x2="18" y2="520"/><polygon points="12,520 24,520 18,535"/><line x1="18" y1="538" x2="18" y2="700"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 700" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="700" stroke="#7a1a1a" stroke-width="0.5" opacity="0.2"/><g fill="none" stroke="#7a1a1a" stroke-width="0.6" opacity="0.2"><circle cx="18" cy="80" r="5"/><line x1="18" y1="30" x2="18" y2="72"/><line x1="18" y1="88" x2="18" y2="240"/><rect x="13" y="240" width="10" height="10"/><line x1="18" y1="253" x2="18" y2="420"/><circle cx="18" cy="420" r="4"/><line x1="18" y1="427" x2="18" y2="600"/><polygon points="12,600 24,600 18,615"/><line x1="18" y1="618" x2="18" y2="700"/></g></svg></div>
+    <!-- Círculo de fondo -->
+    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);opacity:0.07;pointer-events:none;z-index:0;">
+      <svg width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="240" cy="240" r="220" stroke="#b08a1e" stroke-width="0.8"/>
+        <polygon points="240,50 430,380 50,380" fill="none" stroke="#2a6b6e" stroke-width="0.8"/>
+        <polygon points="240,430 50,100 430,100" fill="none" stroke="#7a1a1a" stroke-width="0.6"/>
+        <circle cx="240" cy="240" r="80" fill="none" stroke="#b08a1e" stroke-width="0.6" stroke-dasharray="4,6"/>
+        <circle cx="240" cy="130" r="6" fill="#2a6b6e" opacity="0.6"/>
+        <circle cx="380" cy="350" r="6" fill="#b08a1e" opacity="0.6"/>
+        <circle cx="100" cy="350" r="6" fill="#7a1a1a" opacity="0.6"/>
+        <text x="240" y="118" fill="#2a6b6e" font-size="9" font-family="serif" text-anchor="middle" opacity="0.5">La Mano</text>
+        <text x="395" y="365" fill="#b08a1e" font-size="9" font-family="serif" text-anchor="middle" opacity="0.5">B.A.R.D.</text>
+        <text x="85" y="365" fill="#7a1a1a" font-size="9" font-family="serif" text-anchor="middle" opacity="0.5">El Velo</text>
+      </svg>
+    </div>
+    <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3rem 5rem 3.5rem;text-align:center;min-height:560px;">
+      <div style="font-family:'Cinzel',serif;font-size:0.68rem;letter-spacing:0.4em;text-transform:uppercase;color:rgba(176,138,30,0.5);margin-bottom:0.8rem;">Capítulo VIII</div>
+      <div style="font-family:'Cinzel Decorative',serif;font-size:2.6rem;font-weight:900;color:var(--gold-pale);text-shadow:0 0 40px rgba(176,138,30,0.25),0 2px 6px rgba(0,0,0,0.9);line-height:1.05;margin-bottom:0.2em;">Facciones y Enemigos</div>
+      <div style="width:180px;height:1px;background:linear-gradient(90deg,transparent,rgba(176,138,30,0.5),transparent);margin:0.7rem auto;"></div>
+      <div style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(212,200,154,0.32);margin-bottom:1.8rem;">La Mano de los Misterios · B.A.R.D. · Enemigos del Velo</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;max-width:500px;">
+        <div style="text-align:center;border:1px solid rgba(36,94,96,0.2);padding:0.9rem 0.5rem;opacity:0.65;"><div style="font-size:1.3rem;color:var(--velo);margin-bottom:0.3rem;">✦</div><div style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(90,176,160,0.6);">La Mano</div><div style="font-family:'EB Garamond',serif;font-style:italic;font-size:0.78rem;color:rgba(180,210,200,0.4);">Los Misterios</div></div>
+        <div style="text-align:center;border:1px solid rgba(176,138,30,0.2);padding:0.9rem 0.5rem;opacity:0.65;"><div style="font-size:1.3rem;color:var(--gold);margin-bottom:0.3rem;">⊕</div><div style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(212,190,100,0.6);">B.A.R.D.</div><div style="font-family:'EB Garamond',serif;font-style:italic;font-size:0.78rem;color:rgba(212,200,154,0.4);">El Orden</div></div>
+        <div style="text-align:center;border:1px solid rgba(122,26,26,0.2);padding:0.9rem 0.5rem;opacity:0.65;"><div style="font-size:1.3rem;color:#c04040;margin-bottom:0.3rem;">⊗</div><div style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(180,80,80,0.6);">El Velo</div><div style="font-family:'EB Garamond',serif;font-style:italic;font-size:0.78rem;color:rgba(200,150,150,0.4);">Los Enemigos</div></div>
+      </div>
+    </div>
+    <div class="page-footer"><div class="footer-title">Alkímia: Senderos del Velo</div><div class="footer-title">Capítulo VIII · Facciones y Enemigos</div></div>
+    <div class="page-id">45</div>
+  </div>
+</section>
+
+<!-- PÁG 46: LA MANO DE LOS MISTERIOS — Intro + Objetivos + Cinco Dedos -->
+<section>
+  <div class="page-label">Página 46 · La Mano de los Misterios: Estructura, Objetivos, Los Cinco Dedos</div>
+  <div class="page">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.2" fill="#2a6b6e"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="395" y2="26" stroke="#2a6b6e" stroke-width="0.5"/><line x1="425" y1="26" x2="760" y2="26" stroke="#2a6b6e" stroke-width="0.5"/><polygon points="408,17 420,26 408,35 396,26" fill="none" stroke="#2a6b6e" stroke-width="0.8"/></g></svg><span class="band-text">Facciones · La Mano de los Misterios</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.3"/><g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.28"><circle cx="18" cy="55" r="5"/><line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/><rect x="11" y="155" width="14" height="14" transform="rotate(45,18,162)"/><line x1="18" y1="173" x2="18" y2="300"/><circle cx="18" cy="300" r="4"/><circle cx="18" cy="300" r="7" stroke-dasharray="2,3"/><line x1="18" y1="310" x2="18" y2="460"/><polygon points="12,460 24,460 18,475"/><line x1="18" y1="478" x2="18" y2="630"/><circle cx="18" cy="630" r="5"/><line x1="18" y1="638" x2="18" y2="800"/><rect x="11" y="800" width="14" height="14" transform="rotate(45,18,807)"/><line x1="18" y1="820" x2="18" y2="900"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.22"/><g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.22"><circle cx="18" cy="75" r="5"/><line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/><rect x="13" y="200" width="10" height="10"/><line x1="18" y1="213" x2="18" y2="360"/><circle cx="18" cy="360" r="4"/><line x1="18" y1="367" x2="18" y2="530"/><polygon points="12,530 24,530 18,546"/><line x1="18" y1="548" x2="18" y2="700"/><circle cx="18" cy="700" r="5"/><line x1="18" y1="708" x2="18" y2="880"/></g></svg></div>
+    <div class="page-inner">
+      <div class="section-title">La Mano de los Misterios</div>
+      <div class="chapter-subtitle" style="margin-bottom:0.5rem;">Estructura · Objetivos · Métodos · «Los Cinco Dedos»</div>
+      <div class="chapter-rule"></div>
+      <p class="drop-cap">La <strong>Mano de los Misterios</strong> es una organización secreta que surgió como respuesta directa al nacimiento del Velo. Fue fundada por la enigmática <strong>Isolde Hellebore</strong>, conocida como «La Guardiana de los Secretos», quien reunió a los Alkimistas más sabios para no solo combatir el Velo, sino también proteger el conocimiento alkímico de caer en manos equivocadas.</p>
+
+      <!-- Objetivos en fila compacta -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin:0.8rem 0;">
+        <div class="faccion-item mano" style="border-left-color:var(--velo);padding:0.55rem 0.8rem;">
+          <div class="faccion-name" style="color:var(--velo-deep);font-size:0.72rem;">Investigación del Velo</div>
+          <div class="faccion-desc" style="font-size:0.88rem;">Utilizan recursos alkímicos y sacrificios personales para desentrañar los misterios de esta dimensión corrupta.</div>
+        </div>
+        <div class="faccion-item mano" style="border-left-color:var(--velo);padding:0.55rem 0.8rem;">
+          <div class="faccion-name" style="color:var(--velo-deep);font-size:0.72rem;">Defensa contra la Corrupción</div>
+          <div class="faccion-desc" style="font-size:0.88rem;">Sus miembros actúan como guerreros y eruditos, luchando activamente contra las criaturas y los efectos del Velo.</div>
+        </div>
+        <div class="faccion-item mano" style="border-left-color:var(--velo);padding:0.55rem 0.8rem;">
+          <div class="faccion-name" style="color:var(--velo-deep);font-size:0.72rem;">Protección del Conocimiento</div>
+          <div class="faccion-desc" style="font-size:0.88rem;">Se aseguran de que el arte de la Alkímia no sea explotado por fuerzas ambiciosas o corruptas.</div>
+        </div>
+        <div class="faccion-item mano" style="border-left-color:var(--velo);padding:0.55rem 0.8rem;">
+          <div class="faccion-name" style="color:var(--velo-deep);font-size:0.72rem;">Equilibrio Ético</div>
+          <div class="faccion-desc" style="font-size:0.88rem;">Mantienen un delicado balance entre el uso del poder alkímico y las graves consecuencias del intercambio equivalente.</div>
+        </div>
+      </div>
+
+      <div class="section-title" style="margin-top:1rem;">«Los Cinco Dedos» — Estructura Jerárquica</div>
+      <div class="alch-sep"><span>✦</span></div>
+
+      <div class="cinco-grid">
+        <div class="dedo-card pulgar">
+          <div class="dedo-header">
+            <div class="dedo-symbol">I · El Pulgar</div>
+            <div class="dedo-name">El Consejo de Sabiduría</div>
+            <div class="dedo-role">Liderazgo estratégico</div>
+          </div>
+          <div class="dedo-body">
+            <p>Dirige la organización y establece objetivos estratégicos. Coordina las incursiones más importantes y media en conflictos internos. Su fortaleza reside en la sabiduría y experiencia, aunque pueden alejarse demasiado del campo de batalla.</p>
+          </div>
+          <div class="dedo-lider">Líder: Isolde Hellebore (fundadora y líder honoraria)</div>
+        </div>
+        <div class="dedo-card indice">
+          <div class="dedo-header">
+            <div class="dedo-symbol">II · El Índice</div>
+            <div class="dedo-name">Los Visionarios</div>
+            <div class="dedo-role">Investigación avanzada</div>
+          </div>
+          <div class="dedo-body">
+            <p>Encargados de la investigación avanzada del Velo y la Alkímia. Se dedican al estudio de fisuras, al desarrollo de contramedidas y al perfeccionamiento de habilidades Alkímicas. Su ingenio y creatividad son su fortaleza, aunque a veces son percibidos como imprudentes.</p>
+          </div>
+          <div class="dedo-lider">Líder: Lyra Celestia (Alkimista visionaria, afinidad celestial)</div>
+        </div>
+        <div class="dedo-card corazon">
+          <div class="dedo-header">
+            <div class="dedo-symbol">III · El Corazón</div>
+            <div class="dedo-name">Los Custodios</div>
+            <div class="dedo-role">Guerreros y protectores</div>
+          </div>
+          <div class="dedo-body">
+            <p>Son los guerreros y protectores de los secretos alkímicos. Defienden los asentamientos y lideran incursiones para sellar fisuras. Destacan por su disciplina y ferocidad en combate, pero pueden ser inflexibles y desconfiados hacia métodos no convencionales.</p>
+          </div>
+          <div class="dedo-lider">Líder: Dorian Ashfell (líder de los Custodios)</div>
+        </div>
+        <div class="dedo-card anular">
+          <div class="dedo-header">
+            <div class="dedo-symbol">IV · El Anular</div>
+            <div class="dedo-name">Los Espías</div>
+            <div class="dedo-role">Inteligencia y subterfugios</div>
+          </div>
+          <div class="dedo-body">
+            <p>Recolectan información y vigilan las actividades de enemigos y aliados. Realizan operaciones encubiertas, infiltraciones y sabotaje de las actividades de los Cábala. Su agilidad e ingenio en subterfugios son valiosos, aunque sus métodos generan desconfianza dentro y fuera de la organización.</p>
+          </div>
+          <div class="dedo-lider">Líder: Selene Myrrh (experta en subterfugios)</div>
+        </div>
+        <div class="dedo-card menique">
+          <div class="dedo-header">
+            <div class="dedo-symbol">V · El Meñique</div>
+            <div class="dedo-name">Los Iniciados</div>
+            <div class="dedo-role">Nuevos reclutas</div>
+          </div>
+          <div class="dedo-body">
+            <p>Son los nuevos reclutas que deben probar su valía. Apoyan a los rangos superiores, aprenden los fundamentos de la Alkímia y enfrentan tareas menores. Son adaptables y ansiosos por demostrar su valía, pero su inexperiencia los hace vulnerables y a menudo subestimados.</p>
+          </div>
+          <div class="dedo-lider">Los personajes jugadores — recién reclutados</div>
+        </div>
+      </div>
+
+      <div class="nota">La <strong>Disonancia Alkímica</strong> es el conflicto interno principal: tensiones éticas sobre el uso aceptable de la Alkímia contra el Velo, y rivalidades filosóficas entre el Consejo de Sabiduría y los Custodios que generan fricciones en la toma de decisiones.</div>
+    </div>
+    <div class="page-footer"><div class="footer-title">Alkímia: Senderos del Velo</div><div class="footer-title">Capítulo VIII · La Mano de los Misterios</div></div>
+    <div class="page-id">46</div>
+  </div>
+</section>
+
+<!-- PÁG 47: RECLUTAMIENTO + RITUALES + OPUS MAGNUM -->
+<section>
+  <div class="page-label">Página 47 · Reclutamiento · Rituales de Iniciación · Opus Magnum</div>
+  <div class="page">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.2" fill="#2a6b6e"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="395" y2="26" stroke="#2a6b6e" stroke-width="0.5"/><line x1="425" y1="26" x2="760" y2="26" stroke="#2a6b6e" stroke-width="0.5"/><polygon points="408,17 420,26 408,35 396,26" fill="none" stroke="#2a6b6e" stroke-width="0.8"/></g></svg><span class="band-text">La Mano de los Misterios · Reclutamiento · Rituales · Opus Magnum</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.3"/><g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.28"><circle cx="18" cy="55" r="5"/><line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/><rect x="11" y="155" width="14" height="14" transform="rotate(45,18,162)"/><line x1="18" y1="173" x2="18" y2="300"/><circle cx="18" cy="300" r="4"/><circle cx="18" cy="300" r="7" stroke-dasharray="2,3"/><line x1="18" y1="310" x2="18" y2="460"/><polygon points="12,460 24,460 18,475"/><line x1="18" y1="478" x2="18" y2="630"/><circle cx="18" cy="630" r="5"/><line x1="18" y1="638" x2="18" y2="800"/><rect x="11" y="800" width="14" height="14" transform="rotate(45,18,807)"/><line x1="18" y1="820" x2="18" y2="900"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.22"/><g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.22"><circle cx="18" cy="75" r="5"/><line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/><rect x="13" y="200" width="10" height="10"/><line x1="18" y1="213" x2="18" y2="360"/><circle cx="18" cy="360" r="4"/><line x1="18" y1="367" x2="18" y2="530"/><polygon points="12,530 24,530 18,546"/><line x1="18" y1="548" x2="18" y2="700"/><circle cx="18" cy="700" r="5"/><line x1="18" y1="708" x2="18" y2="880"/></g></svg></div>
+    <div class="page-inner">
+      <div class="page-inner two-col" style="padding:0;">
+        <div>
+          <div class="subsection-title">Reclutamiento: El Camino del Ouroboros</div>
+          <p>Los reclutas potenciales son identificados por su resistencia inusual al Velo o su talento innato para la Alkímia. Al ser seleccionados, reciben un <strong>símbolo alkímico</strong> — el Ouroboros (una serpiente mordiéndose la cola, que representa la conexión entre creación y destrucción) — grabado en plomo. Solo quienes comprenden el intercambio equivalente pueden unirse a la Mano.</p>
+
+          <div class="subsection-title" style="margin-top:1rem;">Rituales de Iniciación</div>
+          <div class="faccion-row">
+            <div class="faccion-item" style="border-left-color:var(--velo);">
+              <div class="faccion-name" style="color:var(--velo-deep);">El Crisol de Vitriol</div>
+              <div class="faccion-desc">Un ritual en un santuario subterráneo donde el plomo del Ouroboros es transmutado en oro, simbolizando el renacimiento del candidato como miembro de la Mano. Inspirado en el acrónimo alkímico <em>«Visita Interiora Terrae Rectificando Invenies Occultum Lapidem»</em> — «Visita el interior de la tierra; rectificando, encontrarás la piedra oculta».</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--velo);">
+              <div class="faccion-name" style="color:var(--velo-deep);">El Velo del Azufre</div>
+              <div class="faccion-desc">Una ceremonia donde los nuevos miembros inhalan un humo de azufre alkímico, enfrentando visiones personales relacionadas con el Velo que revelan sus debilidades y fortalezas. Quienes superan estas pruebas mentales emergen con una marca luminosa en la palma: el <strong>Signo de la Unión</strong>.</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="subsection-title">Nivel de Alkimistas: La Gran Obra (Opus Magnum)</div>
+          <p>La Mano de los Misterios ha concebido un sistema de progresión conocido como <strong>La Gran Obra (Opus Magnum)</strong>. Este proceso traza el linaje y la naturaleza inherente de un Alkimista, y se manifiesta visualmente a través de la <strong>pigmentación de sus manos</strong> cuando canalizan y activan la Alkímia.</p>
+
+          <div class="opus-row">
+            <div class="opus-step nigredo">
+              <div class="opus-num"><div class="opus-roman">I</div><div class="opus-label">Etapa</div></div>
+              <div class="opus-content">
+                <div class="opus-title">Iniciado — Nigredo</div>
+                <div class="opus-desc">El ennegrecimiento o melanosis. Simboliza el <strong>comienzo del viaje</strong>, la purificación y la confrontación con la materia prima y las impurezas internas. Marca el inicio de la profunda conexión con la Alkímia.</div>
+                <div class="opus-manif">Manifestación: Manos oscuras, absorben la luz.</div>
+              </div>
+            </div>
+            <div class="opus-step albedo">
+              <div class="opus-num"><div class="opus-roman">II</div><div class="opus-label">Etapa</div></div>
+              <div class="opus-content">
+                <div class="opus-title">Adepto — Albedo</div>
+                <div class="opus-desc">El blanqueamiento o leucosis. Simboliza la <strong>purificación y la claridad</strong> alcanzada tras superar las pruebas iniciales y purgar las impurezas. Mayor control sobre sus habilidades, refinando su arte alkímico.</div>
+                <div class="opus-manif">Manifestación: Manos con un blanco luminoso, casi traslúcido.</div>
+              </div>
+            </div>
+            <div class="opus-step citrinitas">
+              <div class="opus-num"><div class="opus-roman">III</div><div class="opus-label">Etapa</div></div>
+              <div class="opus-content">
+                <div class="opus-title">Cátedro — Citrinitas</div>
+                <div class="opus-desc">El amarillamiento o xantosis. Denota <strong>madurez, dominio y la capacidad de iluminar los misterios más complejos</strong> de la Alkímia. El Alkimista Cátedro es un maestro en su campo, capaz de impartir conocimiento.</div>
+                <div class="opus-manif">Manifestación: Manos con un brillo dorado y cálido.</div>
+              </div>
+            </div>
+            <div class="opus-step rubedo">
+              <div class="opus-num"><div class="opus-roman">IV</div><div class="opus-label">Etapa</div></div>
+              <div class="opus-content">
+                <div class="opus-title">Excelso — Rubedo</div>
+                <div class="opus-desc">El enrojecimiento, purpúreo o iosis. Representa la <strong>culminación de la Gran Obra, el logro supremo y la fusión del Alkimista con la esencia misma de la Alkímia</strong>. Un ser de inmenso poder y comprensión.</div>
+                <div class="opus-manif">Manifestación: Manos con un rojo profundo, casi carmesí.</div>
+              </div>
+            </div>
+            <div class="opus-step cauda">
+              <div class="opus-num"><div class="opus-roman">∞</div><div class="opus-label">Singular</div></div>
+              <div class="opus-content">
+                <div class="opus-title">Singularidad — Cauda Pavonis</div>
+                <div class="opus-desc">Más allá de las cuatro etapas, existe un estado excepcional conocido como <strong>Cauda Pavonis</strong> (cola de pavo real). En este estado, las manos del Alkimista exhiben una <strong>variedad de colores iridiscentes</strong>, sugiriendo un dominio multifacético que trasciende las clasificaciones convencionales.</div>
+                <div class="opus-manif">Manifestación: Manos iridiscentes, reflejan todos los colores a la vez.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer"><div class="footer-title">Alkímia: Senderos del Velo</div><div class="footer-title">Capítulo VIII · Reclutamiento · Opus Magnum</div></div>
+    <div class="page-id">47</div>
+  </div>
+</section>
+
+<!-- PÁG 48: B.A.R.D. -->
+<section>
+  <div class="page-label">Página 48 · La Orden de B.A.R.D.: Estructura, Métodos, Conflictos</div>
+  <div class="page">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.2" fill="#b08a1e"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="395" y2="26" stroke="#b08a1e" stroke-width="0.5"/><line x1="425" y1="26" x2="760" y2="26" stroke="#b08a1e" stroke-width="0.5"/><rect x="405" y="16" width="10" height="20" transform="rotate(45,410,26)"/></g></svg><span class="band-text">Facciones · La Orden de B.A.R.D.</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.3"/><g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.28"><circle cx="18" cy="55" r="5"/><line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/><rect x="11" y="155" width="14" height="14" transform="rotate(45,18,162)"/><line x1="18" y1="173" x2="18" y2="300"/><circle cx="18" cy="300" r="4"/><circle cx="18" cy="300" r="7" stroke-dasharray="2,3"/><line x1="18" y1="310" x2="18" y2="460"/><polygon points="12,460 24,460 18,475"/><line x1="18" y1="478" x2="18" y2="630"/><circle cx="18" cy="630" r="5"/><line x1="18" y1="638" x2="18" y2="800"/><rect x="11" y="800" width="14" height="14" transform="rotate(45,18,807)"/><line x1="18" y1="820" x2="18" y2="900"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.22"/><g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.22"><circle cx="18" cy="75" r="5"/><line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/><rect x="13" y="200" width="10" height="10"/><line x1="18" y1="213" x2="18" y2="360"/><circle cx="18" cy="360" r="4"/><line x1="18" y1="367" x2="18" y2="530"/><polygon points="12,530 24,530 18,546"/><line x1="18" y1="548" x2="18" y2="700"/><circle cx="18" cy="700" r="5"/><line x1="18" y1="708" x2="18" y2="880"/></g></svg></div>
+    <div class="page-inner">
+      <div class="section-title">La Orden de B.A.R.D.</div>
+      <div class="chapter-subtitle" style="margin-bottom:0.5rem;">Bureau for Alchemy Research and Defense · Estructura · Métodos · Conflictos Internos</div>
+      <div class="chapter-rule"></div>
+      <p class="drop-cap">La <strong>Orden de B.A.R.D.</strong> (Bureau for Alchemy Research and Defense) es una organización internacional dedicada a la regulación y control del uso de la Alkímia. Fue fundada en respuesta a la creciente amenaza del Velo; su enfoque principal es <strong>prevenir nuevas fisuras, controlar a los Alkimistas transgresores y mantener el orden</strong> en un mundo al borde del caos.</p>
+
+      <div class="page-inner two-col" style="padding:0;margin-top:0.5rem;">
+        <div>
+          <div class="subsection-title">Estructura: Los Tres Dedos de B.A.R.D.</div>
+          <div class="faccion-row">
+            <div class="faccion-item bard" style="border-left-color:var(--gold);">
+              <div class="faccion-name" style="color:#7a6000;">Guardianes de la Fisura</div>
+              <div class="faccion-desc">La primera línea de defensa, responsables de monitorear zonas de actividad del Velo, sellar fisuras menores y contener la expansión de la corrupción. Son expertos en detección y neutralización de la energía del Velo.</div>
+            </div>
+            <div class="faccion-item bard" style="border-left-color:var(--gold);">
+              <div class="faccion-name" style="color:#7a6000;">Custodios del Equilibrio</div>
+              <div class="faccion-desc">El segundo nivel, encargados de hacer cumplir las leyes Alkímicas y controlar a los Alkimistas que abusan de su poder. Investigan actividades sospechosas, imponen sanciones y buscan mantener la paz en la comunidad Alkímica.</div>
+            </div>
+            <div class="faccion-item bard" style="border-left-color:rgba(100,80,30,0.5);">
+              <div class="faccion-name" style="color:#5a4a10;">Sombras del Velo</div>
+              <div class="faccion-desc">El nivel más secreto y controvertido. Sus agentes operan en las sombras, utilizando métodos poco ortodoxos — incluso se les acusa de usar la misma corrupción que combaten. Esto genera desconfianza y tensión con los otros «dedos».</div>
+            </div>
+          </div>
+
+          <div class="subsection-title" style="margin-top:0.8rem;">Conflictos Internos de B.A.R.D.</div>
+          <div class="consecuencia-row">
+            <div class="consecuencia-item" style="background:rgba(176,138,30,0.04);border-color:rgba(176,138,30,0.18);">
+              <div class="consecuencia-icon" style="color:var(--gold-dark);">⚖</div>
+              <div><div class="consecuencia-name" style="color:#7a6000;">Diferencias Ideológicas</div><div class="consecuencia-desc">Los tres «dedos» a menudo discrepan sobre los métodos para controlar la Alkímia y combatir la corrupción.</div></div>
+            </div>
+            <div class="consecuencia-item" style="background:rgba(36,94,96,0.04);border-color:rgba(36,94,96,0.15);">
+              <div class="consecuencia-icon" style="color:var(--velo);">✦</div>
+              <div><div class="consecuencia-name" style="color:var(--velo-deep);">Corrupción Interna</div><div class="consecuencia-desc">La proximidad al Velo y los métodos extremos de las Sombras del Velo pueden llevar a la corrupción dentro de la propia organización.</div></div>
+            </div>
+            <div class="consecuencia-item" style="background:rgba(122,62,20,0.04);border-color:rgba(122,62,20,0.15);">
+              <div class="consecuencia-icon" style="color:var(--copper);">🔒</div>
+              <div><div class="consecuencia-name">Falta de Transparencia</div><div class="consecuencia-desc">El secretismo de B.A.R.D. genera desconfianza y dificulta la colaboración con otras organizaciones, especialmente con la Mano de los Misterios.</div></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="subsection-title">Métodos de Control</div>
+          <div class="faccion-row" style="margin-bottom:0.8rem;">
+            <div class="faccion-item" style="border-left-color:var(--gold);padding:0.5rem 0.8rem;">
+              <div class="faccion-name" style="font-size:0.7rem;">Vigilancia</div>
+              <div class="faccion-desc" style="font-size:0.88rem;">Red de informantes y agentes para vigilar la actividad de los Alkimistas en todo el mundo.</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--gold);padding:0.5rem 0.8rem;">
+              <div class="faccion-name" style="font-size:0.7rem;">Investigación</div>
+              <div class="faccion-desc" style="font-size:0.88rem;">Los Custodios del Equilibrio investigan cualquier indicio de uso ilegal de la Alkímia o de corrupción del Velo.</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--gold);padding:0.5rem 0.8rem;">
+              <div class="faccion-name" style="font-size:0.7rem;">Sanciones</div>
+              <div class="faccion-desc" style="font-size:0.88rem;">Imponen multas, encarcelamiento y revocación de licencias a los Alkimistas que violan las leyes.</div>
+            </div>
+            <div class="faccion-item" style="border-left-color:var(--gold);padding:0.5rem 0.8rem;">
+              <div class="faccion-name" style="font-size:0.7rem;">Fuerza</div>
+              <div class="faccion-desc" style="font-size:0.88rem;">Los Guardianes de la Fisura y las Sombras del Velo tienen la autoridad para usar la fuerza y neutralizar amenazas.</div>
+            </div>
+          </div>
+          <div class="subsection-title">Castigos a los Alkimistas Transgresores</div>
+          <table class="rules-table" style="font-size:0.86rem;">
+            <thead><tr><th>Infracción</th><th>Castigo</th></tr></thead>
+            <tbody>
+              <tr><td>Infracción menor</td><td>Amonestación formal</td></tr>
+              <tr><td>Uso indebido de Alkímia, objetos ilegales</td><td>Multa</td></tr>
+              <tr><td>Amenaza grave a la comunidad</td><td>Encarcelamiento</td></tr>
+              <tr><td>Reincidencia / peligro continuado</td><td>Revocación de la licencia</td></tr>
+              <tr><td>Corrupción total / terrorismo alkímico</td><td><strong style="color:#7a1a1a;">Ejecución</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="box-rule" style="margin-top:0.8rem;">
+            <div class="box-title">B.A.R.D. vs. La Mano de los Misterios</div>
+            <p style="margin:0;">Ambas organizaciones comparten el objetivo de combatir el Velo, pero difieren radicalmente en sus métodos. Esta tensión ofrece al Director de Juego una fuente constante de conflicto narrativo: los personajes pueden verse atrapados entre las exigencias de ambas organizaciones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer"><div class="footer-title">Alkímia: Senderos del Velo</div><div class="footer-title">Capítulo VIII · La Orden de B.A.R.D.</div></div>
+    <div class="page-id">48</div>
+  </div>
+</section>
+
+<!-- PÁG 49–52: ENEMIGOS DEL VELO — 4 stat blocks -->
+<section>
+  <div class="page-label">Páginas 49–52 · Enemigos del Velo: Susurros · Cábala · Regentes · Emisarios</div>
+  <div class="page">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.2" fill="#7a1a1a"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="395" y2="26" stroke="#7a1a1a" stroke-width="0.5"/><line x1="425" y1="26" x2="760" y2="26" stroke="#7a1a1a" stroke-width="0.5"/><polygon points="408,17 420,26 408,35 396,26" fill="none" stroke="#7a1a1a" stroke-width="0.8"/></g></svg><span class="band-text" style="color:rgba(180,80,80,0.65);">Facciones · Enemigos del Velo</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#7a1a1a" stroke-width="0.5" opacity="0.28"/><g fill="none" stroke="#7a1a1a" stroke-width="0.6" opacity="0.26"><circle cx="18" cy="55" r="5"/><line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/><rect x="11" y="155" width="14" height="14" transform="rotate(45,18,162)"/><line x1="18" y1="173" x2="18" y2="300"/><circle cx="18" cy="300" r="4"/><circle cx="18" cy="300" r="7" stroke-dasharray="2,3"/><line x1="18" y1="310" x2="18" y2="460"/><polygon points="12,460 24,460 18,475"/><line x1="18" y1="478" x2="18" y2="630"/><circle cx="18" cy="630" r="5"/><line x1="18" y1="638" x2="18" y2="800"/><rect x="11" y="800" width="14" height="14" transform="rotate(45,18,807)"/><line x1="18" y1="820" x2="18" y2="900"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.2"/><g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.2"><circle cx="18" cy="75" r="5"/><line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/><rect x="13" y="200" width="10" height="10"/><line x1="18" y1="213" x2="18" y2="360"/><circle cx="18" cy="360" r="4"/><line x1="18" y1="367" x2="18" y2="530"/><polygon points="12,530 24,530 18,546"/><line x1="18" y1="548" x2="18" y2="700"/><circle cx="18" cy="700" r="5"/><line x1="18" y1="708" x2="18" y2="880"/></g></svg></div>
+    <div class="page-inner">
+      <div class="section-title">Enemigos del Velo</div>
+      <div class="chapter-subtitle" style="margin-bottom:0.5rem;">Cuatro categorías de amenazas — del más débil al más poderoso</div>
+      <div class="chapter-rule"></div>
+
+      <!-- SUSURROS -->
+      <div class="enemy-block">
+        <div class="enemy-veil-bar susurro"></div>
+        <div class="enemy-header">
+          <div class="enemy-header-left">
+            <div class="enemy-name">1 · Susurros</div>
+            <div class="enemy-class">Engendros Menores del Velo · Criatura Menor</div>
+          </div>
+          <div class="enemy-quote">«No lo ves... pero te escucha. No lo tocas... pero ya está dentro.»</div>
+        </div>
+        <div class="enemy-stats-row">
+          <div class="enemy-stat"><span class="enemy-stat-val">3</span><span class="enemy-stat-label">Vitae</span></div>
+          <div class="enemy-stat"><span class="enemy-stat-val">2</span><span class="enemy-stat-label">Voluntad</span></div>
+          <div class="enemy-stat"><span class="enemy-stat-val">4</span><span class="enemy-stat-label">Designio</span></div>
+          <div class="enemy-stat"><span class="enemy-stat-val">3</span><span class="enemy-stat-label">Ánima</span></div>
+          <div class="enemy-stat"><span class="enemy-stat-val">1</span><span class="enemy-stat-label">Daño Base</span></div>
+          <div class="enemy-stat"><span class="enemy-stat-val" style="color:var(--velo);">+1</span><span class="enemy-stat-label">Corrupción</span></div>
+        </div>
+        <div class="enemy-tags">
+          <span class="enemy-tag corrup">Corrupción mental</span>
+          <span class="enemy-tag oscuridad">Vínculo: Oscuridad</span>
+        </div>
+        <div class="enemy-body-grid">
+          <div class="enemy-col">
+            <div class="enemy-section-title">Descripción y Hábitat</div>
+            <p>Manifestaciones de energía corrupta del Velo surgidas de pensamientos rotos y recuerdos perdidos. Suelen tener <strong>formas amorfas y cambiantes</strong>: sombras animadas, masas de niebla con ojos brillantes, enjambres de insectos deformes. Se ocultan en ruinas, bibliotecas abandonadas y grietas de conciencia.</p>
+            <p>Habitan <strong>zonas sombrías, ruinas con presencia residual del Velo</strong>, o en la mente de aquellos que han perdido un recuerdo valioso. Los susurros del Velo son más fuertes en el Bosque de los Ecos en Rügen.</p>
+            <div class="enemy-section-title" style="margin-top:0.6rem;">Debilidad y Recompensas</div>
+            <p><strong>Débiles a:</strong> Luz directa y Alkímia de Sal pura.</p>
+            <p><strong>Recompensas:</strong> Derrotarlos puede proporcionar pistas sobre la actividad del Velo, fragmentos de conocimiento alkímico o la oportunidad de purificar una zona afectada.</p>
+          </div>
+          <div class="enemy-col">
+            <div class="enemy-section-title">Combate</div>
+            <p>Los Susurros son conocidos por sus habilidades para <strong>inducir miedo, paranoia y alucinaciones</strong> en sus víctimas. Pueden susurrar secretos oscuros, manipular las emociones o crear ilusiones terroríficas para debilitar a sus oponentes.</p>
+            <p>Individualmente no son muy poderosos, pero su capacidad para <strong>corromper la mente y el alma</strong> de sus víctimas es peligrosa. La exposición prolongada puede llevar a la locura, desesperación o transformación en una criatura del Velo.</p>
+            <div class="enemy-special">
+              <div class="enemy-special-name">⚡ Habilidad Especial — Eco Mental</div>
+              <p style="font-size:0.9rem;color:var(--text-muted);line-height:1.62;margin:0;">Una vez por combate, el Susurro obliga a un jugador a repetir la última acción que haya realizado. Si la repite de forma inadecuada, sufre <strong>1 punto de Corrupción</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CÁBALA -->
+      <div class="enemy-block">
+        <div class="enemy-veil-bar cabala"></div>
+        <div class="enemy-header">
+          <div class="enemy-header-left">
+            <div class="enemy-name">2 · Cábala</div>
+            <div class="enemy-class">Alkimistas Corrompidos · Criatura Élite</div>
+          </div>
+          <div class="enemy-quote">«Su corazón una vez buscó la luz, pero el Velo les prometió un poder mayor.»</div>
+        </div>
+        <div class="enemy-stats-row">
+          <div class="enemy-stat"><span class="enemy-stat-val">5</span><span class="enemy-stat-label">Vitae</span></div>
+          <div class="enemy-stat"><span class="enemy-stat-val">4</span><span class="enemy-stat-label">Voluntad</span></div>
+          <div class="enemy-stat"><span class="enemy-stat-val">5</span><span class="enemy-stat-label">Designio</span></div>
+          <div class="enemy-stat"><span class="enemy-stat-val">6</span><span class="enemy-stat-label">Ánima</span></div>
+          <div class="enemy-stat"><span class="enemy-stat-val">3</span><span class="enemy-stat-label">Daño Base</span></div>
+          <div class="enemy-stat"><span class="enemy-stat-val" style="color:#c04040;">+2</span><span class="enemy-stat-label">Corrupción</span></div>
+        </div>
+        <div class="enemy-tags">
+          <span class="enemy-tag corrup">Corrupción</span>
+          <span class="enemy-tag alkimia">Alkímia distorsionada</span>
+        </div>
+        <div class="enemy-body-grid">
+          <div class="enemy-col">
+            <div class="enemy-section-title">Descripción y Hábitat</div>
+            <p>Alkimistas que han sucumbido completamente a la corrupción del Velo, transformándose en seres monstruosos y poderosos. Conservan una <strong>apariencia humanoide pero con grotescas mutaciones</strong>: piel de obsidiana, ojos brillantes, garras afiladas o fusión con elementos alkímicos.</p>
+            <p>No tienen un hábitat fijo — operan en las sombras, en <strong>laboratorios secretos o en regiones afectadas por el Velo</strong>. Un ejemplo de su búsqueda se da en las Cenizas de Kaltenstein, donde buscan el «Corazón de la Ciudad».</p>
+            <div class="enemy-section-title" style="margin-top:0.6rem;">Debilidad</div>
+            <p><strong>Interrupción de Flujos Alkímicos Corruptos:</strong> Objetos o rituales que purifiquen o anulen la energía Alkímica, especialmente de Sal Pura.</p>
+          </div>
+          <div class="enemy-col">
+            <div class="enemy-section-title">Combate</div>
+            <p>Los Cábala son <strong>maestros de la Alkímia distorsionada</strong>, capaces de realizar transmutaciones aberrantes y controlar la energía corrupta del Velo. Pueden lanzar maldiciones, convocar criaturas del Velo o manipular la realidad a su alrededor de formas impredecibles.</p>
+            <p>Suelen formar <strong>sectas secretas, conspirar contra la humanidad</strong> o buscar artefactos poderosos para aumentar su poder y corromper el mundo aún más.</p>
+            <div class="enemy-special">
+              <div class="enemy-special-name">⚡ Transmutación Aberrante</div>
+              <p style="font-size:0.9rem;color:var(--text-muted);line-height:1.62;margin:0;">Una vez por turno, gasta Voluntad o Ánima para transformar el entorno (barreras corruptas, terreno peligroso) o lanzar un efecto alkímico directo (ácido, enjambres de parásitos del Velo) que inflige <strong>1 punto de Corrupción adicional</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- REGENTES y EMISARIOS en grid -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:0.5rem;">
+
+        <!-- REGENTES -->
+        <div class="enemy-block" style="margin-bottom:0;">
+          <div class="enemy-veil-bar regente"></div>
+          <div class="enemy-header">
+            <div class="enemy-header-left">
+              <div class="enemy-name">3 · Regentes</div>
+              <div class="enemy-class">Entidades Supremas del Velo</div>
+            </div>
+          </div>
+          <div class="enemy-stats-row">
+            <div class="enemy-stat"><span class="enemy-stat-val" style="font-size:0.9rem;">15+</span><span class="enemy-stat-label">Vitae</span></div>
+            <div class="enemy-stat"><span class="enemy-stat-val" style="font-size:0.9rem;">10+</span><span class="enemy-stat-label">Voluntad</span></div>
+            <div class="enemy-stat"><span class="enemy-stat-val" style="font-size:0.9rem;">12+</span><span class="enemy-stat-label">Designio</span></div>
+            <div class="enemy-stat"><span class="enemy-stat-val" style="font-size:0.9rem;">15+</span><span class="enemy-stat-label">Ánima</span></div>
+          </div>
+          <div class="enemy-tags">
+            <span class="enemy-tag oscuridad">Corrupción pura</span>
+            <span class="enemy-tag oscuridad">Entidad suprema</span>
+          </div>
+          <div style="padding:0.8rem 1rem;">
+            <p style="font-family:'EB Garamond',serif;font-style:italic;font-size:0.85rem;color:var(--text-caption);margin-bottom:0.5rem;">«Su mera presencia es una herida abierta en la realidad, y su nombre es un susurro de la destrucción venidera.»</p>
+            <p>Los Regentes son <strong>entidades supremas del Velo</strong>, seres de inmenso poder y maldad que representan la encarnación de la corrupción. Su aparición presagia la destrucción y el caos — un <strong>evento catastrófico que puede marcar el fin de la civilización</strong>.</p>
+            <p>Poseen poderes que desafían la comprensión humana: <strong>manipulación del espacio-tiempo, control absoluto de la energía del Velo</strong> y la capacidad de corromper la realidad con solo su presencia. Solo los esfuerzos combinados de los Alkimistas más poderosos pueden detenerlos.</p>
+            <div class="enemy-special">
+              <div class="enemy-special-name">⚡ Distorsión de la Realidad</div>
+              <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.62;margin:0;">Una vez por turno, un Regente puede invocar fenómenos masivos del Velo (agujeros negros menores, plagas instantáneas, realidades paralelas colapsando), o <strong>anular las acciones de múltiples oponentes simultáneamente</strong>. Corrupción: 5 (o más).</p>
+            </div>
+            <div style="margin-top:0.5rem;font-family:'Cinzel',serif;font-size:0.7rem;color:var(--copper);">Debilidad: Esencia de la Creación Pura · Rituales de Sellado a Gran Escala</div>
+          </div>
+        </div>
+
+        <!-- EMISARIOS -->
+        <div class="enemy-block" style="margin-bottom:0;">
+          <div class="enemy-veil-bar emisario"></div>
+          <div class="enemy-header">
+            <div class="enemy-header-left">
+              <div class="enemy-name">4 · Emisarios</div>
+              <div class="enemy-class">Agentes Directos del Velo</div>
+            </div>
+          </div>
+          <div class="enemy-stats-row">
+            <div class="enemy-stat"><span class="enemy-stat-val">4</span><span class="enemy-stat-label">Vitae</span></div>
+            <div class="enemy-stat"><span class="enemy-stat-val">3</span><span class="enemy-stat-label">Voluntad</span></div>
+            <div class="enemy-stat"><span class="enemy-stat-val">5</span><span class="enemy-stat-label">Designio</span></div>
+            <div class="enemy-stat"><span class="enemy-stat-val">5</span><span class="enemy-stat-label">Ánima</span></div>
+          </div>
+          <div class="enemy-tags">
+            <span class="enemy-tag corrup">Corrupción</span>
+            <span class="enemy-tag alkimia">Alkímia</span>
+          </div>
+          <div style="padding:0.8rem 1rem;">
+            <p style="font-family:'EB Garamond',serif;font-style:italic;font-size:0.85rem;color:var(--text-caption);margin-bottom:0.5rem;">«Aquellos que sucumben por completo al Velo pueden dejar de ser humanos para convertirse en algo más... algo que sirve a los propósitos de la oscuridad.»</p>
+            <p>Un Emisario es una de las formas en las que un Alkimista puede transformarse al perder su humanidad y sucumbir por completo a la corrupción del Velo. A diferencia de los Cábala, el Emisario representa una etapa donde la <strong>identidad original se desvanece en favor de los designios del Velo</strong>.</p>
+            <p>Se les encuentra en <strong>lugares donde se llevan a cabo ritos del Velo</strong> o donde se reclutan nuevos miembros para la causa de la corrupción. Daño base: 2 (corrupción, psíquico).</p>
+            <div class="enemy-special">
+              <div class="enemy-special-name">⚡ Consumo del Alma</div>
+              <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.62;margin:0;">El Emisario puede intentar drenar la Voluntad o el Ánima de un oponente. Si tiene éxito, <strong>el Emisario recupera un punto de Voluntad o Ánima</strong>. Si falla, el oponente sufre 1 punto de Corrupción. Corrupción: 2.</p>
+            </div>
+            <div style="margin-top:0.5rem;font-family:'Cinzel',serif;font-size:0.7rem;color:var(--copper);">Debilidades: Luz Purificada Intensa · Recordatorios de su Vida Anterior</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer"><div class="footer-title">Alkímia: Senderos del Velo</div><div class="footer-title">Capítulo VIII · Enemigos del Velo</div></div>
+    <div class="page-id">49–52</div>
+  </div>
+</section>
+
+
+
+
 
 
 </main>
