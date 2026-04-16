@@ -1776,6 +1776,321 @@ ol.alch-steps li::before {
     margin-top: 0.2rem;
   }
 
+
+  /* ── INCURSIONES: TAROT CARDS ── */
+  .tarot-spread {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.9rem;
+    margin: 1rem 0;
+  }
+  .tarot-card {
+    border: 1px solid var(--rule-color);
+    background: var(--parchment);
+    overflow: hidden;
+    break-inside: avoid;
+    position: relative;
+  }
+  .tarot-card::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background: linear-gradient(90deg, var(--velo), rgba(176,138,30,0.6), transparent);
+  }
+  .tarot-card-num {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.7rem 0 0.3rem;
+    line-height: 1;
+    color: rgba(36,94,96,0.25);
+  }
+  .tarot-card-header {
+    padding: 0 0.9rem 0.6rem;
+    border-bottom: 1px solid var(--rule-color);
+    text-align: center;
+  }
+  .tarot-card-name {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--velo-deep);
+    line-height: 1.2;
+    margin-bottom: 2px;
+  }
+  .tarot-card-sub {
+    font-family: 'Cinzel', serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-caption);
+  }
+  .tarot-card-body {
+    padding: 0.75rem 0.9rem;
+  }
+  .tarot-card-body p {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+    text-align: left;
+    margin-bottom: 0.4rem;
+  }
+  .tarot-card-body p:last-child { margin-bottom: 0; }
+  .tarot-card-example {
+    background: rgba(36,94,96,0.06);
+    border-top: 1px solid rgba(36,94,96,0.15);
+    padding: 0.5rem 0.9rem;
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 0.88rem;
+    color: var(--velo-deep);
+    line-height: 1.6;
+  }
+
+  /* ── INCURSION BLOCK ── */
+  .incursion-block {
+    border: 1px solid var(--rule-color);
+    background: var(--parchment);
+    overflow: hidden;
+    break-inside: avoid;
+    margin-bottom: 1.2rem;
+  }
+  .incursion-header {
+    background: var(--band-dark);
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .incursion-num {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.6;
+    margin-bottom: 3px;
+  }
+  .incursion-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--gold-pale);
+    line-height: 1.2;
+  }
+  .incursion-loc {
+    font-family: 'Cinzel', serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    color: rgba(212,200,154,0.45);
+    margin-top: 3px;
+  }
+  .incursion-tarot {
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .incursion-tarot-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(212,200,154,0.35);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .incursion-tarot-cards {
+    display: flex;
+    gap: 4px;
+    justify-content: flex-end;
+  }
+  .incursion-tarot-pill {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+    padding: 2px 8px;
+    background: rgba(36,94,96,0.2);
+    color: rgba(90,176,160,0.75);
+    border: 1px solid rgba(36,94,96,0.3);
+    white-space: nowrap;
+  }
+  .incursion-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .incursion-col {
+    padding: 0.85rem 1rem;
+    border-right: 1px solid var(--rule-color);
+  }
+  .incursion-col:last-child { border-right: none; }
+  .incursion-section {
+    font-family: 'Cinzel', serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink);
+    border-bottom: 1px solid var(--rule-color);
+    padding-bottom: 4px;
+    margin-bottom: 0.5rem;
+  }
+  .incursion-col p {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+    text-align: left;
+  }
+  .incursion-col p:last-child { margin-bottom: 0; }
+  .incursion-col ul {
+    list-style: none;
+    padding: 0; margin: 0;
+    display: flex; flex-direction: column; gap: 0.3rem;
+  }
+  .incursion-col ul li {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    padding-left: 0.8rem;
+    position: relative;
+  }
+  .incursion-col ul li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    font-size: 0.5rem;
+    color: var(--gold-dark);
+    top: 0.3rem;
+  }
+  .incursion-col ul li strong { color: var(--ink); }
+  .incursion-footer {
+    background: rgba(36,94,96,0.05);
+    border-top: 1px solid rgba(36,94,96,0.15);
+    padding: 0.55rem 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .incursion-footer-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--velo-deep);
+    white-space: nowrap;
+    padding-top: 1px;
+    flex-shrink: 0;
+  }
+  .incursion-footer-text {
+    font-size: 0.9rem;
+    line-height: 1.62;
+    color: var(--text-muted);
+  }
+
+  /* ── NARRATIVE TIPS (DJ consejos) ── */
+  .narrative-tips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    margin: 0.9rem 0;
+  }
+  .narrative-tip {
+    border: 1px solid var(--rule-color);
+    background: rgba(242,232,200,0.35);
+    overflow: hidden;
+    break-inside: avoid;
+  }
+  .narrative-tip-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 0.85rem;
+    border-bottom: 1px solid var(--rule-color);
+    background: rgba(0,0,0,0.025);
+  }
+  .narrative-tip-icon {
+    width: 2rem; height: 2rem;
+    border: 1px solid var(--rule-color);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    color: var(--gold-dark);
+    background: rgba(176,138,30,0.08);
+  }
+  .narrative-tip-title {
+    font-family: 'Cinzel', serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+  .narrative-tip-body { padding: 0.7rem 0.85rem; }
+  .narrative-tip-consejo {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+  }
+  .narrative-tip-consejo strong { color: var(--ink); }
+  .narrative-tip-ejemplo {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--velo-deep);
+    border-left: 2px solid var(--velo);
+    padding-left: 0.7rem;
+    margin-top: 0.3rem;
+  }
+
+  /* ── SEÑOR DE LA BARAJA ── */
+  .senor-baraja {
+    background: var(--band-dark);
+    border: 1px solid rgba(36,94,96,0.25);
+    padding: 1.1rem 1.2rem;
+    margin: 0.9rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .senor-baraja::before {
+    content: '🂠';
+    position: absolute;
+    top: 0.6rem; right: 1rem;
+    font-size: 2.5rem;
+    opacity: 0.08;
+    color: var(--gold-pale);
+  }
+  .senor-baraja-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--gold-pale);
+    margin-bottom: 0.5rem;
+  }
+  .senor-baraja-quote {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.72;
+    color: rgba(212,200,154,0.75);
+    margin-bottom: 0.6rem;
+  }
+  .senor-baraja-body p {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: rgba(212,200,154,0.6);
+    margin-bottom: 0.4rem;
+    text-align: left;
+  }
+  .senor-baraja-body p strong { color: var(--gold-pale); font-style: normal; }
+  .senor-baraja-body p:last-child { margin-bottom: 0; }
+
 </style>
 </head>
 <body>
@@ -5948,6 +6263,440 @@ ol.alch-steps li::before {
     <div class="page-id">49–52</div>
   </div>
 </section>
+
+<!-- ═══════════════════════════════════════════════
+     CAP. IX — INCURSIONES Y NARRATIVA (pág. 53–62)
+     ═══════════════════════════════════════════════ -->
+
+<!-- APERTURA CAP. IX -->
+<section id="incursiones">
+  <div class="page-label">Página 53 · Cap. IX · Incursiones y Narrativa — Apertura</div>
+  <div class="page" style="min-height:660px;background:#080b0e;background-image:radial-gradient(ellipse at 50% 40%,rgba(36,94,96,0.3) 0%,transparent 60%),radial-gradient(ellipse at 25% 75%,rgba(176,138,30,0.12) 0%,transparent 50%),linear-gradient(180deg,#060a0d 0%,#0a0e12 100%);">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.22" fill="#2a6b6e"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="392" y2="26" stroke="#2a6b6e" stroke-width="0.5"/><line x1="428" y1="26" x2="760" y2="26" stroke="#2a6b6e" stroke-width="0.5"/><polygon points="408,16 420,26 408,36 396,26" fill="none" stroke="#2a6b6e" stroke-width="0.9"/></g></svg><span class="band-text" style="color:rgba(90,176,160,0.65);">Alkímia: Senderos del Velo · Incursiones y Narrativa</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 700" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="700" stroke="#2a6b6e" stroke-width="0.5" opacity="0.3"/><g fill="none" stroke="#2a6b6e" stroke-width="0.7" opacity="0.28"><circle cx="18" cy="60" r="5"/><line x1="18" y1="30" x2="18" y2="52"/><line x1="18" y1="68" x2="18" y2="200"/><rect x="11" y="200" width="14" height="14" transform="rotate(45,18,207)"/><line x1="18" y1="218" x2="18" y2="360"/><circle cx="18" cy="360" r="5"/><line x1="18" y1="368" x2="18" y2="520"/><polygon points="12,520 24,520 18,535"/><line x1="18" y1="538" x2="18" y2="700"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 700" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="700" stroke="#b08a1e" stroke-width="0.5" opacity="0.2"/><g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.2"><circle cx="18" cy="80" r="5"/><line x1="18" y1="30" x2="18" y2="72"/><line x1="18" y1="88" x2="18" y2="240"/><rect x="13" y="240" width="10" height="10"/><line x1="18" y1="253" x2="18" y2="420"/><circle cx="18" cy="420" r="4"/><line x1="18" y1="427" x2="18" y2="600"/><polygon points="12,600 24,600 18,615"/><line x1="18" y1="618" x2="18" y2="700"/></g></svg></div>
+    <!-- naipes de fondo decorativos -->
+    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);opacity:0.07;pointer-events:none;z-index:0;">
+      <svg width="460" height="380" viewBox="0 0 460 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Carta izquierda -->
+        <rect x="60" y="60" width="90" height="140" rx="4" stroke="#b08a1e" stroke-width="1"/>
+        <text x="105" y="150" fill="#b08a1e" font-size="40" font-family="serif" text-anchor="middle" opacity="0.6">XI</text>
+        <text x="105" y="88" fill="#b08a1e" font-size="13" font-family="serif" text-anchor="middle">La Justicia</text>
+        <!-- Carta central -->
+        <rect x="185" y="30" width="90" height="140" rx="4" stroke="#2a6b6e" stroke-width="1.2"/>
+        <text x="230" y="120" fill="#2a6b6e" font-size="40" font-family="serif" text-anchor="middle" opacity="0.6">☽</text>
+        <text x="230" y="58" fill="#2a6b6e" font-size="13" font-family="serif" text-anchor="middle">La Luna</text>
+        <!-- Carta derecha -->
+        <rect x="310" y="60" width="90" height="140" rx="4" stroke="#b08a1e" stroke-width="1"/>
+        <text x="355" y="150" fill="#b08a1e" font-size="36" font-family="serif" text-anchor="middle" opacity="0.6">IX</text>
+        <text x="355" y="88" fill="#b08a1e" font-size="13" font-family="serif" text-anchor="middle">El Ermitaño</text>
+        <!-- Señor de la Baraja silhouette -->
+        <circle cx="230" cy="290" r="40" stroke="#2a6b6e" stroke-width="0.8" stroke-dasharray="4,5"/>
+        <text x="230" y="297" fill="#2a6b6e" font-size="22" font-family="serif" text-anchor="middle" opacity="0.5">🂠</text>
+      </svg>
+    </div>
+    <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3rem 5rem 3.5rem;text-align:center;min-height:560px;">
+      <div style="font-family:'Cinzel',serif;font-size:0.68rem;letter-spacing:0.4em;text-transform:uppercase;color:rgba(90,176,160,0.5);margin-bottom:0.8rem;">Capítulo IX</div>
+      <div style="font-family:'Cinzel Decorative',serif;font-size:2.6rem;font-weight:900;color:#c8e8e0;text-shadow:0 0 40px rgba(36,94,96,0.4),0 2px 6px rgba(0,0,0,0.9);line-height:1.05;margin-bottom:0.2em;">Incursiones y Narrativa</div>
+      <div style="width:180px;height:1px;background:linear-gradient(90deg,transparent,rgba(90,176,160,0.5),transparent);margin:0.7rem auto;"></div>
+      <div style="font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(180,220,210,0.3);margin-bottom:1.8rem;">El Velo del Destino · La Mano del Destino · Ejemplos · Arte de la Narrativa</div>
+      <div style="max-width:480px;">
+        <p style="font-family:'EB Garamond',serif;font-style:italic;font-size:1rem;line-height:1.82;color:rgba(180,220,210,0.6);text-align:center;margin:0;">«Las cartas no mienten, Alkimista. Pero tampoco dicen toda la verdad. El destino es un hilo que solo quien conoce el precio del poder puede llegar a tejer con sabiduría.»</p>
+        <div style="font-family:'Cinzel',serif;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(90,176,160,0.35);margin-top:0.8rem;">— El Señor de la Baraja, El Salón del Velo</div>
+      </div>
+    </div>
+    <div class="page-footer" style="border-top-color:rgba(36,94,96,0.2);"><div class="footer-title" style="color:rgba(90,176,160,0.4);">Alkímia: Senderos del Velo</div><div class="footer-title" style="color:rgba(90,176,160,0.4);">Capítulo IX · Incursiones y Narrativa</div></div>
+    <div class="page-id">53</div>
+  </div>
+</section>
+
+<!-- PÁG 54–55: ESTRUCTURA + EL VELO DEL DESTINO -->
+<section>
+  <div class="page-label">Páginas 54–55 · Estructura de las Incursiones · El Velo del Destino</div>
+  <div class="page">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.2" fill="#2a6b6e"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="395" y2="26" stroke="#2a6b6e" stroke-width="0.5"/><line x1="425" y1="26" x2="760" y2="26" stroke="#2a6b6e" stroke-width="0.5"/><polygon points="408,17 420,26 408,35 396,26" fill="none" stroke="#2a6b6e" stroke-width="0.8"/></g></svg><span class="band-text">Incursiones y Narrativa · Estructura · El Velo del Destino</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.3"/><g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.28"><circle cx="18" cy="55" r="5"/><line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/><rect x="11" y="155" width="14" height="14" transform="rotate(45,18,162)"/><line x1="18" y1="173" x2="18" y2="310"/><circle cx="18" cy="310" r="4"/><circle cx="18" cy="310" r="7" stroke-dasharray="2,3"/><line x1="18" y1="320" x2="18" y2="480"/><polygon points="12,480 24,480 18,495"/><line x1="18" y1="498" x2="18" y2="650"/><circle cx="18" cy="650" r="5"/><line x1="18" y1="658" x2="18" y2="820"/><rect x="11" y="820" width="14" height="14" transform="rotate(45,18,827)"/><line x1="18" y1="840" x2="18" y2="900"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.22"/><g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.22"><circle cx="18" cy="75" r="5"/><line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/><rect x="13" y="200" width="10" height="10"/><line x1="18" y1="213" x2="18" y2="360"/><circle cx="18" cy="360" r="4"/><line x1="18" y1="367" x2="18" y2="530"/><polygon points="12,530 24,530 18,546"/><line x1="18" y1="548" x2="18" y2="700"/><circle cx="18" cy="700" r="5"/><line x1="18" y1="708" x2="18" y2="870"/></g></svg></div>
+    <div class="page-inner">
+      <div class="section-title">Estructura de las Incursiones: <span class="highlight">Mecánicas de Interacción</span></div>
+      <div class="chapter-rule"></div>
+      <p class="drop-cap">En el corazón de la experiencia de <em>Alkímia: Senderos del Velo</em>, cada aventura — conocida como <strong>Incursión</strong> — no es una mera tarea, sino un <strong>Designio tejido por el mismo destino</strong>. Este proceso se desvela en <em>El Salón del Velo</em>, un lugar que se dice existe fuera del tiempo, y es orquestado por el enigmático <strong>Señor de la Baraja</strong>, un ser místico envuelto en misterio y ambigüedad, el único capaz de leer los hilos del tiempo y la realidad a través de las Cartas del Tarot.</p>
+
+      <div class="senor-baraja">
+        <div class="senor-baraja-title">El Señor de la Baraja — El Salón del Velo</div>
+        <div class="senor-baraja-quote">«La luz de la Luna no siempre guía; a veces distorsiona lo que es real. La ilusión será tu compañera en esta travesía, y solo quienes comprendan el valor del sacrificio encontrarán el resplandor de la Estrella. Pero cuidado, Alkimistas, pues hasta las sombras más largas nacen de la luz más brillante.»</div>
+        <div class="senor-baraja-body">
+          <p>Se le describe como <strong>misterioso, ambiguo y teatral</strong>, siempre comunicándose mediante metáforas e insinuaciones. Su papel no es solo asignar misiones, sino también infundir una <strong>sensación ineludible de destino y misticismo</strong> en vuestro camino. Permite a los jugadores especular sobre los significados de las cartas y cómo se manifestarán.</p>
+        </div>
+      </div>
+
+      <div class="section-title" style="margin-top:1rem;">El Proceso de Asignación: <span class="highlight">El Velo del Destino</span></div>
+      <div class="alch-sep"><span>🂠</span></div>
+
+      <p>El proceso se desarrolla en <strong>dos fases clave</strong> que establecen el tono de cada Incursión y tejen la historia personal de cada Alkimista con los misterios que los aguardan.</p>
+
+      <div class="pilares-row">
+        <div class="pilar-item">
+          <div class="pilar-num"><div class="pilar-numeral" style="color:var(--velo-deep);">I</div><div class="pilar-roman">Fase</div></div>
+          <div class="pilar-content">
+            <div class="pilar-name" style="color:var(--velo-deep);">La Declaración del Propósito</div>
+            <div class="pilar-desc">Antes de que las cartas revelen vuestro camino, se os ofrece un momento para el alma del Alkimista. Podéis <strong>declarar vuestra intención o formular una pregunta</strong> al Señor de la Baraja. Aunque opcional, este acto infunde a vuestra búsqueda una profunda conexión personal.<br><br><em>Ejemplo — La Voz de Kaelen:</em> Cuando Kaelen declaró su deseo de «liberar el tormento de aquellos que puedan sufrir su misma condena», el Señor de la Baraja reconoció la profunda conexión de su anhelo con la corrupción que ha lacerado la civilización.</div>
+          </div>
+        </div>
+        <div class="pilar-item">
+          <div class="pilar-num"><div class="pilar-numeral" style="color:var(--velo-deep);">II</div><div class="pilar-roman">Fase</div></div>
+          <div class="pilar-content">
+            <div class="pilar-name" style="color:var(--velo-deep);">La Revelación de las Tres Cartas</div>
+            <div class="pilar-desc">Tras la declaración, el Señor de la Baraja extiende su mano sobre su baraja y <strong>tres cartas se alzan para determinar el corazón de vuestra incursión</strong>. Cada carta define un aspecto fundamental de la misión que se avecina.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Las 3 cartas como tarot-spread -->
+      <div class="tarot-spread">
+        <div class="tarot-card">
+          <div class="tarot-card-num">I</div>
+          <div class="tarot-card-header">
+            <div class="tarot-card-name">Carta 1</div>
+            <div class="tarot-card-sub">El Tipo de Incursión</div>
+          </div>
+          <div class="tarot-card-body">
+            <p>Define la <strong>naturaleza general de vuestra misión</strong>. Será una aventura de exploración, contención, rescate o investigación.</p>
+          </div>
+          <div class="tarot-card-example">Para Kaelen: «La Justicia (XI)» — marcó su misión como una de contención y restablecimiento del equilibrio, presagiando decisiones difíciles con consecuencias duraderas.</div>
+        </div>
+        <div class="tarot-card">
+          <div class="tarot-card-num">II</div>
+          <div class="tarot-card-header">
+            <div class="tarot-card-name">Carta 2</div>
+            <div class="tarot-card-sub">Las Complicaciones Principales</div>
+          </div>
+          <div class="tarot-card-body">
+            <p>Esta carta advierte sobre los <strong>eventos, enemigos o circunstancias</strong> que desafiarán vuestro ingenio y vuestra voluntad durante la Incursión.</p>
+          </div>
+          <div class="tarot-card-example">Para Kaelen: «La Luna (XVIII)» — auguraba un camino de ilusiones, engaños y alucinaciones. La verdad se volvería esquiva; confiar en el Designio para discernir lo real.</div>
+        </div>
+        <div class="tarot-card">
+          <div class="tarot-card-num">III</div>
+          <div class="tarot-card-header">
+            <div class="tarot-card-name">Carta 3</div>
+            <div class="tarot-card-sub">La Recompensa o Consecuencia</div>
+          </div>
+          <div class="tarot-card-body">
+            <p>Esta carta final revela <strong>lo que está en juego</strong>: un artefacto único, un cambio permanente en el mundo, o quizás un profundo sacrificio personal.</p>
+          </div>
+          <div class="tarot-card-example">Para Kaelen: «El Ermitaño (IX)» — sugería una recompensa de conocimiento profundo. Pero el Señor ya advertía: «el conocimiento... siempre tiene un precio».</div>
+        </div>
+      </div>
+
+      <div class="nota">Este sistema de asignación de incursiones asegura que cada aventura esté imbuida de un <strong>misterio profundo y una conexión narrativa</strong> con los principios fundamentales de Alkímia: Senderos del Velo, recordándoos siempre el precio del poder y la influencia del Velo.</div>
+    </div>
+    <div class="page-footer"><div class="footer-title">Alkímia: Senderos del Velo</div><div class="footer-title">Capítulo IX · Estructura · El Velo del Destino</div></div>
+    <div class="page-id">54–55</div>
+  </div>
+</section>
+
+<!-- PÁG 56–59: EJEMPLOS DE INCURSIONES -->
+<section>
+  <div class="page-label">Páginas 56–59 · Ejemplos de Incursiones: Objetivos, Desafíos, Recompensas</div>
+  <div class="page">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.2" fill="#b08a1e"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="395" y2="26" stroke="#b08a1e" stroke-width="0.5"/><line x1="425" y1="26" x2="760" y2="26" stroke="#b08a1e" stroke-width="0.5"/><rect x="405" y="16" width="10" height="20" transform="rotate(45,410,26)"/></g></svg><span class="band-text">Incursiones y Narrativa · Ejemplos de Incursiones</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.3"/><g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.28"><circle cx="18" cy="55" r="5"/><line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/><rect x="11" y="155" width="14" height="14" transform="rotate(45,18,162)"/><line x1="18" y1="173" x2="18" y2="300"/><circle cx="18" cy="300" r="4"/><circle cx="18" cy="300" r="7" stroke-dasharray="2,3"/><line x1="18" y1="310" x2="18" y2="460"/><polygon points="12,460 24,460 18,475"/><line x1="18" y1="478" x2="18" y2="630"/><circle cx="18" cy="630" r="5"/><line x1="18" y1="638" x2="18" y2="800"/><rect x="11" y="800" width="14" height="14" transform="rotate(45,18,807)"/><line x1="18" y1="820" x2="18" y2="900"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.22"/><g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.22"><circle cx="18" cy="75" r="5"/><line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/><rect x="13" y="200" width="10" height="10"/><line x1="18" y1="213" x2="18" y2="360"/><circle cx="18" cy="360" r="4"/><line x1="18" y1="367" x2="18" y2="530"/><polygon points="12,530 24,530 18,546"/><line x1="18" y1="548" x2="18" y2="700"/><circle cx="18" cy="700" r="5"/><line x1="18" y1="708" x2="18" y2="880"/></g></svg></div>
+    <div class="page-inner">
+      <div class="section-title">Ejemplos de Incursiones: <span class="highlight">Objetivos, Desafíos, Recompensas</span></div>
+      <div class="chapter-rule"></div>
+      <p>Se incluyen tres ejemplos detallados de incursiones, diseñados para ofrecer narrativa, desafíos y decisiones significativas que afectan tanto a los personajes como al mundo que los rodea. Los mapas pueden incluir <strong>zonas clave, eventos activadores y encuentros dinámicos</strong> que cambian según las acciones de los jugadores, aumentando la rejugabilidad.</p>
+
+      <!-- INCURSIÓN 1 -->
+      <div class="incursion-block">
+        <div class="incursion-header">
+          <div>
+            <div class="incursion-num">Incursión 1 of 3</div>
+            <div class="incursion-title">La Catedral del Eco Eterno</div>
+            <div class="incursion-loc">📍 Ruinas catedralicias en la cima de una montaña brumosa — entre el mundo material y el Velo</div>
+          </div>
+          <div class="incursion-tarot">
+            <span class="incursion-tarot-label">Cartas del Destino</span>
+            <div class="incursion-tarot-cards">
+              <span class="incursion-tarot-pill">La Justicia XI</span>
+              <span class="incursion-tarot-pill">La Luna XVIII</span>
+              <span class="incursion-tarot-pill">El Ermitaño IX</span>
+            </div>
+          </div>
+        </div>
+        <div class="incursion-body">
+          <div class="incursion-col">
+            <div class="incursion-section">🎯 Objetivo</div>
+            <p><strong>Sellar una fisura del Velo</strong> que permite la entrada de espíritus vengativos a la catedral, atrapada entre el mundo material y el Velo.</p>
+            <div class="incursion-section" style="margin-top:0.7rem;">⚔ Desafíos</div>
+            <ul>
+              <li><strong>El Eco:</strong> Cada acción genera un eco que atrae espíritus, forzando a los jugadores a actuar con cautela.</li>
+              <li><strong>Espectros vengativos:</strong> Rápidos, difíciles de dañar sin armas imbuidas de esencia espiritual.</li>
+              <li><strong>El Guardián del Eco:</strong> Una criatura fusionada con la fisura que refleja ataques si no se resuelve un enigma primero.</li>
+              <li><strong>Puzzle:</strong> Restaurar las campanas de la torre para debilitar al Guardián.</li>
+            </ul>
+          </div>
+          <div class="incursion-col">
+            <div class="incursion-section">👥 PNJs Clave</div>
+            <ul>
+              <li><strong>Iriel, la Guardiana del Umbral:</strong> Anciana vidente que ofrece pistas para los acertijos de las campanas. Desconfía de forasteros y busca liberar las almas de su familia perdida.</li>
+              <li><strong>Eco de Aryn:</strong> Una figura fantasmal que aparenta ayudar, pero con intenciones ambiguas.</li>
+            </ul>
+            <div class="incursion-section" style="margin-top:0.7rem;">🏆 Recompensas</div>
+            <ul>
+              <li><strong>Anillo del Silencio:</strong> Reduce el ruido de las acciones del portador, útil en zonas con presencia del Velo.</li>
+              <li><strong>Fragmento del Velo:</strong> Permite un ritual para debilitar temporalmente enemigos del Velo.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="incursion-footer">
+          <div class="incursion-footer-label">🌀 Giro Narrativo</div>
+          <div class="incursion-footer-text">La confianza en Eco de Aryn podría llevar a una traición que fortalece al Guardián. La decisión de liberar las almas o sellar la fisura afecta futuras misiones — liberar las almas puede atraer entidades agradecidas o resentidas.</div>
+        </div>
+      </div>
+
+      <!-- INCURSIÓN 2 -->
+      <div class="incursion-block">
+        <div class="incursion-header">
+          <div>
+            <div class="incursion-num">Incursión 2 of 3</div>
+            <div class="incursion-title">La Mina de los Susurros</div>
+            <div class="incursion-loc">📍 Antigua mina de cristal en el desierto de Cendra Escarlata</div>
+          </div>
+          <div class="incursion-tarot">
+            <span class="incursion-tarot-label">Cartas del Destino</span>
+            <div class="incursion-tarot-cards">
+              <span class="incursion-tarot-pill">La Torre XVI</span>
+              <span class="incursion-tarot-pill">El Mundo XXI</span>
+              <span class="incursion-tarot-pill">La Fuerza VIII</span>
+            </div>
+          </div>
+        </div>
+        <div class="incursion-body">
+          <div class="incursion-col">
+            <div class="incursion-section">🎯 Objetivo</div>
+            <p><strong>Rescatar mineros atrapados</strong> y detener la expansión de una corrupción cristalina que amplifica los pensamientos oscuros y lleva a la locura.</p>
+            <div class="incursion-section" style="margin-top:0.7rem;">⚔ Desafíos</div>
+            <ul>
+              <li><strong>Corrupción Cristalina:</strong> Cristales de rápido crecimiento que bloquean caminos y requieren ser destruidos.</li>
+              <li><strong>Criaturas cristalinas:</strong> Resistentes al daño físico, vulnerables a Alkímia de Azufre.</li>
+              <li><strong>El Corruptor:</strong> Una masa cristalina que controla a un PNJ clave.</li>
+              <li><strong>Entorno Hostil:</strong> La mina es un laberinto cambiante por los cristales.</li>
+            </ul>
+          </div>
+          <div class="incursion-col">
+            <div class="incursion-section">👥 PNJs Clave</div>
+            <ul>
+              <li><strong>Maese Tharok:</strong> Líder de los mineros, atrapado y al borde de la locura, quien sacrificó hombres para detener la corrupción.</li>
+              <li><strong>Nerai, la Hija del Cristal:</strong> Mujer misteriosa parcialmente fusionada con cristales, que ofrece guiar a los jugadores con un motivo oculto.</li>
+            </ul>
+            <div class="incursion-section" style="margin-top:0.7rem;">🏆 Recompensas</div>
+            <ul>
+              <li><strong>Fragmento Puro:</strong> Cristal que amplifica habilidades alkímicas temporalmente.</li>
+              <li><strong>Mapa de la Mina:</strong> Recurso valioso para futuras incursiones en la región.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="incursion-footer">
+          <div class="incursion-footer-label">🌀 Giro Narrativo</div>
+          <div class="incursion-footer-text">Destruir todos los cristales implica perder fragmentos útiles, mientras que dejarlos crecer podría hacer reaparecer al Corruptor. Nerai podría unirse al grupo o convertirse en una amenaza según las decisiones tomadas respecto a los cristales.</div>
+        </div>
+      </div>
+
+      <!-- INCURSIÓN 3 -->
+      <div class="incursion-block">
+        <div class="incursion-header">
+          <div>
+            <div class="incursion-num">Incursión 3 of 3</div>
+            <div class="incursion-title">El Árbol del Lamento</div>
+            <div class="incursion-loc">📍 Un bosque muerto con un gigantesco árbol negro impregnado de magia antigua y corrupta</div>
+          </div>
+          <div class="incursion-tarot">
+            <span class="incursion-tarot-label">Cartas del Destino</span>
+            <div class="incursion-tarot-cards">
+              <span class="incursion-tarot-pill">El Juicio XX</span>
+              <span class="incursion-tarot-pill">El Colgado XII</span>
+              <span class="incursion-tarot-pill">La Estrella XVII</span>
+            </div>
+          </div>
+        </div>
+        <div class="incursion-body">
+          <div class="incursion-col">
+            <div class="incursion-section">🎯 Objetivo</div>
+            <p><strong>Realizar un ritual para purificar el árbol o destruirlo</strong> antes de que su magia consuma los pueblos cercanos. La elección entre purificar o destruir tendrá consecuencias permanentes.</p>
+            <div class="incursion-section" style="margin-top:0.7rem;">⚔ Desafíos</div>
+            <ul>
+              <li><strong>Ecos del Bosque:</strong> El Árbol crea ilusiones que confunden a los jugadores, haciéndoles atacar a sus compañeros.</li>
+              <li><strong>Los Marchitos:</strong> Humanoides de corteza y hojas negras que protegen el Árbol.</li>
+              <li><strong>El Guardián de Raíces:</strong> Una criatura semienterrada de enorme poder.</li>
+              <li><strong>Tiempo Limitado:</strong> Se debe completar el ritual antes de una tormenta mágica que hará al Árbol indestructible.</li>
+            </ul>
+          </div>
+          <div class="incursion-col">
+            <div class="incursion-section">👥 PNJs Clave</div>
+            <ul>
+              <li><strong>Elder Vael:</strong> Sabia de un pueblo cercano que guía a los jugadores. Conoce partes del ritual, pero su memoria está dañada por el Árbol.</li>
+              <li><strong>Eiran, el Heraldo del Árbol:</strong> Un antiguo druida corrompido que intenta convencer a los jugadores de unirse a él y preservar el Árbol.</li>
+            </ul>
+            <div class="incursion-section" style="margin-top:0.7rem;">🏆 Recompensas</div>
+            <ul>
+              <li><strong>Rama Purificada:</strong> Arma mágica contra criaturas corruptas.</li>
+              <li><strong>Semilla del Árbol del Lamento:</strong> Reliquia para crear un santuario o herramienta mágica única.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="incursion-footer">
+          <div class="incursion-footer-label">🌀 Giro Narrativo</div>
+          <div class="incursion-footer-text">Destruir el Árbol podría llevar a la venganza de Eiran y sus seguidores. Purificarlo lo convierte en un aliado que proporciona recursos únicos y abre un santuario permanente para el grupo. La Semilla tiene un potencial dual: creación o corrupción.</div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer"><div class="footer-title">Alkímia: Senderos del Velo</div><div class="footer-title">Capítulo IX · Ejemplos de Incursiones</div></div>
+    <div class="page-id">56–59</div>
+  </div>
+</section>
+
+<!-- PÁG 60–61: EL ARTE DE LA NARRATIVA -->
+<section>
+  <div class="page-label">Páginas 60–61 · El Arte de la Narrativa: Consejos para el Director de Juego</div>
+  <div class="page">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.2" fill="#b08a1e"><circle cx="50" cy="26" r="3"/><circle cx="770" cy="26" r="3"/><line x1="60" y1="26" x2="395" y2="26" stroke="#b08a1e" stroke-width="0.5"/><line x1="425" y1="26" x2="760" y2="26" stroke="#b08a1e" stroke-width="0.5"/><polygon points="408,17 420,26 408,35 396,26" fill="none" stroke="#b08a1e" stroke-width="0.8"/></g></svg><span class="band-text">Incursiones y Narrativa · El Arte de la Narrativa</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#b08a1e" stroke-width="0.5" opacity="0.3"/><g fill="none" stroke="#b08a1e" stroke-width="0.6" opacity="0.28"><circle cx="18" cy="55" r="5"/><line x1="18" y1="28" x2="18" y2="47"/><line x1="18" y1="63" x2="18" y2="155"/><rect x="11" y="155" width="14" height="14" transform="rotate(45,18,162)"/><line x1="18" y1="173" x2="18" y2="300"/><circle cx="18" cy="300" r="4"/><circle cx="18" cy="300" r="7" stroke-dasharray="2,3"/><line x1="18" y1="310" x2="18" y2="460"/><polygon points="12,460 24,460 18,475"/><line x1="18" y1="478" x2="18" y2="630"/><circle cx="18" cy="630" r="5"/><line x1="18" y1="638" x2="18" y2="800"/><rect x="11" y="800" width="14" height="14" transform="rotate(45,18,807)"/><line x1="18" y1="820" x2="18" y2="900"/></g></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 900" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="900" stroke="#2a6b6e" stroke-width="0.5" opacity="0.22"/><g fill="none" stroke="#2a6b6e" stroke-width="0.6" opacity="0.22"><circle cx="18" cy="75" r="5"/><line x1="18" y1="28" x2="18" y2="67"/><line x1="18" y1="83" x2="18" y2="200"/><rect x="13" y="200" width="10" height="10"/><line x1="18" y1="213" x2="18" y2="360"/><circle cx="18" cy="360" r="4"/><line x1="18" y1="367" x2="18" y2="530"/><polygon points="12,530 24,530 18,546"/><line x1="18" y1="548" x2="18" y2="700"/><circle cx="18" cy="700" r="5"/><line x1="18" y1="708" x2="18" y2="880"/></g></svg></div>
+    <div class="page-inner">
+      <div class="section-title">El Arte de la Narrativa: <span class="highlight">Consejos para el Director de Juego</span></div>
+      <div class="chapter-rule"></div>
+      <p>Se ofrecen recomendaciones para el <strong>Director de Juego (DJ)</strong> para crear una experiencia dinámica, mantener la atención de los jugadores y asegurar una narrativa evolutiva y memorable.</p>
+
+      <div class="narrative-tips-grid">
+        <div class="narrative-tip">
+          <div class="narrative-tip-header">
+            <div class="narrative-tip-icon">🪝</div>
+            <div class="narrative-tip-title">Crear Ganchos Narrativos Atractivos</div>
+          </div>
+          <div class="narrative-tip-body">
+            <div class="narrative-tip-consejo"><strong>Consejo:</strong> Iniciar la aventura con un <strong>evento inesperado que capte la atención de los jugadores</strong>, como un ataque sorpresa o la aparición de un extraño.</div>
+            <div class="narrative-tip-ejemplo">Ejemplo: Introducir una misteriosa carta o mensaje de un antiguo aliado perdido para mantener la curiosidad y crear intriga desde el primer momento.</div>
+          </div>
+        </div>
+        <div class="narrative-tip">
+          <div class="narrative-tip-header">
+            <div class="narrative-tip-icon">🧵</div>
+            <div class="narrative-tip-title">Desarrollar la Trama en Capas</div>
+          </div>
+          <div class="narrative-tip-body">
+            <div class="narrative-tip-consejo"><strong>Consejo:</strong> Planificar <strong>múltiples capas de conflicto</strong> (internas y externas) para que los jugadores sientan que sus decisiones impactan directamente la historia.</div>
+            <div class="narrative-tip-ejemplo">Ejemplo: El descubrimiento de un artefacto antiguo podría resolver un problema, pero también atraer la atención de enemigos poderosos y abrir una nueva línea de conflicto.</div>
+          </div>
+        </div>
+        <div class="narrative-tip">
+          <div class="narrative-tip-header">
+            <div class="narrative-tip-icon">🌀</div>
+            <div class="narrative-tip-title">Introducir Giros Argumentales</div>
+          </div>
+          <div class="narrative-tip-body">
+            <div class="narrative-tip-consejo"><strong>Consejo:</strong> Incorporar sorpresas cuando los jugadores se sientan cómodos con la trama, como <strong>revelar la verdadera identidad de un personaje o la traición de un aliado</strong>.</div>
+            <div class="narrative-tip-ejemplo">Ejemplo: Un PNJ que parecía confiable resulta ser parte del Velo, implicando que los eventos anteriores fueron una trampa cuidadosamente tendida.</div>
+          </div>
+        </div>
+        <div class="narrative-tip">
+          <div class="narrative-tip-header">
+            <div class="narrative-tip-icon">💎</div>
+            <div class="narrative-tip-title">Crear Momentos Memorables</div>
+          </div>
+          <div class="narrative-tip-body">
+            <div class="narrative-tip-consejo"><strong>Consejo:</strong> Incluir <strong>decisiones difíciles con consecuencias duraderas</strong> para los personajes o el mundo, como sacrificar un objeto precioso para evitar la expansión del Velo.</div>
+            <div class="narrative-tip-ejemplo">Ejemplo: Una escena emocional donde los personajes deben elegir entre salvar a un ser querido o prevenir una catástrofe global que afectará a miles.</div>
+          </div>
+        </div>
+        <div class="narrative-tip">
+          <div class="narrative-tip-header">
+            <div class="narrative-tip-icon">🌫</div>
+            <div class="narrative-tip-title">Mantener la Atmósfera de Misterio</div>
+          </div>
+          <div class="narrative-tip-body">
+            <div class="narrative-tip-consejo"><strong>Consejo:</strong> <strong>Limitar la información</strong> y ofrecer pistas y secretos que los jugadores deban descubrir por sí mismos para mantener la intriga y el sentido de exploración.</div>
+            <div class="narrative-tip-ejemplo">Ejemplo: Describir el entorno de manera que los jugadores sientan que algo no está bien — a través de ruidos extraños, cambios en el clima o la ausencia de vida natural.</div>
+          </div>
+        </div>
+        <div class="narrative-tip">
+          <div class="narrative-tip-header">
+            <div class="narrative-tip-icon">📖</div>
+            <div class="narrative-tip-title">Gestionar la Información Efectivamente</div>
+          </div>
+          <div class="narrative-tip-body">
+            <div class="narrative-tip-consejo"><strong>Consejo:</strong> <strong>No revelar todo de inmediato</strong>. Hacer que los jugadores investiguen o pregunten para obtener información crucial, lo que mantiene la tensión y premia la curiosidad.</div>
+            <div class="narrative-tip-ejemplo">Ejemplo: Un libro antiguo contiene pistas, pero está en un idioma que los personajes deben aprender o descifrar antes de poder acceder a sus secretos.</div>
+          </div>
+        </div>
+        <div class="narrative-tip" style="grid-column:1/-1;">
+          <div class="narrative-tip-header">
+            <div class="narrative-tip-icon">👂</div>
+            <div class="narrative-tip-title">Mantener a los Jugadores Inmersos — La Regla de Oro</div>
+          </div>
+          <div class="narrative-tip-body" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div class="narrative-tip-consejo"><strong>Consejo:</strong> <strong>Escuchar a los jugadores</strong> y ajustar la historia según sus decisiones. Cuando los jugadores se sienten escuchados y sus acciones tienen peso, se sumergen más en la narrativa y la experiencia se vuelve verdaderamente memorable.</div>
+            <div class="narrative-tip-ejemplo">Ejemplo: Si un jugador muestra interés en un aspecto específico del mundo — una región, un PNJ, una facción — el DJ puede profundizar en ese tema y hacerlo relevante para la historia principal, creando un vínculo personal duradero.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer"><div class="footer-title">Alkímia: Senderos del Velo</div><div class="footer-title">Capítulo IX · El Arte de la Narrativa</div></div>
+    <div class="page-id">60–61</div>
+  </div>
+</section>
+
+<!-- COLOFÓN FINAL -->
+<section>
+  <div class="page-label">Página 62 · Colofón — Fin del documento de maquetación</div>
+  <div class="page" style="min-height:600px;background:#0a0c0a;background-image:radial-gradient(ellipse at 50% 40%,rgba(176,138,30,0.15) 0%,transparent 65%),linear-gradient(180deg,#080a08 0%,#0c0e0a 100%);">
+    <div class="page-band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 52" preserveAspectRatio="none"><rect width="820" height="52" fill="#1a1c24"/><g opacity="0.18" fill="#b08a1e"><line x1="0" y1="26" x2="820" y2="26" stroke="#b08a1e" stroke-width="0.5"/><circle cx="410" cy="26" r="4"/><circle cx="50" cy="26" r="2"/><circle cx="770" cy="26" r="2"/></g></svg><span class="band-text" style="color:rgba(176,138,30,0.45);">Alkímia: Senderos del Velo</span></div>
+    <div class="border-left"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 700" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="700" stroke="#b08a1e" stroke-width="0.5" opacity="0.2"/></svg></div>
+    <div class="border-right"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 700" preserveAspectRatio="xMidYMid slice"><line x1="18" y1="0" x2="18" y2="700" stroke="#b08a1e" stroke-width="0.5" opacity="0.2"/></svg></div>
+    <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4rem 5rem;text-align:center;min-height:520px;gap:1.4rem;">
+      <!-- Círculo alquímico final -->
+      <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.25;">
+        <circle cx="60" cy="60" r="55" stroke="#b08a1e" stroke-width="0.8"/>
+        <circle cx="60" cy="60" r="35" stroke="#2a6b6e" stroke-width="0.6" stroke-dasharray="3,4"/>
+        <polygon points="60,15 100,85 20,85" fill="none" stroke="#b08a1e" stroke-width="0.7"/>
+        <polygon points="60,105 20,35 100,35" fill="none" stroke="#2a6b6e" stroke-width="0.6"/>
+        <circle cx="60" cy="60" r="8" fill="none" stroke="#b08a1e" stroke-width="1"/>
+        <circle cx="60" cy="60" r="3" fill="#b08a1e"/>
+      </svg>
+      <div style="font-family:'Cinzel Decorative',serif;font-size:2rem;font-weight:900;color:rgba(176,138,30,0.55);">Alkímia</div>
+      <div style="font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.35em;text-transform:uppercase;color:rgba(212,200,154,0.3);">Senderos del Velo</div>
+      <div style="width:120px;height:1px;background:linear-gradient(90deg,transparent,rgba(176,138,30,0.4),transparent);"></div>
+      <div style="font-family:'EB Garamond',serif;font-style:italic;font-size:1rem;line-height:1.85;color:rgba(212,200,154,0.5);max-width:480px;">
+        «La Alkímia no es el dominio de la materia.<br>Es el dominio de uno mismo frente a la materia.<br>La Gran Obra no termina jamás — se transforma.»
+      </div>
+      <div style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(176,138,30,0.3);margin-top:0.5rem;">— Del Tratado de Thorne, Vol. Final</div>
+      <div style="display:flex;gap:1.5rem;margin-top:1.2rem;opacity:0.2;">
+        <span style="font-size:1.1rem;color:#b08a1e;">Θ</span>
+        <span style="font-size:1.1rem;color:#2a6b6e;">✦</span>
+        <span style="font-size:1.1rem;color:#7a1a1a;">⊗</span>
+        <span style="font-size:1.1rem;color:#2a6b6e;">☿</span>
+        <span style="font-size:1.1rem;color:#b08a1e;">∞</span>
+      </div>
+      <!-- Capítulos completados -->
+      <div style="margin-top:1.5rem;display:grid;grid-template-columns:repeat(3,1fr);gap:0.4rem;max-width:500px;opacity:0.35;">
+        <div style="font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(212,200,154,0.6);text-align:center;padding:4px 8px;border:1px solid rgba(176,138,30,0.2);">I · Introducción</div>
+        <div style="font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(212,200,154,0.6);text-align:center;padding:4px 8px;border:1px solid rgba(176,138,30,0.2);">II · El Origen del Velo</div>
+        <div style="font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(212,200,154,0.6);text-align:center;padding:4px 8px;border:1px solid rgba(176,138,30,0.2);">III · La Ciencia</div>
+        <div style="font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(212,200,154,0.6);text-align:center;padding:4px 8px;border:1px solid rgba(176,138,30,0.2);">IV · Sistema de Juego</div>
+        <div style="font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(212,200,154,0.6);text-align:center;padding:4px 8px;border:1px solid rgba(176,138,30,0.2);">V · Creación</div>
+        <div style="font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(212,200,154,0.6);text-align:center;padding:4px 8px;border:1px solid rgba(176,138,30,0.2);">VI · Intercambio</div>
+        <div style="font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(212,200,154,0.6);text-align:center;padding:4px 8px;border:1px solid rgba(176,138,30,0.2);">VII · El Mundo</div>
+        <div style="font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(212,200,154,0.6);text-align:center;padding:4px 8px;border:1px solid rgba(176,138,30,0.2);">VIII · Facciones</div>
+        <div style="font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(212,200,154,0.6);text-align:center;padding:4px 8px;border:1px solid rgba(176,138,30,0.2);">IX · Incursiones</div>
+      </div>
+    </div>
+    <div class="page-footer" style="border-top-color:rgba(176,138,30,0.1);"><div class="footer-title" style="color:rgba(176,138,30,0.3);">Alkímia: Senderos del Velo</div><div class="footer-title" style="color:rgba(176,138,30,0.3);">Maquetación v1.0 · Documento Completo</div></div>
+    <div class="page-id" style="background:rgba(176,138,30,0.4);">62</div>
+  </div>
+</section>
+
+
 
 
 
